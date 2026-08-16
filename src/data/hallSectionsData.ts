@@ -52,7 +52,7 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
   capacityText: 'تتسع حتى 400 سيدة مع 40 طاولة ضيافة فاخرة',
   overview:
     'صالة نسائية مجهزة بأعلى معايير الفخامة والخصوصية، تضم مسرحاً ملكياً مبهراً، ممر زفة مضيء، كشاف عروسة وأجهزة ليزر ودخان، مع بوفيه مفتوح فضي بطول 10 متر، تورتة زفاف من 3 أدوار، وضيافة طاولات مجانية تليق بليلة العمر.',
-  heroImage: '/07_Clean_Video_Frames/video_09_frame_2.jpg',
+  heroImage: '/07_Clean_Video_Frames/video_09_frame_1.jpg',
   heroVideo: '/Videos/video_01.mp4',
   specsList: [
     'بوفيه مفتوح بطول 10 أمتار من القائمة الفضية لـ 100 سيدة',
@@ -201,16 +201,16 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
     },
   ],
   galleryImages: [
-    { src: '/07_Clean_Video_Frames/video_09_frame_2.jpg', title: 'إطلالة واسعة على صالة النساء', desc: 'لقطة أصلية توضح مساحة الصالة وتوزيع الطاولات', badge: 'الصالة الرئيسية' },
-    { src: '/07_Clean_Video_Frames/video_09_frame_1.jpg', title: 'مسرح وكوشة العروس', desc: 'زاوية حقيقية للمسرح والكوشة وتجهيزات المناسبة', badge: 'مسرح العروس' },
-    { src: '/07_Clean_Video_Frames/video_09_frame_3.jpg', title: 'ممر الزفة والطاولات', desc: 'منظور مختلف لممر الزفة وتنسيق الجلسات المحيطة', badge: 'ممر الزفة' },
-    { src: '/07_Clean_Video_Frames/video_01_frame_1.jpg', title: 'ركن الترحيب بالمناسبة', desc: 'تنسيق الورد وركن استقبال الضيوف', badge: 'الاستقبال' },
-    { src: '/07_Clean_Video_Frames/video_01_frame_2.jpg', title: 'جلسات الاستقبال', desc: 'جانب من جلسات الاستقبال داخل القاعة', badge: 'جلسات القاعة' },
-    { src: '/07_Clean_Video_Frames/video_01_frame_3.jpg', title: 'الكوشة وممر العروس', desc: 'زاوية إضافية من الكوشة وممر العروس', badge: 'الكوشة' },
+    { src: '/07_Clean_Video_Frames/video_09_frame_1.jpg', title: 'إطلالة واسعة على صالة النساء', desc: 'مساحة الصالة وتوزيع الطاولات والجلسات', badge: 'الصالة الرئيسية' },
+    { src: '/07_Clean_Video_Frames/video_09_frame_3.jpg', title: 'مسرح وكوشة العروس', desc: 'المسرح والكوشة في مواجهة ممر الزفة', badge: 'مسرح العروس' },
+    { src: '/07_Clean_Video_Frames/video_09_frame_5.jpg', title: 'الممر الرئيسي للصالة', desc: 'منظور ممتد للممر والطاولات وصولًا إلى المسرح', badge: 'ممر الزفة' },
+    { src: '/07_Clean_Video_Frames/video_01_frame_1.jpg', title: 'الكوشة والثريا الرئيسية', desc: 'الإضاءة الدافئة وتنسيقات الورد حول الكوشة', badge: 'الكوشة' },
+    { src: '/07_Clean_Video_Frames/video_01_frame_3.jpg', title: 'مدخل صالة النساء', desc: 'منظر المدخل والدرج مع ركن الترحيب', badge: 'الاستقبال' },
+    { src: '/07_Clean_Video_Frames/video_01_frame_4.jpg', title: 'جلسة العروس', desc: 'جلسة أنيقة محاطة بتنسيقات الورد', badge: 'جلسة العروس' },
   ],
   videos: [
     { src: '/Videos/video_01.mp4', title: 'جولة حية داخل صالة النساء', desc: 'شاهد تفاصيل الصالة وتوزيع الطاولات وتجهيزات المناسبة', poster: '/07_Clean_Video_Frames/video_01_frame_3.jpg' },
-    { src: '/Videos/video_15.mp4', title: 'تجهيزات إحدى المناسبات', desc: 'لقطات حقيقية لتفاصيل الديكور والتوزيعات', poster: '/07_Clean_Video_Frames/video_15_frame_1.jpg' },
+    { src: '/Videos/video_15.mp4', title: 'تجهيزات إحدى المناسبات', desc: 'تفاصيل الديكور والتوزيعات وتجهيز ركن الترحيب', poster: '/07_Clean_Video_Frames/video_15_frame_4.jpg' },
   ],
 };
 
@@ -344,11 +344,11 @@ export const MEN_HALL_DATA: HallSectionSpec = {
     },
   ],
   galleryImages: [
-    { src: '/07_Clean_Video_Frames/video_04_frame_1.jpg', title: 'جلسات مجلس الرجال', desc: 'لقطة أصلية من جلسات قسم الرجال وتجهيزاته', badge: 'المجلس الداخلي' },
+    { src: '/07_Clean_Video_Frames/video_04_frame_1.jpg', title: 'جلسات مجلس الرجال', desc: 'جلسات رحبة داخل قسم الرجال', badge: 'المجلس الداخلي' },
     { src: '/07_Clean_Video_Frames/video_04_frame_2.jpg', title: 'مجلس استقبال الضيوف', desc: 'زاوية توضح ترتيب الجلسات ومساحة الحركة', badge: 'استقبال الرجال' },
     { src: '/07_Clean_Video_Frames/video_04_frame_3.jpg', title: 'تفاصيل قسم الرجال', desc: 'منظور واسع لقسم الرجال ومناطق الجلوس', badge: 'قسم الرجال' },
     { src: '/07_Clean_Video_Frames/video_05_frame_1.jpg', title: 'مدخل القاعة', desc: 'لقطة حقيقية للمدخل ومسار الوصول', badge: 'المدخل' },
-    { src: '/07_Clean_Video_Frames/video_05_frame_2.jpg', title: 'الممر الداخلي', desc: 'جانب من الممرات والمداخل الداخلية', badge: 'المرافق' },
+    { src: '/07_Clean_Video_Frames/video_06_frame_1.jpg', title: 'مدخل المرافق الداخلية', desc: 'مدخل واضح ضمن المرافق الملحقة بالقاعة', badge: 'المرافق' },
     { src: '/07_Clean_Video_Frames/video_05_frame_3.jpg', title: 'غرفة الجلوس والخدمات', desc: 'مساحة داخلية مخصصة للراحة والخدمات', badge: 'الخدمات' },
   ],
   videos: [

@@ -20,8 +20,8 @@ const ANGLES_DATA: AnglePhoto[] = [
     angleTag: 'kosha',
     angleLabel: 'الكوشة والمسرح',
     imageUrl: '/07_Clean_Video_Frames/video_09_frame_1.jpg',
-    description: 'لقطة أصلية من داخل الصالة توضح المسرح والكوشة وتجهيزات المناسبة.',
-    cameraSetting: 'لقطة أصلية من فيديو القاعة'
+    description: 'زاوية واضحة للمسرح والكوشة وتجهيزات المناسبة.',
+    cameraSetting: 'الكوشة والمسرح'
   },
   {
     id: 'b1',
@@ -30,7 +30,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     angleLabel: 'البوفيه المفتوح',
     imageUrl: '/07_Clean_Video_Frames/video_13_frame_2.jpg',
     description: 'عرض حقيقي ومرتب لأصناف الحلويات والضيافة في إحدى المناسبات.',
-    cameraSetting: 'لقطة أصلية من تجهيزات الضيافة'
+    cameraSetting: 'الحلويات والضيافة'
   },
   {
     id: 'c1',
@@ -47,7 +47,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     angleTag: 'men',
     angleLabel: 'قسم الرجال',
     imageUrl: '/07_Clean_Video_Frames/video_04_frame_3.jpg',
-    description: 'لقطة أصلية توضح ترتيب الجلسات ومساحة استقبال الضيوف في قسم الرجال.',
+    description: 'زاوية توضح ترتيب الجلسات ومساحة استقبال الضيوف في قسم الرجال.',
     cameraSetting: 'زاوية واسعة من مجلس الرجال'
   },
   {
@@ -57,7 +57,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     angleLabel: 'غرفة العروسة',
     imageUrl: '/07_Clean_Video_Frames/video_06_frame_3.jpg',
     description: 'لقطة واضحة لمدخل غرفة العروسة ضمن المرافق الداخلية للقاعة.',
-    cameraSetting: 'لقطة أصلية من مرافق القاعة'
+    cameraSetting: 'المرافق الداخلية'
   },
   {
     id: 'e1',
@@ -65,7 +65,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     angleTag: 'entrance',
     angleLabel: 'مدخل القاعة',
     imageUrl: '/07_Clean_Video_Frames/video_05_frame_1.jpg',
-    description: 'لقطة أصلية توضح مدخل القاعة والممر المؤدي إلى المرافق الداخلية.',
+    description: 'زاوية توضح مدخل القاعة والممر المؤدي إلى المرافق الداخلية.',
     cameraSetting: 'زاوية حقيقية من المدخل'
   }
 ];
@@ -88,7 +88,7 @@ export const AnglePhotoExplorer: React.FC = () => {
           تصفح زوايا قاعة الباخرة حسب القسم والزاوية
         </h3>
         <p className="text-xs text-[var(--color-navy-100)] font-cairo mt-1">
-          لقطات أصلية مستخرجة من فيديوهات القاعة، ويمكنك فتح أي صورة وتكبيرها لمشاهدة التفاصيل.
+          اختر القسم الذي ترغب في استكشافه، وافتح أي صورة لتكبيرها ومشاهدة التفاصيل.
         </p>
       </div>
 

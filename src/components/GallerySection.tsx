@@ -98,10 +98,10 @@ export const GallerySection: React.FC = () => {
   const visibleImages = useMemo(() => {
     if (expanded) return currentCategoryImages;
     if (selectedCategoryId === 'all') {
-      const perCategory = compact ? 1 : 2;
+      const perCategory = compact ? 2 : 3;
       return GALLERY_CATEGORIES.flatMap((category) => category.images.slice(0, perCategory));
     }
-    return currentCategoryImages.slice(0, compact ? 5 : 8);
+    return currentCategoryImages.slice(0, compact ? 8 : 10);
   }, [compact, currentCategoryImages, expanded, selectedCategoryId]);
 
   const lightboxItems = useMemo(() => currentCategoryImages.map((image) => ({
@@ -127,10 +127,10 @@ export const GallerySection: React.FC = () => {
       <div className="relative z-10 mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
         <header className="mx-auto mb-9 max-w-3xl text-center">
           <span className="mb-3 inline-flex items-center gap-2 rounded-full border border-[var(--color-champagne-300)] bg-[var(--color-champagne-100)] px-4 py-1.5 text-xs font-bold text-[var(--color-champagne-700)]">
-            <Sparkles className="h-4 w-4 text-[var(--color-champagne-500)]" /> الصور الحقيقية لقاعة الباخرة
+            <Sparkles className="h-4 w-4 text-[var(--color-champagne-500)]" /> جولة مصورة داخل قاعة الباخرة
           </span>
           <h2 id="gallery-title" className="text-3xl font-black text-[var(--color-navy-950)] sm:text-5xl font-tajawal">معرض <span className="text-[var(--color-champagne-700)]">قاعة الباخرة للاحتفالات</span></h2>
-          <p className="mt-4 text-sm font-semibold leading-7 text-[var(--color-navy-700)] sm:text-base">لقطات أصلية نظيفة من فيديوهات القاعة، مختارة لتعرض تفاصيل متنوعة دون صور متكررة أو علامات مائية.</p>
+          <p className="mt-4 text-sm font-semibold leading-7 text-[var(--color-navy-700)] sm:text-base">استكشف الصالات والجلسات والضيافة والمرافق من زوايا متنوعة، واختر القسم الذي ترغب في مشاهدته.</p>
         </header>
 
         <div className="mb-9 grid grid-cols-1 gap-3 min-[480px]:grid-cols-2 lg:grid-cols-5" aria-label="بطاقات أقسام القاعة">
@@ -172,7 +172,7 @@ export const GallerySection: React.FC = () => {
           </AnimatePresence>
         </motion.div>
 
-        {currentCategoryImages.length > (selectedCategoryId === 'all' ? (compact ? 5 : 10) : (compact ? 5 : 8)) && (
+        {currentCategoryImages.length > (selectedCategoryId === 'all' ? (compact ? 10 : 15) : (compact ? 8 : 10)) && (
           <div className="mt-10 text-center">
             <button type="button" onClick={() => setExpanded((value) => !value)} aria-expanded={expanded} className="btn-secondary inline-flex min-h-12 items-center gap-2 rounded-xl px-7 py-3 text-sm font-bold transition-colors">
               {expanded ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
@@ -182,7 +182,7 @@ export const GallerySection: React.FC = () => {
         )}
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-soft-beige)] p-5 text-center md:flex-row md:text-right">
-          <p className="flex items-center gap-2 text-sm font-bold text-[var(--color-navy-950)]"><Check className="h-5 w-5 text-[var(--color-champagne-500)]" /> جميع الصور المعروضة لقطات أصلية نظيفة من فيديوهات قاعة الباخرة.</p>
+          <p className="flex items-center gap-2 text-sm font-bold text-[var(--color-navy-950)]"><Check className="h-5 w-5 text-[var(--color-champagne-500)]" /> أعجبتك القاعة؟ نسّق موعد زيارة وشاهد التفاصيل على الطبيعة.</p>
           <a href="https://wa.me/966500292974" target="_blank" rel="noopener noreferrer" className="btn-primary shrink-0 rounded-xl px-6 py-3 text-xs font-black">تنسيق موعد زيارة ومعاينة</a>
         </div>
       </div>
