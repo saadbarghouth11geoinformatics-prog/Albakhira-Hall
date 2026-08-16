@@ -89,12 +89,23 @@ export const MensHallPage: React.FC<MensHallPageProps> = ({ onOpenBooking }) => 
       />
 
       {/* Hero Banner Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[var(--color-navy-950)] text-white pt-24 pb-16">
+      <section className="relative min-h-[420px] sm:min-h-[480px] max-h-[560px] flex items-center justify-center overflow-hidden bg-[var(--color-navy-950)] text-white pt-16 pb-12">
         <div className="absolute inset-0 z-0 opacity-40">
           <img
             src={MEN_HALL_DATA.heroImage}
             alt="مجلس وقسم الرجال قاعة الباخرة"
             className="w-full h-full object-cover object-center scale-105 animate-subtle-zoom"
+          />
+          <video
+            src="/Videos/video_05.mp4"
+            poster={MEN_HALL_DATA.heroImage}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+            aria-label="فيديو قسم الرجال بقاعة الباخرة"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-950)] via-[var(--color-navy-950)]/70 to-transparent" />
         </div>

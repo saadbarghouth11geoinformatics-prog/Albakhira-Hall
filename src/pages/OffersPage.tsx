@@ -55,7 +55,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
       <PageVideoHeader
         driveId="15-LwCv8tRIhMym20zDNDFgdPx3uJ_Hb9"
         driveUrl="https://drive.google.com/file/d/15-LwCv8tRIhMym20zDNDFgdPx3uJ_Hb9/view?usp=drive_link"
-        localVideoSrc="/Videos/video_15.mp4"
+        localVideoSrc="/Videos/video_06.mp4"
         localPoster="/01_Featured_Website/women_03.jpg"
         badge="ورقة العروض المعتمدة 2026 (تغطية حية حقيقية)"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"

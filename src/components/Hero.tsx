@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
   const statsY = useTransform(smoothProgress, [0, 1], ['0px', '15px']);
 
   return (
-    <section ref={heroRef} id="hero" className="relative min-h-[78svh] sm:min-h-[82svh] flex items-center justify-center overflow-hidden py-7 sm:py-12 md:py-16 bg-[var(--color-ivory)] text-[var(--color-text)]">
+    <section ref={heroRef} id="hero" className="relative min-h-[58svh] sm:min-h-[64svh] flex items-center justify-center overflow-hidden py-7 sm:py-10 md:py-12 bg-[var(--color-ivory)] text-[var(--color-text)]">
       {/* AUTOPLAYING PARALLAX VIDEO/IMAGE BACKGROUND LAYER - CRYSTAL CLEAR */}
       <motion.div
         style={shouldReduceMotion ? {} : { y: bgY, scale: bgScale, opacity: bgOpacity }}
@@ -60,6 +60,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
           loading="eager"
           decoding="async"
         />
+        <video
+          poster="/Videos/posters/hall-tour.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="absolute inset-0 h-full w-full object-cover object-center filter contrast-[1.08] brightness-[0.96]"
+          aria-label="جولة قصيرة داخل قاعة الباخرة بجدة"
+        >
+          <source src="/Videos/video_01.mp4" type="video/mp4" />
+        </video>
         {/* Crisp subtle framing gradient (no foggy white veil) */}
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/40 via-transparent to-[var(--color-ivory)]/80 pointer-events-none" />
       </motion.div>
