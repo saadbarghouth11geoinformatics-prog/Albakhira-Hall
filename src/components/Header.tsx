@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
+import { motion } from 'motion/react';
 import {
   Phone,
   Calendar,
@@ -145,22 +146,47 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-1 2xl:gap-2" aria-label="التنقل الرئيسي">
-            {allMobileLinks.map((link) => (
-              <NavLink
-                key={link.path}
-                to={link.path}
-                end={link.path === '/'}
-                className={({ isActive }) =>
-                  `relative px-2.5 2xl:px-3 py-2 rounded-lg text-[13px] 2xl:text-sm font-bold transition-all duration-200 flex items-center gap-1 whitespace-nowrap border border-transparent ${
-                    isActive
-                      ? 'text-[var(--color-navy-950)] font-black after:absolute after:inset-x-3 after:-bottom-1 after:h-0.5 after:rounded-full after:bg-[var(--color-champagne-500)]'
-                      : 'text-[var(--color-text-secondary)] hover:text-[var(--color-navy-950)] hover:bg-[var(--color-soft-beige)]/70'
-                  }`
-                }
-              >
-                <span>{link.label}</span>
-              </NavLink>
+          <nav className="hidden xl:flex flex-1 min-w-0 items-center justify-center rounded-2xl border border-[var(--color-border)]/75 bg-[var(--color-warm-white)]/45 px-1.5 py-1 shadow-xs backdrop-blur-sm" aria-label="التنقل الرئيسي">
+            {allMobileLinks.map((link, index) => (
+              <React.Fragment key={link.path}>
+                {index > 0 && (
+                  <span
+                    aria-hidden="true"
+                    className="h-5 w-px shrink-0 bg-gradient-to-b from-transparent via-[var(--color-champagne-500)]/35 to-transparent"
+                  />
+                )}
+                <NavLink
+                  to={link.path}
+                  end={link.path === '/'}
+                  className={({ isActive }) =>
+                    `relative flex items-center whitespace-nowrap rounded-lg border border-transparent px-2 py-2 text-xs font-bold transition-[color,transform] duration-200 ease-out 2xl:px-3 2xl:text-sm ${
+                      isActive
+                        ? 'text-[var(--color-navy-950)] font-black'
+                        : 'text-[var(--color-text-secondary)] hover:-translate-y-0.5 hover:text-[var(--color-navy-950)]'
+                    }`
+                  }
+                >
+                  {({ isActive }) => (
+                    <>
+                      {isActive && (
+                        <motion.span
+                          layoutId="desktop-nav-active-pill"
+                          className="absolute inset-0 rounded-lg border border-[var(--color-champagne-300)]/70 bg-[var(--color-champagne-100)]/75 shadow-xs"
+                          transition={{ type: 'spring', stiffness: 420, damping: 34 }}
+                        />
+                      )}
+                      <span className="relative z-10">{link.label}</span>
+                      {isActive && (
+                        <motion.span
+                          layoutId="desktop-nav-active-line"
+                          className="absolute inset-x-3 -bottom-1.5 h-0.5 rounded-full bg-[var(--color-champagne-600)]"
+                          transition={{ type: 'spring', stiffness: 420, damping: 34 }}
+                        />
+                      )}
+                    </>
+                  )}
+                </NavLink>
+              </React.Fragment>
             ))}
           </nav>
 
