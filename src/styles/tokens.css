@@ -1,0 +1,148 @@
+:root {
+  /* Warm Royal Dark Palette (Zero Blue - Replaces all dark navy shades with rich warm espresso & charcoal bronze) */
+  --color-navy-950: #14120e;
+  --color-navy-900: #1c1813;
+  --color-navy-800: #2a231b;
+  --color-navy-700: #3e3428;
+  --color-navy-100: #f5efe6;
+  --color-navy-50: #faf7f0;
+
+  /* Royal Champagne & Gold Palette */
+  --color-champagne-700: #7d5b24;
+  --color-champagne-600: #9c7533;
+  --color-champagne-500: #b88e3e;
+  --color-champagne-300: #e5ca85;
+  --color-champagne-100: #f5eedd;
+
+  /* Luxury Warm Ivory & Cream Surfaces (Matching User Reference Image) */
+  --color-ivory: #faf6ee;
+  --color-warm-white: #fffdf9;
+  --color-soft-beige: #f2ead9;
+  --color-stone: #dcd3c3;
+
+  /* High-Contrast Warm Typography */
+  --color-text: #1a1612;
+  --color-text-secondary: #4a3f33;
+  --color-text-muted: #736453;
+  --color-border: #e5dbc7;
+  --color-white: #ffffff;
+
+  /* Functional Indicators */
+  --color-success: #2e6b52;
+  --color-warning: #a56f24;
+  --color-error: #9e3d3d;
+
+  /* Luxury Shadows with Warm Undertone */
+  --shadow-sm: 0 4px 16px rgba(32, 26, 20, 0.06);
+  --shadow-md: 0 12px 32px rgba(32, 26, 20, 0.10);
+  --focus-ring: 0 0 0 3px rgba(184, 142, 62, 0.35);
+}
+
+::selection {
+  background: var(--color-champagne-300);
+  color: var(--color-navy-950);
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-champagne-600);
+  outline-offset: 3px;
+  box-shadow: var(--focus-ring);
+}
+
+:where(button, [role='button'], input[type='button'], input[type='submit']) {
+  min-height: 44px;
+}
+
+:where(button, input, select, textarea):disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+input,
+select,
+textarea {
+  background: var(--color-warm-white);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-champagne-600);
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+.surface-warm {
+  background: var(--color-warm-white);
+  color: var(--color-text);
+}
+
+.surface-ivory {
+  background: var(--color-ivory);
+  color: var(--color-text);
+}
+
+.surface-beige {
+  background: var(--color-soft-beige);
+  color: var(--color-text);
+}
+
+.surface-navy {
+  background: var(--color-navy-950);
+  color: var(--color-white);
+}
+
+.btn-primary {
+  background: var(--color-navy-900);
+  color: var(--color-white);
+  border: 1px solid var(--color-champagne-600);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--color-navy-800);
+  border-color: var(--color-champagne-500);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--color-warm-white);
+  color: var(--color-navy-900);
+  border: 1px solid var(--color-champagne-500);
+}
+
+.btn-secondary:hover {
+  background: var(--color-champagne-100);
+}
+
+.btn-on-dark {
+  background: linear-gradient(135deg, var(--color-champagne-600), var(--color-champagne-500));
+  color: var(--color-navy-950);
+  border: 1px solid var(--color-champagne-500);
+  box-shadow: 0 4px 15px rgba(184, 142, 62, 0.25);
+}
+
+.btn-on-dark:hover {
+  background: linear-gradient(135deg, var(--color-champagne-500), var(--color-champagne-300));
+  transform: translateY(-1px);
+}
+
+.card-surface {
+  background: var(--color-warm-white);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-surface:hover {
+  border-color: var(--color-champagne-300);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}

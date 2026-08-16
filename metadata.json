@@ -1,0 +1,6 @@
+{
+  "name": "قاعة الباخرة للاحتفالات | Al Bakhera Wedding Hall",
+  "description": "الموقع الرسمي لقاعة الباخرة للاحتفالات بجدة (الحرازات) - حجز باقات الأعراس والمناسبات، التواصل المباشر، الموقع الجغرافي ومعرض الصور.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

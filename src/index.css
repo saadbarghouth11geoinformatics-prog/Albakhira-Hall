@@ -1,0 +1,490 @@
+@import "./styles/tokens.css";
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-text);
+    overflow-x: hidden;
+  }
+}
+
+.font-cairo {
+  font-family: 'Cairo', sans-serif;
+}
+
+.font-tajawal {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+/* Solid brand treatments: warm ivory, champagne gold, and royal espresso */
+.gold-text {
+  color: var(--color-champagne-600);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, var(--color-champagne-600), var(--color-champagne-500));
+  color: var(--color-navy-950) !important;
+}
+
+.gold-gradient-dark {
+  background: var(--color-navy-900);
+  color: var(--color-white) !important;
+}
+
+.gold-gradient-hover {
+  background: var(--color-navy-800);
+}
+
+.gold-border {
+  border-color: var(--color-champagne-500);
+}
+
+.glass-card {
+  background: var(--color-warm-white);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  .glass-card {
+    background: rgba(255, 253, 249, 0.95);
+    border: 1px solid rgba(195, 153, 77, 0.3);
+    color: var(--color-text);
+    box-shadow: 0 4px 20px -5px rgba(125, 91, 36, 0.08);
+  }
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: var(--color-warm-white);
+  border-color: var(--color-champagne-500);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+@media (prefers-color-scheme: light) {
+  .glass-card-hover:hover {
+    background: #ffffff;
+    border-color: rgba(195, 153, 77, 0.6);
+    box-shadow: 0 12px 30px -10px rgba(125, 91, 36, 0.15);
+  }
+}
+
+.gold-glow {
+  box-shadow: var(--shadow-sm);
+}
+
+/* Forms keep one warm, legible surface across booking and contact flows. */
+.site-shell :where(input:not([type='range']):not([type='checkbox']):not([type='radio']), select, textarea) {
+  background: var(--color-warm-white) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+
+.site-shell :where(input, select, textarea):focus {
+  border-color: var(--color-champagne-600) !important;
+  box-shadow: var(--focus-ring) !important;
+}
+
+img[src='/logo-official.png'] {
+  object-fit: contain !important;
+  box-shadow: none !important;
+}
+
+.surface-light > div > .text-center :where(h1, h2, h3) {
+  color: var(--color-navy-950) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+.surface-light > div > .text-center p {
+  color: var(--color-text-secondary) !important;
+}
+
+/* Unified site palette & typography contrast system */
+.theme-page {
+  background: var(--color-ivory);
+  color: var(--color-text);
+}
+
+/* Ensure text classes in Tailwind work reliably without improper overrides */
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-gold-light {
+  color: var(--color-champagne-300) !important;
+}
+
+.text-gold {
+  color: var(--color-champagne-500) !important;
+}
+
+.text-gold-dark {
+  color: var(--color-champagne-700) !important;
+}
+
+.text-navy-deep {
+  color: var(--color-navy-950) !important;
+}
+
+/* Light surface text contrast defaults */
+.surface-light,
+.glass-card,
+.card-surface {
+  color: var(--color-text);
+}
+
+.surface-light h1, .surface-light h2, .surface-light h3, .surface-light h4,
+.glass-card h1, .glass-card h2, .glass-card h3, .glass-card h4,
+.card-surface h1, .card-surface h2, .card-surface h3, .card-surface h4 {
+  color: var(--color-navy-950);
+}
+
+/* Dark surface & photo overlay contrast guardrails */
+[data-theme='dark'],
+.cinematic-story,
+.dark-overlay-card,
+[class*='bg-[var(--color-navy-950)]'],
+[class*='bg-[var(--color-navy-900)]'],
+[class*='bg-[var(--color-navy-800)]'] {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme='dark'] h1, [data-theme='dark'] h2, [data-theme='dark'] h3, [data-theme='dark'] h4, [data-theme='dark'] h5, [data-theme='dark'] h6,
+.cinematic-story h1, .cinematic-story h2, .cinematic-story h3, .cinematic-story h4,
+[class*='bg-[var(--color-navy-950)]'] h1, [class*='bg-[var(--color-navy-950)]'] h2, [class*='bg-[var(--color-navy-950)]'] h3,
+[class*='bg-[var(--color-navy-900)]'] h1, [class*='bg-[var(--color-navy-900)]'] h2, [class*='bg-[var(--color-navy-900)]'] h3 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
+}
+
+[data-theme='dark'] p,
+.cinematic-story p {
+  color: #f5efe6 !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Text readability enhancer for image overlays */
+.text-shadow-strong {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.85), 0 1px 4px rgba(0, 0, 0, 0.95);
+}
+
+.text-shadow-subtle {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.page-video-header .gold-gradient {
+  background: var(--color-champagne-100) !important;
+  color: var(--color-navy-950) !important;
+  border: 1px solid var(--color-champagne-500);
+  box-shadow: none;
+}
+
+.brand-info-bar :where(a, span) {
+  color: var(--color-navy-900) !important;
+}
+
+.site-shell footer {
+  background: var(--color-ivory);
+  color: var(--color-text-secondary);
+  border-color: var(--color-champagne-300);
+}
+
+.site-shell footer [class*='bg-[var(--color-navy-950)]'],
+.site-shell footer [class*='bg-[var(--color-navy-900)]'] {
+  background-color: var(--color-warm-white) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+
+.site-shell footer :where(h1, h2, h3, h4, strong),
+.site-shell footer [class*='text-white'],
+.site-shell footer [class*='text-[var(--color-navy-100)]'] {
+  color: var(--color-navy-950) !important;
+}
+
+.site-shell footer .gold-text {
+  color: var(--color-champagne-700) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+.booking-theme [class*='bg-[var(--color-navy-950)]'],
+.booking-theme [class*='bg-[var(--color-navy-900)]'] {
+  background-color: var(--color-soft-beige) !important;
+  color: var(--color-text) !important;
+}
+
+.booking-theme [class*='text-white'],
+.booking-theme [class*='text-[var(--color-navy-100)]'] {
+  color: var(--color-text-secondary) !important;
+}
+
+.booking-theme .gold-text {
+  color: var(--color-navy-950) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+.global-video-controls [class*='bg-[var(--color-navy-950)]'],
+.global-video-controls [class*='bg-[var(--color-navy-900)]'],
+.global-video-controls [class*='from-[var(--color-navy'] {
+  background: var(--color-warm-white) !important;
+  color: var(--color-navy-900) !important;
+  border-color: var(--color-champagne-300) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.global-video-controls [class*='text-[var(--color-navy-100)]'],
+.global-video-controls [class*='text-[var(--color-champagne-300)]'] {
+  color: var(--color-navy-900) !important;
+}
+
+/* Global contrast guardrails: dark surfaces stay readable everywhere. */
+.site-shell :where(
+  [data-theme='dark'],
+  [class*='from-[var(--color-navy-950)]'],
+  [class*='from-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-800)]']
+) {
+  color: var(--color-white) !important;
+}
+
+.site-shell :where(
+  [data-theme='dark'],
+  [class*='from-[var(--color-navy-950)]'],
+  [class*='from-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-800)]']
+) :where(h1, h2, h3, h4, h5, h6, strong, [class*='text-white']) {
+  color: var(--color-white) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+.site-shell :where(
+  [data-theme='dark'],
+  [class*='from-[var(--color-navy-950)]'],
+  [class*='from-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-800)]']
+) :where(
+  p,
+  li,
+  small,
+  [class*='text-[var(--color-navy-100)]'],
+  [class*='text-[var(--color-text-muted)]'],
+  [class*='text-[var(--color-text-secondary)]'],
+  [class*='text-slate-300'],
+  [class*='text-slate-400']
+) {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.site-shell :where(
+  [data-theme='dark'],
+  [class*='from-[var(--color-navy-950)]'],
+  [class*='from-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-900)]'],
+  [class*='via-[var(--color-navy-800)]']
+) :where(
+  .gold-text,
+  [class*='text-[var(--color-champagne-300)]'],
+  [class*='text-[var(--color-champagne-500)]']
+) {
+  color: var(--color-champagne-300) !important;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* Clean card and surface text styles without breaking child dark components */
+.card-surface,
+.glass-card {
+  color: var(--color-text);
+}
+
+.card-surface > h1, .card-surface > h2, .card-surface > h3, .card-surface > h4,
+.glass-card > h1, .glass-card > h2, .glass-card > h3, .glass-card > h4 {
+  color: var(--color-navy-950);
+}
+
+/* Custom Scrollbar in Warm Gold & Champagne */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-champagne-600), var(--color-champagne-500));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-champagne-700);
+}
+
+/* Hide scrollbar for clean horizontal mobile navigation */
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar,
+.scrollbar-none {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+@keyframes floatNile {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0.4deg);
+  }
+}
+
+.animate-float-nile {
+  animation: floatNile 7s ease-in-out infinite;
+}
+
+@keyframes floatShipGentle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-4px) rotate(0.3deg);
+  }
+  66% {
+    transform: translateY(3px) rotate(-0.2deg);
+  }
+}
+
+.floating-ship-subtle {
+  animation: floatShipGentle 9s ease-in-out infinite;
+}
+
+@keyframes nileWaveFlow {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.85);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+@keyframes nileWaveReverse {
+  0% {
+    transform: translateX(-50%) translateZ(0) scaleY(0.9);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(1.1);
+  }
+  100% {
+    transform: translateX(0) translateZ(0) scaleY(0.9);
+  }
+}
+
+@keyframes waterCausticsGlow {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.08) translateY(-6px);
+  }
+}
+
+.animate-nile-wave-1 {
+  animation: nileWaveFlow 24s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.animate-nile-wave-2 {
+  animation: nileWaveReverse 18s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.animate-nile-wave-3 {
+  animation: nileWaveFlow 32s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.animate-water-caustics {
+  animation: waterCausticsGlow 8s ease-in-out infinite;
+}
+
+/* Subtle Water Wave Ambient Background in Pure Warm Gold (No Cyan/Blue) */
+.nile-water-canvas {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.nile-water-shimmer {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(212, 175, 55, 0.12),
+    rgba(184, 142, 62, 0.08) 40%,
+    transparent 80%
+  );
+}
+
+@keyframes pulseGold {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 3s infinite ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .cinematic-story img {
+    min-height: 68vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .cinematic-story {
+    height: auto !important;
+  }
+}

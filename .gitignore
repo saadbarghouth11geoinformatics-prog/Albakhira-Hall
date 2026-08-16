@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+.codex-video-review/
+.DS_Store
+*.log
+.env*
+!.env.example
