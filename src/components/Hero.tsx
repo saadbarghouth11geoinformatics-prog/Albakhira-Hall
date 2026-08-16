@@ -60,19 +60,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
           loading="eager"
           decoding="async"
         />
-        <video
-          poster="/Videos/posters/hall-tour.jpg"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 h-full w-full object-cover object-center filter contrast-[1.08] brightness-[0.96] transition-opacity duration-700"
-          aria-label="جولة فيديو قصيرة داخل قاعة الباخرة بجدة"
-        >
-          <source src="/Videos/video_01.mp4" type="video/mp4" />
-          <source src="/Videos/video_02.mp4" type="video/mp4" />
-        </video>
         {/* Crisp subtle framing gradient (no foggy white veil) */}
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/40 via-transparent to-[var(--color-ivory)]/80 pointer-events-none" />
       </motion.div>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'motion/react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { BookingModal } from './components/BookingModal';
@@ -9,7 +8,6 @@ import { MobileBottomBar } from './components/MobileBottomBar';
 import { AudioGuideTour } from './components/AudioGuideTour';
 import { ScrollProgressBar } from './components/ScrollProgressBar';
 import { ScrollProgressTopButton } from './components/ScrollProgressTopButton';
-import { PageTransition } from './components/PageTransition';
 import { FloatingWhatsAppButton } from './components/FloatingWhatsAppButton';
 
 // Standalone Pages with React.lazy for optimized bundle splitting
@@ -173,15 +171,11 @@ interface AnimatedRoutesProps {
 }
 
 function AnimatedRoutes({ handleOpenBooking, preselectedPkg }: AnimatedRoutesProps) {
-  const location = useLocation();
-
   return (
     <>
       <RouteSEOManager />
-      <AnimatePresence mode="wait">
-        <PageTransition key={location.pathname}>
-          <React.Suspense fallback={<PageLoadingSkeleton />}>
-            <Routes location={location}>
+      <React.Suspense fallback={<PageLoadingSkeleton />}>
+            <Routes>
               <Route
                 path="/"
                 element={<HomePage onOpenBooking={handleOpenBooking} />}
@@ -220,9 +214,7 @@ function AnimatedRoutes({ handleOpenBooking, preselectedPkg }: AnimatedRoutesPro
               />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-          </React.Suspense>
-        </PageTransition>
-      </AnimatePresence>
+      </React.Suspense>
     </>
   );
 }
@@ -231,6 +223,27 @@ export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState<boolean>(false);
   const [preselectedPkg, setPreselectedPkg] = useState<string>('royal-yacht');
   const [bookingPrefilledData, setBookingPrefilledData] = useState<any>(null);
+
+  // Warm page chunks after the first render so navigation feels instant without
+  // competing with the critical content during the initial load.
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      void Promise.allSettled([
+        import('./pages/WomensHallPage'),
+        import('./pages/MensHallPage'),
+        import('./pages/AboutPage'),
+        import('./pages/OffersPage'),
+        import('./pages/CalculatorPage'),
+        import('./pages/GalleryPage'),
+        import('./pages/MenuPage'),
+        import('./pages/ReviewsPage'),
+        import('./pages/FaqPage'),
+        import('./pages/ContactPage'),
+      ]);
+    }, 1500);
+
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const handleOpenBooking = (packageId?: string, prefilled?: any) => {
     if (packageId) {

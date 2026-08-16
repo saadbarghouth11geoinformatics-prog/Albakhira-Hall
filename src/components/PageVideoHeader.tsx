@@ -22,12 +22,11 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
   localVideoSrc,
   localPoster,
 }) => {
-  const videoSrc = localVideoSrc || '/Videos/video_16.mp4';
   const posterSrc = localPoster || '/Videos/posters/welcome-display.jpg';
 
   return (
     <section className="page-video-header relative w-full py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-[var(--color-ivory)] overflow-hidden border-b border-[var(--color-border)]">
-      {/* AUTOPLAYING VIDEO BACKGROUND LAYER */}
+      {/* Lightweight section-specific image; videos load only after user action. */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none bg-[var(--color-navy-950)]">
         <img
           src={posterSrc}
@@ -40,18 +39,6 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
             e.currentTarget.src = '/01_Featured_Website/women_03.jpg';
           }}
         />
-        <video
-          src={videoSrc}
-          poster={posterSrc}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 h-full w-full object-cover object-center brightness-90 contrast-110"
-          aria-label={title}
-        />
-
         {/* Subtle top/bottom framing (no foggy white veil) */}
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/40 via-transparent to-[var(--color-ivory)]/90 pointer-events-none" />
       </div>

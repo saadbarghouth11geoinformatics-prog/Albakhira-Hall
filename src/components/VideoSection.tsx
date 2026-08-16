@@ -9,6 +9,7 @@ type LocalVideo = {
   poster: string;
   duration: string;
   size: string;
+  category: string;
 };
 
 const LOCAL_VIDEOS: LocalVideo[] = [
@@ -20,6 +21,7 @@ const LOCAL_VIDEOS: LocalVideo[] = [
     poster: '/Videos/posters/hall-tour.jpg',
     duration: '00:44',
     size: '5.1 MB',
+    category: 'قسم النساء والكوشة',
   },
   {
     id: 'hospitality',
@@ -29,6 +31,7 @@ const LOCAL_VIDEOS: LocalVideo[] = [
     poster: '/Videos/posters/hospitality.jpg',
     duration: '00:18',
     size: '2.6 MB',
+    category: 'الضيافة والخدمة',
   },
   {
     id: 'table-decor',
@@ -38,6 +41,7 @@ const LOCAL_VIDEOS: LocalVideo[] = [
     poster: '/Videos/posters/table-decor.jpg',
     duration: '00:29',
     size: '4.9 MB',
+    category: 'البوفيه والطاولات',
   },
   {
     id: 'welcome-display',
@@ -47,6 +51,7 @@ const LOCAL_VIDEOS: LocalVideo[] = [
     poster: '/Videos/posters/welcome-display.jpg',
     duration: '00:16',
     size: '2.3 MB',
+    category: 'التجهيز والديكور',
   },
 ];
 
@@ -109,6 +114,9 @@ export const VideoSection: React.FC = () => {
 
             <div className="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-7">
               <div>
+                <span className="mb-2 inline-flex rounded-full bg-[var(--color-champagne-100)] px-3 py-1 text-[11px] font-bold text-[var(--color-champagne-700)]">
+                  {activeVideo.category}
+                </span>
                 <h3 className="font-tajawal text-xl font-black text-[var(--color-navy-950)] sm:text-2xl">{activeVideo.title}</h3>
                 <p className="mt-2 max-w-2xl text-sm leading-7 text-[var(--color-text-secondary)]">{activeVideo.description}</p>
               </div>
@@ -161,6 +169,7 @@ export const VideoSection: React.FC = () => {
                       <span className="block font-tajawal text-sm font-black text-[var(--color-navy-950)]">{video.title}</span>
                       <span className="mt-1.5 line-clamp-2 block text-[11px] leading-5 text-[var(--color-text-secondary)]">{video.description}</span>
                       <span className="mt-1.5 block text-[10px] font-bold text-[var(--color-champagne-700)]">{video.size}</span>
+                      <span className="mt-1 block text-[10px] font-bold text-[var(--color-navy-700)]">{video.category}</span>
                     </span>
                   </button>
                 );

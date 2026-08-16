@@ -210,8 +210,7 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
   ],
   videos: [
     { src: '/Videos/video_01.mp4', title: 'جولة حية داخل صالة النساء الملكية', desc: 'شاهد تفاصيل الصالة وتوزيع الطاولات وإضاءات الزفة الفاخرة', poster: '/02_Women_Hall/women_03.jpg' },
-    { src: '/Videos/video_02.mp4', title: 'لحظات الزفة والمؤثرات الضوئية', desc: 'استعراض أجهزة الليزر وكشاف العروسة والبخار أثناء الحفل', poster: '/02_Women_Hall/women_01.jpg' },
-    { src: '/Videos/video_03.mp4', title: 'تجهيزات البوفيه الفضي المفتوح 10 متر', desc: 'لقطات من بوفيه العشاء وتورتة الزفاف والضيافة', poster: '/04_Dining_Buffet/food_02.jpg' },
+    { src: '/Videos/video_15.mp4', title: 'لحظات الزفة والمؤثرات الضوئية', desc: 'استعراض أجهزة الليزر وكشاف العروسة والبخار أثناء الحفل', poster: '/02_Women_Hall/women_01.jpg' },
   ],
 };
 
@@ -354,7 +353,7 @@ export const MEN_HALL_DATA: HallSectionSpec = {
   ],
   videos: [
     { src: '/Videos/video_05.mp4', title: 'جولة حية في مجلس وقسم الرجال', desc: 'استعراض المجلس الداخلي وتجهيزات الضيافة وأماكن الجلوس', poster: '/03_Men_Hall/men_01.jpg' },
-    { src: '/Videos/video_06.mp4', title: 'أجواء الحوش الخارجي والجلسات التراثية', desc: 'مشاهدة ساحة الحوش وفرش الـ 100 جلسة تحت الأضواء', poster: '/05_Exterior_Outdoor_Yard/men_14.jpg' },
-    { src: '/Videos/video_07.mp4', title: 'مراسم الضيافة وتقديم القهوة والشاي', desc: 'لقطات لكادر المباشرين والقهوجي وخدمة الضيوف بحفاوة', poster: '/03_Men_Hall/men_02.jpg' },
+    { src: '/Videos/video_09.mp4', title: 'أجواء الحوش الخارجي والجلسات التراثية', desc: 'مشاهدة ساحة الحوش وفرش الـ 100 جلسة تحت الأضواء', poster: '/05_Exterior_Outdoor_Yard/men_14.jpg' },
+    { src: '/Videos/video_12.mp4', title: 'مراسم الضيافة وتقديم القهوة والشاي', desc: 'لقطات لكادر المباشرين والقهوجي وخدمة الضيوف بحفاوة', poster: '/03_Men_Hall/men_02.jpg' },
   ],
 };
