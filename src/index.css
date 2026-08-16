@@ -477,3 +477,14 @@ img[src='/logo-official.png'] {
     height: auto !important;
   }
 }
+
+/* Form fields use light surfaces throughout the site; keep their values dark
+   even when older component classes still contain text-white. */
+.site-shell :where(input:not([type='range']):not([type='checkbox']):not([type='radio']), select, textarea) {
+  color: var(--color-text) !important;
+  -webkit-text-fill-color: var(--color-text) !important;
+}
+
+.site-shell input[type='date'] {
+  color-scheme: light;
+}

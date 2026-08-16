@@ -16,7 +16,7 @@ export const AboutSection: React.FC = () => {
     {
       icon: Users,
       title: 'طاقم ضيافة متكامل رجال ونساء',
-      desc: '10 مباشرات لنساء مع مشرفة الصالة، و10 مباشرين للرجال مع القهوجي المعتمد.',
+      desc: '10 مباشرات للنساء مع مشرفة الصالة، و10 مباشرين للرجال مع مسؤول تقديم القهوة.',
     },
     {
       icon: Music,
@@ -72,15 +72,15 @@ export const AboutSection: React.FC = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
         >
           <div className="dark-overlay-card p-4 rounded-2xl text-center bg-[var(--color-navy-900)]/80">
-            <div className="text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
-              +<ScrollCountUp end={15} duration={1.8} /> سنة
+            <div className="flex items-baseline justify-center gap-1 text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
+              <span dir="ltr"><ScrollCountUp end={15} duration={1.8} />+</span><span>سنة</span>
             </div>
             <span className="text-[11px] sm:text-xs text-[var(--color-text-muted)] font-cairo">خبرة في تنظيم أفراح جدة</span>
           </div>
 
           <div className="dark-overlay-card p-4 rounded-2xl text-center bg-[var(--color-navy-900)]/80">
-            <div className="text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
-              +<ScrollCountUp end={2500} duration={2.2} /> حفل
+            <div className="flex items-baseline justify-center gap-1 text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
+              <span dir="ltr"><ScrollCountUp end={2500} duration={2.2} />+</span><span>حفل</span>
             </div>
             <span className="text-[11px] sm:text-xs text-[var(--color-text-muted)] font-cairo">مناسبة وزفاف ناجح</span>
           </div>

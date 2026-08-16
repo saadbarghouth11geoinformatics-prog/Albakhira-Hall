@@ -58,6 +58,7 @@ const HIJRI_MONTH_MAP: Record<number, string> = {
 };
 
 const WEEKDAYS_AR = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+const WEEKDAYS_SHORT_AR = ['أحد', 'إثن', 'ثلا', 'أرب', 'خمي', 'جمع', 'سبت'];
 
 export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProps> = ({
   onSelectDate,
@@ -178,7 +179,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
       <div className="absolute top-1/4 right-10 w-80 h-80 bg-[var(--color-champagne-500)]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-[var(--color-success)]/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-0 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
           <div className="inline-flex flex-wrap justify-center items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-champagne-500)]/15 text-[var(--color-champagne-700)] text-xs font-bold border border-[var(--color-champagne-500)]/40 shadow-sm">
@@ -217,7 +218,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
           </div>
 
           {/* Quick Filter Buttons */}
-          <div className="flex items-center gap-1.5">
+          <div className="flex w-full flex-wrap items-center justify-center gap-1.5 sm:w-auto">
             <span className="text-xs text-[var(--color-navy-100)] font-bold ml-1 hidden sm:flex items-center gap-1">
               <Filter className="w-3.5 h-3.5 text-[var(--color-champagne-500)]" /> الفرز:
             </span>
@@ -239,7 +240,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
                   : 'bg-[var(--color-navy-900)] text-[var(--color-navy-100)] border border-white/10 hover:border-[var(--color-champagne-500)]/40'
               }`}
             >
-              المتاحة فقط 🟢
+              <span className="sm:hidden">المتاحة</span><span className="hidden sm:inline">المتاحة فقط 🟢</span>
             </button>
             <button
               onClick={() => setFilter('weekend')}
@@ -249,58 +250,61 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
                   : 'bg-[var(--color-navy-900)] text-[var(--color-navy-100)] border border-white/10 hover:border-[var(--color-champagne-500)]/40'
               }`}
             >
-              ليالي نهاية الأسبوع 💜
+              <span className="sm:hidden">نهاية الأسبوع</span><span className="hidden sm:inline">ليالي نهاية الأسبوع 💜</span>
             </button>
           </div>
         </div>
 
         {/* Main Calendar Body Grid */}
-        <div className="bg-[var(--color-navy-950)]/95 border-2 border-[var(--color-champagne-500)]/40 rounded-3xl p-4 sm:p-7 shadow-[0_25px_60px_rgba(0,0,0,0.8)] backdrop-blur-2xl">
+        <div className="bg-[var(--color-navy-950)]/95 border-2 border-[var(--color-champagne-500)]/40 rounded-2xl sm:rounded-3xl p-2 sm:p-7 shadow-[0_25px_60px_rgba(0,0,0,0.8)] backdrop-blur-2xl">
           {/* Month Header Navigation */}
-          <div className="flex items-center justify-between pb-5 border-b border-[var(--color-champagne-500)]/25 mb-6">
+          <div className="grid grid-cols-[44px_minmax(0,1fr)_44px] sm:grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 pb-4 sm:pb-5 border-b border-[var(--color-champagne-500)]/25 mb-4 sm:mb-6">
             <button
               onClick={handlePrevMonth}
-              className="px-3.5 py-2 rounded-2xl bg-[var(--color-navy-900)] border border-[var(--color-champagne-500)]/30 text-[var(--color-champagne-300)] hover:text-white hover:border-[var(--color-champagne-500)] transition-all flex items-center gap-1 text-xs font-bold cursor-pointer"
+              className="h-11 w-11 sm:h-auto sm:w-auto sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[var(--color-navy-900)] border border-[var(--color-champagne-500)]/30 text-[var(--color-champagne-300)] hover:text-white hover:border-[var(--color-champagne-500)] transition-all flex items-center justify-center gap-1 text-xs font-bold cursor-pointer"
+              aria-label="الشهر السابق"
             >
               <ChevronRight className="w-4 h-4 text-[var(--color-champagne-500)]" />
-              <span>الشهر السابق</span>
+              <span className="hidden sm:inline">الشهر السابق</span>
             </button>
 
-            <div className="text-center">
-              <h3 className="text-xl sm:text-2xl font-black font-tajawal gold-text">
+            <div className="min-w-0 text-center">
+              <h3 className="text-base sm:text-2xl font-black font-tajawal text-[var(--color-champagne-300)] leading-tight">
                 {MONTH_NAMES_AR[currentMonth]} {currentYear} م
               </h3>
-              <p className="text-xs text-[var(--color-navy-100)] font-bold mt-0.5">
-                تأريخ هجري تقريبي: {HIJRI_MONTH_MAP[currentMonth]}
+              <p className="mt-1 truncate text-[10px] sm:text-xs text-[var(--color-navy-100)] font-bold">
+                التاريخ الهجري التقريبي: {HIJRI_MONTH_MAP[currentMonth]}
               </p>
             </div>
 
             <button
               onClick={handleNextMonth}
-              className="px-3.5 py-2 rounded-2xl bg-[var(--color-navy-900)] border border-[var(--color-champagne-500)]/30 text-[var(--color-champagne-300)] hover:text-white hover:border-[var(--color-champagne-500)] transition-all flex items-center gap-1 text-xs font-bold cursor-pointer"
+              className="h-11 w-11 sm:h-auto sm:w-auto sm:px-3.5 sm:py-2 rounded-xl sm:rounded-2xl bg-[var(--color-navy-900)] border border-[var(--color-champagne-500)]/30 text-[var(--color-champagne-300)] hover:text-white hover:border-[var(--color-champagne-500)] transition-all flex items-center justify-center gap-1 text-xs font-bold cursor-pointer"
+              aria-label="الشهر التالي"
             >
-              <span>الشهر التالي</span>
+              <span className="hidden sm:inline">الشهر التالي</span>
               <ChevronLeft className="w-4 h-4 text-[var(--color-champagne-500)]" />
             </button>
           </div>
 
           {/* Weekday Titles Bar */}
-          <div className="grid grid-cols-7 gap-1.5 text-center mb-3 text-xs font-black font-tajawal text-[var(--color-champagne-300)] bg-[var(--color-navy-900)] p-2.5 rounded-2xl border border-[var(--color-champagne-500)]/20">
+          <div className="grid grid-cols-7 gap-1 text-center mb-2 sm:mb-3 text-[10px] sm:text-xs font-black font-tajawal text-[var(--color-champagne-300)] bg-[var(--color-navy-900)] p-2 sm:p-2.5 rounded-xl sm:rounded-2xl border border-[var(--color-champagne-500)]/20">
             {WEEKDAYS_AR.map((dayName, idx) => (
               <div key={idx} className={idx === 4 || idx === 5 ? 'text-[var(--color-champagne-500)]' : ''}>
-                {dayName}
+                <span className="sm:hidden">{WEEKDAYS_SHORT_AR[idx]}</span>
+                <span className="hidden sm:inline">{dayName}</span>
               </div>
             ))}
           </div>
 
           {/* Calendar Month Days Matrix Grid */}
-          <div className="grid grid-cols-7 gap-1.5 sm:gap-2 text-center">
+          <div className="grid grid-cols-7 gap-1 sm:gap-2 text-center">
             {daysList.map((day, idx) => {
               if (!day.isCurrentMonth) {
                 return (
                   <div
                     key={`empty-${idx}`}
-                    className="min-h-[70px] sm:min-h-[85px] rounded-2xl bg-[var(--color-navy-950)]/30 border border-white/5 opacity-20 p-1 flex items-center justify-center text-xs text-slate-600 pointer-events-none"
+                    className="min-h-[48px] sm:min-h-[85px] rounded-xl sm:rounded-2xl bg-[var(--color-navy-950)]/30 border border-white/5 opacity-20 p-1 flex items-center justify-center text-xs text-slate-600 pointer-events-none"
                   >
                     <span>{day.dayNum}</span>
                   </div>
@@ -319,7 +323,8 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
                     setSelectedDate(day.dateStr);
                     onSelectDate(day.dateStr);
                   }}
-                  className={`min-h-[75px] sm:min-h-[92px] rounded-2xl p-1.5 sm:p-2 border transition-all cursor-pointer flex flex-col justify-between relative overflow-hidden ${
+                  title={day.note}
+                  className={`min-h-[52px] sm:min-h-[92px] rounded-xl sm:rounded-2xl p-1 sm:p-2 border transition-all cursor-pointer flex flex-col justify-between relative overflow-hidden ${
                     !isVisible ? 'opacity-30 grayscale' : ''
                   } ${
                     isSelected
@@ -352,7 +357,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
                   </div>
 
                   {/* Day Status Label & Hijri Info */}
-                  <div className="my-0.5 text-right">
+                  <div className="my-0.5 hidden text-right sm:block">
                     {day.status === 'booked' ? (
                       <span className="text-[10px] text-[var(--color-error)] font-bold block leading-tight">
                         محجوز
@@ -378,7 +383,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
 
                   {/* Price Tag or Badge if available */}
                   {day.badge && (
-                    <div className="mt-auto">
+                    <div className="mt-auto hidden sm:block">
                       <span
                         className={`text-[9px] px-1.5 py-0.5 rounded-md font-bold block text-center truncate ${
                           day.status === 'special_weekend'
