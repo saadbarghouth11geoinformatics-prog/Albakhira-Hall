@@ -159,7 +159,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                   to={link.path}
                   end={link.path === '/'}
                   className={({ isActive }) =>
-                    `relative flex items-center whitespace-nowrap rounded-lg border border-transparent px-2 py-2 text-xs font-bold transition-[color,transform] duration-200 ease-out 2xl:px-3 2xl:text-sm ${
+                    `relative flex items-center whitespace-nowrap rounded-lg border border-transparent px-2 py-2 text-[13px] font-bold transition-[color,transform] duration-200 ease-out 2xl:px-3 2xl:text-[15px] ${
                       isActive
                         ? 'text-[var(--color-navy-950)] font-black'
                         : 'text-[var(--color-text-secondary)] hover:-translate-y-0.5 hover:text-[var(--color-navy-950)]'
