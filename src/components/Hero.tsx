@@ -71,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
           aria-label="جولة فيديو قصيرة داخل قاعة الباخرة بجدة"
         >
           <source src="/Videos/video_01.mp4" type="video/mp4" />
-          <source src="/Videos/WhatsApp Video 2026-08-10 at 7.34.06 PM.mp4" type="video/mp4" />
+          <source src="/Videos/video_02.mp4" type="video/mp4" />
         </video>
         {/* Crisp subtle framing gradient (no foggy white veil) */}
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/40 via-transparent to-[var(--color-ivory)]/80 pointer-events-none" />

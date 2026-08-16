@@ -24,7 +24,7 @@ export const SEO: React.FC<SEOProps> = ({
   description = 'قاعة الباخرة للاحتفالات بجدة (الحرازات) - عروض زفاف شاملة مع بوفيه مفتوح 10 متر، تورتة 3 أدوار، وقسم رجال متكامل.',
   keywords = 'قاعة الباخرة, قاعة الباخرة للاحتفالات, قاعات أفراح جدة, قاعات الحرازات, عروض قاعات جدة, حجز قاعة زفاف جدة, بوفيه مفتوح جدة',
   canonical,
-  ogImage = '/logo-official.jpg',
+  ogImage = '/logo-official.png',
   ogType = 'website',
   pageType = 'home',
   breadcrumbs,

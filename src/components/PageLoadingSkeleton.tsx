@@ -4,7 +4,7 @@ export const PageLoadingSkeleton: React.FC = () => {
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center py-20 px-4 bg-transparent text-center">
       <img
-        src="/logo-official.jpg"
+        src="/logo-official.png"
         alt="شعار قاعة الباخرة للاحتفالات"
         className="mb-6 h-24 w-56 animate-pulse object-contain"
       />

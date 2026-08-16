@@ -103,7 +103,7 @@
   box-shadow: var(--focus-ring) !important;
 }
 
-img[src='/logo-official.jpg'] {
+img[src='/logo-official.png'] {
   object-fit: contain !important;
   box-shadow: none !important;
 }

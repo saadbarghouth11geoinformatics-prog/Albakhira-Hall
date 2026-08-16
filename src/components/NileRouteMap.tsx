@@ -121,7 +121,7 @@ const ROUTE_MARKERS: RouteMarker[] = [
     shortDesc: 'نقطة الاستدلال الرئيسية وسهولة الوصول من جميع أنحاء جدة',
     fullDesc: 'موقع استراتيجي وسهل الوصول في الحرازات بعيداً عن اختناقات وسط المدينة مع لوحات إرشادية واضحة تقودك مباشرة للقاعة.',
     highlights: ['بعد محطة المدينة بـ 500م فقط', 'طريق مسفلت وواسع', 'مباشرة على الخريطة GPS'],
-    imageUrl: '/logo-official.jpg',
+    imageUrl: '/logo-official.png',
     icon: <Navigation className="w-4 h-4 text-[var(--color-champagne-500)]" />,
   },
 ];
