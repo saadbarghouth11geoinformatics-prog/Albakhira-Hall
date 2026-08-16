@@ -26,7 +26,7 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
   const posterSrc = localPoster || '/Videos/posters/welcome-display.jpg';
 
   return (
-    <section className="page-video-header relative flex min-h-[360px] w-full flex-col items-center justify-center overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-navy-950)] px-4 py-16 sm:min-h-[400px] sm:px-6 sm:py-16 lg:max-h-[500px] lg:px-8">
+    <section className="page-video-header relative flex min-h-[360px] w-full flex-col items-center justify-center overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-navy-950)] px-4 py-16 sm:min-h-[430px] sm:px-6 sm:py-16 lg:min-h-[calc(100svh-124px)] lg:px-8 lg:py-20">
       {/* Compact, section-specific autoplay video. */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none bg-[var(--color-navy-950)]">
         <img
