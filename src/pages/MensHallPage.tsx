@@ -85,7 +85,7 @@ export const MensHallPage: React.FC<MensHallPageProps> = ({ onOpenBooking }) => 
         title="قسم الرجال والحوش الخارجي | قاعة الباخرة للاحتفالات بجدة"
         description="استكشف مواصفات قسم الرجال والجلسات الخارجية بقاعة الباخرة بالحرازات بجدة. 10 مباشرين، قهوجي مختص، حارس بوابة النساء، 100 فرش جلسات حوش، قهوة وشاي، مباخر، وأدوات نظافة متكاملة."
         keywords="قسم الرجال قاعة الباخرة, مجلس رجال جدة, جلسات حوش الحرازات, قاعة افراح رجال جدة, 100 فرش حوش, قهوجي افراح جدة"
-        ogImage="/03_Men_Hall/men_01.jpg"
+        ogImage="/Videos/posters/hospitality.jpg"
       />
 
       {/* Hero Banner Section */}
@@ -311,7 +311,7 @@ export const MensHallPage: React.FC<MensHallPageProps> = ({ onOpenBooking }) => 
             <ScrollReveal delay={0.2}>
               <div className="relative rounded-3xl overflow-hidden border border-[var(--color-champagne-500)]/40 shadow-2xl aspect-4/3">
                 <img
-                  src="/05_Exterior_Outdoor_Yard/men_14.jpg"
+                  src="/Videos/posters/welcome-display.jpg"
                   alt="الحوش الخارجي والمجالس التراثية"
                   className="w-full h-full object-cover"
                 />

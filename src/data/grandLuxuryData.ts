@@ -33,9 +33,9 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'جناح العروس الملكي المستقل (Royal Bride Suite)',
     subtitle: 'خصوصية مطلقة مع مدخل خاص ومراقبة حية للصالة',
     badge: 'جناح ملكي فاخر',
-    imageUrl: '/02_Women_Hall/women_05.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     description:
-      'جناح فاخر متكامل مصمم خصيصاً لراحة العروسة ومرافقيها المقربين قبل وبدء الحفل. يقع الجناح في دور مستقل بمدخل خاص معزول عن حركة الضيوف والمعازيم، ومجهز بأحدث مرايا الميكأب الهوليودية وتكييف منفصل.',
+      'جناح فاخر متكامل مصمم خصيصًا لراحة العروسة ومرافقيها المقربين قبل وبدء الحفل. يقع الجناح في دور مستقل بمدخل خاص معزول عن حركة الضيوف والمعازيم، ومجهز بأحدث مرايا الميكأب الهوليودية وتكييف منفصل.',
     highlights: [
       'مدخل خاص ومستقل مع مصعد بروتوكولي هيدروليكي للممر',
       'مرآة ميكأب هوليوودية (Hollywood Vanity Mirror) بإضاءة LED دافئة',
@@ -60,7 +60,7 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'مجلس العريس وكبار الشخصيات (VIP Groom Lounge)',
     subtitle: 'استقبال فخم لرموز العائلة والشيخ المأذون',
     badge: 'بروتوكول استقبال كبار الضيوف',
-    imageUrl: '/03_Men_Hall/men_01.jpg',
+    imageUrl: '/Videos/posters/hospitality.jpg',
     description:
       'مجلس استقبال فاخر مزود بكنب ملكي مذهب وشواحن ذكية للضيوف، مخصص لعقد القران (الملكة) واستقبال والد العريس وكبار الشخصيات في جو من الهيبة والوقار مع صالون ضيافة القهوة العربية والعود الأزرق.',
     highlights: [
@@ -85,7 +85,7 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'جدار الشاشات التفاعلية 4K Giant LED Wall',
     subtitle: 'عروض فيديو سينمائية وخلفيات زفة مخصصة باسم العروسين',
     badge: 'تقنية سينمائية حديثة',
-    imageUrl: '/02_Women_Hall/women_16.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     description:
       'شاشات عرض LED عملاقة بدقة فائقة الوضوح خلف الكوشة وفي زوايا الصالة، تسمح بعرض فيديوهات الذكريات، شريط التهنئة الحي، ومؤثرات خلفية متحركة متناسقة مع لون فستان وديكور الزفاف.',
     highlights: [
@@ -110,7 +110,7 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'منظومة الإضاءات المسرحية الذكية (Truss & Moving Heads)',
     subtitle: 'كشاف متابعة (Follow Spot) وليسرات ومؤثرات ضوئية معلقة',
     badge: 'إخراج مسرحي احترافي',
-    imageUrl: '/02_Women_Hall/women_01.jpg',
+    imageUrl: '/Videos/posters/hall-tour.jpg',
     description:
       'جسر إضاءة معلق (Truss Rigging) يحمل أكثر من 30 كشاف متحرك ذكي برمجياً مع كشاف المتابعة الموجه ديناميكياً لتتبع خطى العروسة على الممر، مع جهاز بخار مكثف بارد يغطي الممر كالسحاب.',
     highlights: [
@@ -135,9 +135,9 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'نظام الصوتيات الفندقي الموزع (Line-Array Acoustics)',
     subtitle: 'نقاوة صوت مذهلة بدون صدى أو إزعاج للطاولات المجاورة',
     badge: 'صوتيات فندقية نقية',
-    imageUrl: '/02_Women_Hall/women_03.jpg',
+    imageUrl: '/Videos/posters/hall-tour.jpg',
     description:
-      'تم تصميم توزيع السماعات بواسطة مهندسي صوت لمنع ظاهرة الصدى وتوزيع الصوت بشكل متوازن، بحيث يستمتع الحضور في كافة الطاولات بمستوى صوت مريح وواضح تماماً دون إزعاج.',
+      'تم تصميم توزيع السماعات بواسطة مهندسي صوت لمنع ظاهرة الصدى وتوزيع الصوت بشكل متوازن، بحيث يستمتع الحضور في كافة الطاولات بمستوى صوت مريح وواضح تمامًا دون إزعاج.',
     highlights: [
       'سماعات معلقة Line-Array موزعة هندسياً بكافة زوايا القاعة',
       'معالج صوتي رقمي (DSP Sound Processor) لعزل التشويش والصدى',
@@ -160,7 +160,7 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'الممر الملكي والسقف الكريستالي المضيء (Catwalk & Starry Ceiling)',
     subtitle: 'ممر رخامي مرتفع تحت ثريات كريستالية وألياف ضوئية بنجوم السماء',
     badge: 'تصميم معماري مبهر',
-    imageUrl: '/02_Women_Hall/women_10.jpg',
+    imageUrl: '/Videos/posters/table-decor.jpg',
     description:
       'ممر زفة مرتفع ومصمم برخام فاخر وإضاءات جدارية خافتة، يعلوه سقف مرصع بالثريات الكريستالية العملاقة والألياف الضوئية (Fiber Optics) التي تجعل السقف يبدو كليلة مرصعة بالنجوم.',
     highlights: [
@@ -182,10 +182,10 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
   {
     id: 'live-cooking-buffet-stations',
     category: 'dining_gourmet',
-    title: 'محطات الطهي المباشر والبوفيه الفضي 10 متر (Live Cooking Stations)',
+    title: 'محطات الطهي المباشر والبوفيه الفضي بطول 10 أمتار (Live Cooking Stations)',
     subtitle: 'سخانات فندقية وطهاة محترفون لتقديم أشهى الأطباق طازجة',
     badge: 'ضيافة وفندقة 5 نجوم',
-    imageUrl: '/04_Dining_Buffet/food_02.jpg',
+    imageUrl: '/Videos/posters/table-decor.jpg',
     description:
       'بوفيه مفتوح ممتد لـ 10 أمتار مجهز بأفخم السخانات الفندقية الاستيل المذهبة، مع إمكانية إضافة محطات طهي مباشر للمشويات والشاورما والستيك، بالإضافة لتورتة الزفاف الـ 3 أدوار.',
     highlights: [
@@ -201,7 +201,7 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     ],
     standardVsGrand: {
       standard: 'طاولات طعام عادية بأطباق معدنية محدودة الأصناف.',
-      albakheraGrand: 'بوفيه فضي 10م بسخانات فندقية، تورتة 3 دور و80 صحن ضيافة مجاني.'
+      albakheraGrand: 'بوفيه فضي 10م بسخانات فندقية، تورتة من 3 أدوار و80 صحن ضيافة مجاني.'
     }
   },
   {
@@ -210,13 +210,13 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'نافورة الشوكولاتة والقهوة المختصة (Chocolate Fountain & Cafe Bar)',
     subtitle: 'ركن ضيافة تفاعلي يضفي لمسة رفاهية ممتعة للضيوف',
     badge: 'ركن الضيافة الملكي',
-    imageUrl: '/04_Dining_Buffet/food_01.jpg',
+    imageUrl: '/Videos/posters/table-decor.jpg',
     description:
       'ركن فاخر يتضمن نافورة شوكولاتة بلجيكية دافئة مع تشكيلة فواكه طازجة (فرولة، كيوى، مارشميلو، دوناتس)، بالإضافة إلى بار المشروبات الباردة والقهوة المختصة الساخنة.',
     highlights: [
       'شوكولاتة بلجيكية ذائبة مع أعواد الفواكه والحلويات الفاخرة',
       'ركن قهوة اسبريسو وكابتشينو ومشروبات دافئة مخصصة',
-      'تقديم عصائر فريش موشحة بشرائح الفواكه عند استقبال المعازيم',
+      'تقديم عصائر طازجة موشحة بشرائح الفواكه عند استقبال المعازيم',
       'طاقم مضيفات مخصص لركن الحلويات والمشروبات الباردة'
     ],
     specs: [
@@ -235,12 +235,12 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'التكييف المركزي الذكي والمولدات الاحتياطية (Chilled Central HVAC)',
     subtitle: 'برودة متوازنة 100% مع ضمان عدم انقطاع التيار الكهربائي نهائياً',
     badge: 'راحة واستدامة كاملة',
-    imageUrl: '/06_Facilities/food_07.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     description:
       'منظومة تكييف مركزية بقدرات تبريد هائلة تضمن برودة منعشة ومريحة داخل الصالة مهما بلغت حرارة الطقس الخارجي أو ازداد عدد الحضور، مع مولدات طاقة أوتوماتيكية سريعة الاستجابة.',
     highlights: [
       'تكييف أوتوماتيكي ذكي يضبط الحرارة حسب كثافة الحضور بالصالة',
-      'مولدات كهرباء احتياطية (Automatic ATS Backup Generators) تعمل فوراً',
+      'مولدات كهرباء احتياطية (Automatic ATS Backup Generators) تعمل فورًا',
       'فلترة وتنقيمة مستمرة للهواء داخل القاعة لمنع الرطوبة والروائح',
       'عزل حراري وصوتي كامل لمبنى القاعة للجدران والأسقف'
     ],
@@ -260,7 +260,7 @@ export const GRAND_LUXURY_FEATURES: GrandFeatureItem[] = [
     title: 'الأمن، العبايات، وخدمة الفاليه (Protocol & Valet Parking)',
     subtitle: 'مواقف واسعة تتسع +150 سيارة، حراسة أمنية، ونظام عبايات رقمي',
     badge: 'سلامة وتنظيم عالي',
-    imageUrl: '/05_Exterior_Outdoor_Yard/men_18.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     description:
       'تنظيم أمني فندقي يضمن راحة وسلامة ضيوفكم من لحظة وصول سياراتهم إلى المواقف المظللة وحتى مغادرتهم، مع حارس بوابة أمن لبوابة النساء ورقم إلكتروني لحفظ أمانات وعبايات الضيوف.',
     highlights: [

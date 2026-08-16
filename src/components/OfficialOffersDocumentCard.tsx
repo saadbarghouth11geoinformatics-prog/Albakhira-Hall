@@ -47,13 +47,13 @@ export const OfficialOffersDocumentCard: React.FC<OfficialOffersDocumentCardProp
 الخدمات المقدمة في قسم النساء:
 • توفر القاعة (10 متر بوفيه مفتوح من القائمة الفضية لعدد 100 سيدة).
 • توفر القاعة تورتة (3 دور) مع البوفيه.
-• تأمين القاعة (40) صحن ضيافة حلا وعدد (40) صحن ضيافة معجنات على (40) طاولة مجاناً.
+• تأمين القاعة (40) صحن ضيافة حلا وعدد (40) صحن ضيافة معجنات على (40) طاولة مجانًا.
 • تأمين القاعة الفحم والمباخر.
 • عاملات مسك فستان العروسة أثناء الزفة.
 • عدد (10) مباشرات مع المشرفة.
-• تأمين القاعة عدد (30) لتر عصيرات: مانجو - جوافه - كوكتيل.
-• تشغيل دي جي قبل وصول المطربة مجاناً.
-• تشغيل زفة العروسة - زفة العصير - ليزرات - البخار - كشاف العروسة مجاناً - مرة واحدة.
+• تأمين القاعة عدد (30) لتر عصائر: مانجو - جوافة - كوكتيل.
+• تشغيل دي جي قبل وصول المطربة مجانًا.
+• تشغيل زفة العروسة - زفة العصير - ليزرات - البخار - كشاف العروسة مجانًا - مرة واحدة.
 • توفر القاعة جميع أدوات النظافة ومناديل على جميع الطاولات.
 
 ملاحظات على العميل يتم الاتفاق عليها مع القاعة مسبقاً:
@@ -250,7 +250,7 @@ export const OfficialOffersDocumentCard: React.FC<OfficialOffersDocumentCardProp
               <li className="flex items-start gap-3">
                 <span className="text-amber-600 font-black text-lg leading-none mt-0.5">❖</span>
                 <span className="text-xs sm:text-sm text-[var(--color-navy-950)] font-bold">
-                  تأمين القاعة <strong className="text-amber-700">(40) صحن ضيافة حلا</strong> وعدد <strong className="text-amber-700">(40) صحن ضيافة معجنات</strong> على <strong className="text-amber-700">(40) طاولة مجاناً</strong>.
+                  تأمين القاعة <strong className="text-amber-700">(40) صحن ضيافة حلا</strong> وعدد <strong className="text-amber-700">(40) صحن ضيافة معجنات</strong> على <strong className="text-amber-700">(40) طاولة مجانًا</strong>.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -274,19 +274,19 @@ export const OfficialOffersDocumentCard: React.FC<OfficialOffersDocumentCardProp
               <li className="flex items-start gap-3">
                 <span className="text-amber-600 font-black text-lg leading-none mt-0.5">❖</span>
                 <span className="text-xs sm:text-sm text-[var(--color-navy-950)] font-bold">
-                  تأمين القاعة عدد <strong className="text-amber-700">(30) لتر عصيرات: مانجو - جوافه - كوكتيل</strong>.
+                  تأمين القاعة عدد <strong className="text-amber-700">(30) لتر عصائر: مانجو - جوافة - كوكتيل</strong>.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-amber-600 font-black text-lg leading-none mt-0.5">❖</span>
                 <span className="text-xs sm:text-sm text-[var(--color-navy-950)] font-bold">
-                  تشغيل دي جي قبل وصول المطربة <strong className="text-amber-700">مجاناً</strong>.
+                  تشغيل دي جي قبل وصول المطربة <strong className="text-amber-700">مجانًا</strong>.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-amber-600 font-black text-lg leading-none mt-0.5">❖</span>
                 <span className="text-xs sm:text-sm text-[var(--color-navy-950)] font-bold">
-                  تشغيل زفة العروسة - زفة العصير - ليزرات - البخار - كشاف العروسة <strong className="text-amber-700">مجاناً - مرة واحدة</strong>.
+                  تشغيل زفة العروسة - زفة العصير - ليزرات - البخار - كشاف العروسة <strong className="text-amber-700">مجانًا - مرة واحدة</strong>.
                 </span>
               </li>
               <li className="flex items-start gap-3">

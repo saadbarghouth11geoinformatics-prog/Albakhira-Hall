@@ -46,7 +46,7 @@ const BUFFET_DISHES: DishItem[] = [
     categoryLabel: 'المقبلات والسلطات',
     cookingStyle: 'قلي خفيف مقرمش وقلايات حديثة',
     description: '40 صحن معجنات طازجة وموالح موشحة بالسمسم وحبة البركة تقدم على طاولات النساء.',
-    tags: ['40 صحن مجاناً', 'موالح طازجة']
+    tags: ['40 صحن مجانًا', 'موالح طازجة']
   },
   {
     id: 'd5',
@@ -54,8 +54,8 @@ const BUFFET_DISHES: DishItem[] = [
     category: 'sweets',
     categoryLabel: 'الحلويات والتورتة',
     cookingStyle: 'إعداد مخابز فندقية معتمدة بجدة',
-    description: 'تورتة زفاف 3 طبقات بنكهات اختيارية (فانيلا - شوكولاتة - فستق) مجاناً بالعرض الشامل.',
-    tags: ['تورتة 3 دور مجاناً', 'تصميم ذهبي ملكي']
+    description: 'تورتة زفاف 3 طبقات بنكهات اختيارية (فانيلا - شوكولاتة - فستق) مجانًا بالعرض الشامل.',
+    tags: ['تورتة من 3 أدوار مجانًا', 'تصميم ذهبي ملكي']
   },
   {
     id: 'd6',
@@ -63,8 +63,8 @@ const BUFFET_DISHES: DishItem[] = [
     category: 'drinks',
     categoryLabel: 'بار العصائر والمشروبات',
     cookingStyle: 'عصر طبيعي طازج بدون ألوان صناعية',
-    description: 'بار عصائر فريش طازجة موشحة بشرائح الفاكهة مع القهوة العربية والقهوجي المباشر.',
-    tags: ['30L عصائر فريش', 'ضيافة مباشرة']
+    description: 'بار عصائر طازجة طازجة موشحة بشرائح الفاكهة مع القهوة العربية والقهوجي المباشر.',
+    tags: ['30L عصائر طازجة', 'ضيافة مباشرة']
   }
 ];
 
@@ -79,7 +79,7 @@ export const GourmetBuffetDishExplorer: React.FC = () => {
     <div className="py-10 bg-[var(--color-navy-900)] rounded-3xl border border-[var(--color-champagne-500)]/30 p-6 sm:p-8 my-8 shadow-2xl">
       <div className="text-center max-w-2xl mx-auto mb-8">
         <span className="px-3.5 py-1 rounded-full bg-[var(--color-champagne-500)]/20 text-[var(--color-champagne-500)] text-xs font-bold border border-[var(--color-champagne-500)]/40 inline-flex items-center gap-1.5 mb-2">
-          <Utensils className="w-4 h-4" /> مستكشف أصناف البوفيه الفضي 10 متر
+          <Utensils className="w-4 h-4" /> مستكشف أصناف البوفيه الفضي بطول 10 أمتار
         </span>
         <h3 className="text-xl sm:text-3xl font-black font-tajawal text-white">
           استكشف المكونات وطريقة الطهي لأطباق البوفيه المفتوح

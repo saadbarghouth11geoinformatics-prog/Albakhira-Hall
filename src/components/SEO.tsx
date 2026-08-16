@@ -21,10 +21,10 @@ export interface SEOProps {
 
 export const SEO: React.FC<SEOProps> = ({
   title = 'قاعة الباخرة للاحتفالات بجدة | الموقع الرسمي والحجز',
-  description = 'قاعة الباخرة للاحتفالات بجدة (الحرازات) - عروض زفاف شاملة مع بوفيه مفتوح 10 متر، تورتة 3 أدوار، وقسم رجال متكامل.',
+  description = 'قاعة الباخرة للاحتفالات بجدة (الحرازات) - عروض زفاف شاملة مع بوفيه مفتوح بطول 10 أمتار، تورتة من 3 أدوار، وقسم رجال متكامل.',
   keywords = 'قاعة الباخرة, قاعة الباخرة للاحتفالات, قاعات أفراح جدة, قاعات الحرازات, عروض قاعات جدة, حجز قاعة زفاف جدة, بوفيه مفتوح جدة',
   canonical,
-  ogImage = '/01_Featured_Website/women_03.jpg',
+  ogImage = '/Videos/posters/hall-tour.jpg',
   ogType = 'website',
   pageType = 'home',
   breadcrumbs,
@@ -73,10 +73,10 @@ export const SEO: React.FC<SEOProps> = ({
       }
     ],
     "image": [
-      `${origin}/01_Featured_Website/women_03.jpg`,
-      `${origin}/02_Women_Hall/women_03.jpg`,
-      `${origin}/04_Dining_Buffet/food_02.jpg`,
-      `${origin}/05_Exterior_Outdoor_Yard/men_18.jpg`
+      `${origin}/Videos/posters/hall-tour.jpg`,
+      `${origin}/Videos/posters/hall-tour.jpg`,
+      `${origin}/Videos/posters/table-decor.jpg`,
+      `${origin}/Videos/posters/welcome-display.jpg`
     ],
     "sameAs": [
       HALL_SPECS.instagramUrl

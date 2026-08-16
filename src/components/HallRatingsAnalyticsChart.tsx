@@ -19,7 +19,7 @@ import { Star, Award, TrendingUp, ShieldCheck, CheckCircle2, BarChart3, PieChart
 // Star distribution data
 const STAR_DISTRIBUTION_DATA = [
   { starLabel: '5 نجوم (ممتاز)', count: 485, percentage: 95.1, color: 'var(--color-champagne-500)' },
-  { starLabel: '4 نجوم (جيد جداً)', count: 22, percentage: 4.3, color: 'var(--color-champagne-300)' },
+  { starLabel: '4 نجوم (جيد جدًا)', count: 22, percentage: 4.3, color: 'var(--color-champagne-300)' },
   { starLabel: '3 نجوم (جيد)', count: 3, percentage: 0.6, color: 'var(--color-text-muted)' },
   { starLabel: 'نجمتان (مقبول)', count: 0, percentage: 0.0, color: 'var(--color-text-secondary)' },
   { starLabel: 'نجمة واحدة', count: 0, percentage: 0.0, color: 'var(--color-text-secondary)' },
@@ -272,7 +272,7 @@ export const HallRatingsAnalyticsChart: React.FC = () => {
                   </p>
                   <p className="flex items-start gap-1.5">
                     <span className="text-[var(--color-champagne-500)] font-bold">•</span>
-                    <span><strong>البوفيه المفتوح 10 متر:</strong> تقييم 4.95/5 للإشادة بطازجية وتنوع الأطباق وحسن تنسيق طاولات الطعام.</span>
+                    <span><strong>البوفيه المفتوح بطول 10 أمتار:</strong> تقييم 4.95/5 للإشادة بطازجية وتنوع الأطباق وحسن تنسيق طاولات الطعام.</span>
                   </p>
                   <p className="flex items-start gap-1.5">
                     <span className="text-[var(--color-champagne-500)] font-bold">•</span>

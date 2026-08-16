@@ -20,8 +20,8 @@ interface InteractiveStarReviewFormProps {
 }
 
 const RATING_LABELS: Record<number, { text: string; color: string; desc: string }> = {
-  5: { text: 'ممتاز جداً وفاخر (5/5)', color: 'var(--color-champagne-500)', desc: 'تجربة استثنائية فاقت التوقعات في كل تفاصيل الحفل' },
-  4: { text: 'جيد جداً ومميز (4/5)', color: 'var(--color-champagne-300)', desc: 'خدمة راقية وتنظيم رائع نال استحسان الجميع' },
+  5: { text: 'ممتاز جدًا وفاخر (5/5)', color: 'var(--color-champagne-500)', desc: 'تجربة استثنائية فاقت التوقعات في كل تفاصيل الحفل' },
+  4: { text: 'جيد جدًا ومميز (4/5)', color: 'var(--color-champagne-300)', desc: 'خدمة راقية وتنظيم رائع نال استحسان الجميع' },
   3: { text: 'جيد ومقبول (3/5)', color: 'var(--color-text-muted)', desc: 'تجربة مناسبة مع بعض الملاحظات البسيطة' },
   2: { text: 'يحتاج تحسين (2/5)', color: 'var(--color-warning)', desc: 'هناك نقاط بحاجة للتطوير والمتابعة' },
   1: { text: 'غير مرضي (1/5)', color: 'var(--color-error)', desc: 'لم تكن التجربة على المستوى المطلوب' },
@@ -333,7 +333,7 @@ export const InteractiveStarReviewForm: React.FC<InteractiveStarReviewFormProps>
 
               <p className="text-[11px] text-center text-[var(--color-text-muted)] font-cairo flex items-center justify-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#25D366]" />
-                <span>تقييمك يظهر فوراً ويُدرج ضمن مؤشرات الرضا العامة لقاعة الباخرة بجدة</span>
+                <span>تقييمك يظهر فورًا ويُدرج ضمن مؤشرات الرضا العامة لقاعة الباخرة بجدة</span>
               </p>
             </motion.form>
           )}

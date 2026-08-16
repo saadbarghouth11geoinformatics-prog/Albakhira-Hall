@@ -122,7 +122,7 @@ export const LuxuryCountdownTimer: React.FC<LuxuryCountdownTimerProps> = ({
             <div>
               <div className="flex items-center gap-2 mb-1">
                 <span className="bg-[var(--color-error)]/20 text-[var(--color-error)] border border-[var(--color-error)]/40 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full">
-                  ينتهي قريباً جداً
+                  ينتهي قريباً جدًا
                 </span>
                 <h4 className="text-base sm:text-lg font-bold font-tajawal text-white">
                   خصم 20% على باقة الـ 100 سيدة + بوفيه الـ 10 متر

@@ -443,7 +443,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
                     </div>
 
                     <p className="text-xs text-slate-300">
-                      {selectedDayObj.note} - يشمل العرض المعتمد: بوفيه مفتوح 10 متر، تورتة 3 دور، 40 طاولة ضيافة، وحوش خارجي بـ 100 فرش.
+                      {selectedDayObj.note} - يشمل العرض المعتمد: بوفيه مفتوح بطول 10 أمتار، تورتة من 3 أدوار، 40 طاولة ضيافة، وحوش خارجي بـ 100 فرش.
                     </p>
                   </div>
 
@@ -474,7 +474,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
                           className="w-full sm:w-auto bg-[#25D366] text-white font-bold text-xs sm:text-sm px-5 py-3.5 rounded-xl shadow-lg hover:scale-105 transition-all inline-flex items-center justify-center gap-2 cursor-pointer"
                         >
                           <MessageCircle className="w-4 h-4 text-white" />
-                          <span>استفسار واتساب فوراً</span>
+                          <span>استفسار واتساب فورًا</span>
                         </a>
                       </>
                     ) : (

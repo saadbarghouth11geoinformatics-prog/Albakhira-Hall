@@ -8,7 +8,7 @@ export const ParallaxImageBanner: React.FC<{
   title?: string;
   subtitle?: string;
 }> = ({
-  imageUrl = '/01_Featured_Website/women_03.jpg',
+  imageUrl = '/Videos/posters/hall-tour.jpg',
   title = 'فخامة التفاصيل في كل زاوية من قاعة الباخرة',
   subtitle = 'تجربة مرئية سينمائية تحاكي واقع ليالي العمر بجدة - الحرازات',
 }) => {
@@ -42,7 +42,7 @@ export const ParallaxImageBanner: React.FC<{
           referrerPolicy="no-referrer"
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = '/01_Featured_Website/women_03.jpg';
+            e.currentTarget.src = '/Videos/posters/hall-tour.jpg';
           }}
         />
         {/* Luxury Dark Gradient Overlays */}

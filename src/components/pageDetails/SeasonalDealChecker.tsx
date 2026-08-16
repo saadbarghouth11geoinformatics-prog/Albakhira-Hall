@@ -8,23 +8,23 @@ export const SeasonalDealChecker: React.FC = () => {
     summer: {
       title: 'عروض الموسم الصيفي وموسم الأفراح 2026',
       badge: 'مزايا الموسم + شلال عصائر',
-      details: 'يشمل إضافة شلال عصائر الفواكه الطبيعية 30 لتر مجاناً مع ترقية خدمات الضيافة عند تثبيت الحجز.',
-      bonusList: ['شلال عصائر فواكه 30L مجاناً', 'تعديل تاريخ الحفل مجاناً', 'توفير كشاف العروسة والليزرات']
+      details: 'يشمل إضافة شلال عصائر الفواكه الطبيعية 30 لتر مجانًا مع ترقية خدمات الضيافة عند تثبيت الحجز.',
+      bonusList: ['شلال عصائر فواكه 30L مجانًا', 'تعديل تاريخ الحفل مجانًا', 'توفير كشاف العروسة والليزرات']
     },
     winter: {
       title: 'عروض الشتاء والأجواء الرائعة بالحرازات',
-      badge: 'جلسات الحوش الخارجي مجاناً',
-      details: 'تجهيز الحوش الخارجي بـ 100 فرش جلسات شعبية مع مباخر العود والشاي التخادر والقهوة السعودية مجاناً.',
-      bonusList: ['100 فرش جلسات حوش مجاناً', 'شبة نار ومباخر عود أزرق', 'تأمين حارس بوابة النساء']
+      badge: 'جلسات الحوش الخارجي مجانًا',
+      details: 'تجهيز الحوش الخارجي بـ 100 فرش جلسات شعبية مع مباخر العود والشاي التخادر والقهوة السعودية مجانًا.',
+      bonusList: ['100 فرش جلسات حوش مجانًا', 'شبة نار ومباخر عود أزرق', 'تأمين حارس بوابة النساء']
     },
     eid: {
       title: 'عروض الأعياد والمناسبات العائلية والكبيرة',
-      badge: 'تورتة VIP 4 أدوار مجاناً',
+      badge: 'تورتة VIP 4 أدوار مجانًا',
       details: 'خصم خاص لحجوزات الأعياد مع ترقية تورتة العروسين إلى 4 أدوار VIP ومباشرين إضافيين لقسم الرجال.',
       bonusList: ['ترقية التورتة لـ 4 أدوار VIP', '80 صحن حلا ومعجنات', 'مباشرات إضافيات للصالة']
     },
     earlybird: {
-      title: 'باقة الحجز المبكر (تأكيد الحجز قبل 90 يوماً)',
+      title: 'باقة الحجز المبكر (تأكيد الحجز قبل 90 يومًا)',
       badge: 'خصم 10% + ترقية مجانية',
       details: 'عند تأكيد عربون القاعة قبل موعد الحفل بـ 3 أشهر على الأقل تحصل على خصم 10% من الفاتورة الإجمالية.',
       bonusList: ['خصم 10% من إجمالي الفاتورة', 'تثبيت وحجز الموعد المفضل', 'أولوية اختيار الكوشة والدي جي']
@@ -43,7 +43,7 @@ export const SeasonalDealChecker: React.FC = () => {
           اكتشف المزايا والهدية المجانية حسب موسم حفلكم
         </h3>
         <p className="text-xs text-[var(--color-text-secondary)] font-cairo mt-1">
-          اضغط على الموسم المحدد لمناسبتكم لمعرفة المزايا والهدايا الإضافية المشمولة تلقائياً مع العقد.
+          اضغط على الموسم المحدد لمناسبتكم لمعرفة المزايا والهدايا الإضافية المشمولة تلقائيًا مع العقد.
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export const SeasonalDealChecker: React.FC = () => {
           { id: 'summer', label: 'الموسم الصيفي' },
           { id: 'winter', label: 'موسم الشتاء' },
           { id: 'eid', label: 'موسم الأعياد' },
-          { id: 'earlybird', label: 'الحجز المبكر (90 يوماً)' }
+          { id: 'earlybird', label: 'الحجز المبكر (90 يومًا)' }
         ].map((btn) => (
           <button
             key={btn.id}
@@ -84,7 +84,7 @@ export const SeasonalDealChecker: React.FC = () => {
         <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] font-cairo leading-relaxed">{current.details}</p>
 
         <div className="space-y-2 pt-2">
-          <span className="text-xs font-bold text-[var(--color-champagne-700)] block">الهدايا والمزايا المضافة مجاناً:</span>
+          <span className="text-xs font-bold text-[var(--color-champagne-700)] block">الهدايا والمزايا المضافة مجانًا:</span>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
             {current.bonusList.map((bonus, i) => (
               <div key={i} className="bg-[var(--color-warm-white)] p-3 rounded-xl border border-[var(--color-success)]/40 text-[11px] text-[var(--color-success)] font-bold flex items-center gap-1.5 shadow-sm">

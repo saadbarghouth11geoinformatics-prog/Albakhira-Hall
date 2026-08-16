@@ -19,7 +19,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     title: 'الكوشة الملكية الفاخرة ومؤثرات المسرح والزفة',
     angleTag: 'kosha',
     angleLabel: 'الكوشة والمسرح',
-    imageUrl: '/02_Women_Hall/women_05.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     description: 'إطار واسع للكوشة الفخمة يظهر الثريات الكريستالية والشاشة التفاعلية وأقواس الورود الفاخرة.',
     cameraSetting: 'عدسة واسعة 24mm | إضاءة سينمائية دافئة'
   },
@@ -28,7 +28,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     title: 'امتداد البوفيه الفضي المفتوح 10 أمتار',
     angleTag: 'buffet',
     angleLabel: 'البوفيه المفتوح',
-    imageUrl: '/04_Dining_Buffet/food_02.jpg',
+    imageUrl: '/Videos/posters/table-decor.jpg',
     description: 'لقطة طولية تستعرض امتداد السخانات الفندقية الفضية وتنسيق أطباق المقابلات والحلويات.',
     cameraSetting: 'زاوية أفقية 35mm | إضاءة كشافات البوفيه الذهبية'
   },
@@ -37,7 +37,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     title: 'صالة النساء وممر الزفة الملكي مع سقف الإضاءات',
     angleTag: 'catwalk',
     angleLabel: 'الممر الرخامي',
-    imageUrl: '/02_Women_Hall/women_01.jpg',
+    imageUrl: '/Videos/posters/hall-tour.jpg',
     description: 'منظور متكامل للممر الملكي المرتفع والطاولات الدائرية مع كراسي تيفاني المذهبة والورود.',
     cameraSetting: 'عدسة 50mm ببعد بؤري | تسليط كشاف Follow Spot'
   },
@@ -46,7 +46,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     title: 'قسم الرجال والحوش الخارجي المجهز بـ 100 فرش',
     angleTag: 'men',
     angleLabel: 'قسم الرجال والحوش',
-    imageUrl: '/03_Men_Hall/men_01.jpg',
+    imageUrl: '/Videos/posters/hospitality.jpg',
     description: 'لقطة تستعرض الجلسات الخارجية الشعبية التراثية ومجلس استقبال كبار الشخصيات مع مباخر العود.',
     cameraSetting: 'تصوير ليلي مع كشافات المظلات المضيئة'
   },
@@ -55,7 +55,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     title: 'جناح العروسة VIP مع مرآة الميكأب الهوليودية',
     angleTag: 'suite',
     angleLabel: 'جناح العروسة VIP',
-    imageUrl: '/02_Women_Hall/women_16.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     description: 'تفاصيل الخصوصية داخل الجناح الخاص بالعروسة مع مرآة الإضاءة الهوليوودية وجلسة الاسترخاء المخملية.',
     cameraSetting: 'إضاءة دافئة عازلة لتصوير المكياج الاحترافي'
   },
@@ -64,7 +64,7 @@ const ANGLES_DATA: AnglePhoto[] = [
     title: 'القاعة الملكية الكبرى والثريات الكريستالية',
     angleTag: 'entrance',
     angleLabel: 'المدخل والثريات',
-    imageUrl: '/02_Women_Hall/women_03.jpg',
+    imageUrl: '/Videos/posters/hall-tour.jpg',
     description: 'لقطة استقبال المعازيم الفخمة والأقواس المذهبة والثريات الكريستالية المعلقة.',
     cameraSetting: 'عدسة عريضة مع إبراز البريق الكريستالي'
   }

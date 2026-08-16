@@ -20,7 +20,7 @@ export const CalculatorPage: React.FC<CalculatorPageProps> = ({ onOpenBookingWit
     <PageTransition className="bg-[var(--color-ivory)] min-h-screen text-[var(--color-text)] font-cairo">
       <SEO
         title="حاسبة عروض قاعة الباخرة للاحتفالات بجدة"
-        description="حساب تكلفة العروض المعتمدة لقاعة الباخرة للاحتفالات بجدة (الحرازات). بوفيه مفتوح 10 متر فضي، 3 دور تورتة، ضيافة 40 طاولة وقسم رجال متكامل."
+        description="حساب تكلفة العروض المعتمدة لقاعة الباخرة للاحتفالات بجدة (الحرازات). بوفيه مفتوح بطول 10 أمتار فضي، تورتة من 3 أدوار، ضيافة 40 طاولة وقسم رجال متكامل."
         pageType="calculator"
       />
 

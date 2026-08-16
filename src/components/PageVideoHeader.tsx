@@ -37,7 +37,7 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
           decoding="async"
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = '/01_Featured_Website/women_03.jpg';
+            e.currentTarget.src = '/Videos/posters/hall-tour.jpg';
           }}
         />
         <video

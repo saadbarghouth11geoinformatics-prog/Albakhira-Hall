@@ -278,7 +278,7 @@ export const GrandLuxuryFeatures: React.FC<GrandLuxuryFeaturesProps> = ({
                     <td className="p-4 font-bold text-white">البوفيه المفتوح والضيافة</td>
                     <td className="p-4 text-[var(--color-text-muted)] bg-red-950/10">أطباق محدودة بدون تورتة أو عصير طبيعي</td>
                     <td className="p-4 text-[var(--color-success)] font-bold bg-[var(--color-champagne-500)]/10 flex items-center gap-1.5">
-                      <Check className="w-4 h-4 text-[var(--color-success)]" /> بوفيه فضي 10م + تورتة 3 دور + 80 صحن حلا و30L عصير
+                      <Check className="w-4 h-4 text-[var(--color-success)]" /> بوفيه فضي 10م + تورتة من 3 أدوار + 80 صحن حلا و30L عصير
                     </td>
                   </tr>
                   <tr>
@@ -292,7 +292,7 @@ export const GrandLuxuryFeatures: React.FC<GrandLuxuryFeaturesProps> = ({
                     <td className="p-4 font-bold text-white">المؤثرات الضوئية والزفة</td>
                     <td className="p-4 text-[var(--color-text-muted)] bg-red-950/10">رسوم إضافية مرتفعة على البخار والليزر</td>
                     <td className="p-4 text-[var(--color-success)] font-bold bg-[var(--color-champagne-500)]/10 flex items-center gap-1.5">
-                      <Check className="w-4 h-4 text-[var(--color-success)]" /> مجاناً (بخار سحاب + ليزرات + كشاف العروسة + دي جي)
+                      <Check className="w-4 h-4 text-[var(--color-success)]" /> مجانًا (بخار سحاب + ليزرات + كشاف العروسة + دي جي)
                     </td>
                   </tr>
                   <tr>

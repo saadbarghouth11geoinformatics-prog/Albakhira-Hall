@@ -51,7 +51,7 @@ export const GlobalVideoBackground: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 scale-105"
           style={{
-            backgroundImage: `url(${currentVideo.posterUrl || '/02_Women_Hall/women_03.jpg'})`,
+            backgroundImage: `url(${currentVideo.posterUrl || '/Videos/posters/hall-tour.jpg'})`,
           }}
         />
 
@@ -81,7 +81,7 @@ export const GlobalVideoBackground: React.FC = () => {
       </div>
 
       {/* FLOATING CONTROLLER WIDGET FOR GLOBAL VIDEO BACKGROUND */}
-      <div className="global-video-controls fixed bottom-18 right-3 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2">
+      <div className="global-video-controls hidden sm:flex fixed bottom-6 right-6 z-40 flex-col items-end gap-2">
         {/* Expanded Controls Panel */}
         {isControlsExpanded && (
           <div className="bg-[var(--color-navy-950)]/95 border-2 border-[var(--color-champagne-500)]/60 rounded-2xl p-4 shadow-2xl backdrop-blur-xl w-72 sm:w-80 text-right animate-fadeIn border-t-4 border-t-[var(--color-champagne-500)]">
@@ -212,7 +212,7 @@ export const GlobalVideoBackground: React.FC = () => {
             <span className="w-2.5 h-2.5 rounded-full bg-[var(--color-success)] animate-ping" />
             <Film className="w-4 h-4 text-[var(--color-champagne-500)] group-hover:rotate-12 transition-transform" />
             <span className="text-xs font-bold font-tajawal hidden sm:inline">
-              خلفية فيديو شغال تلقائياً
+              خلفية فيديو شغال تلقائيًا
             </span>
             <Settings className="w-3.5 h-3.5 text-[var(--color-champagne-500)] opacity-80" />
           </button>

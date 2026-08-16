@@ -29,12 +29,12 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
     {
       title: 'خصم حماة الوطن ومنسوبي التعليم',
       badge: 'خصم إضافي 5%',
-      detail: 'تقديراً لمنسوبي أبطال الحد الجنوبي، العسكريين، والمعلمين والمعلمات، نقدم خصماً إضافياً 5% أو إضافة كوشة VIP مجاناً عند استبراز البطاقة المهنية.',
+      detail: 'تقديرًا لمنسوبي أبطال الحد الجنوبي، العسكريين، والمعلمين والمعلمات، نقدم خصماً إضافياً 5% أو إضافة كوشة VIP مجانًا عند استبراز البطاقة المهنية.',
     },
     {
       title: 'باقة الحجز المبكر 3 أشهر مسبقاً',
       badge: 'تورتة 4 أدوار VIP',
-      detail: 'عند تثبيت عربون الحجز قبل التاريخ بـ 90 يوماً على الأقل، يتم ترقية تورتة العروسين تلقائياً من 3 أدوار إلى تورتة VIP ملكية 4 أدوار مجاناً.',
+      detail: 'عند تثبيت عربون الحجز قبل التاريخ بـ 90 يومًا على الأقل، يتم ترقية تورتة العروسين تلقائيًا من 3 أدوار إلى تورتة VIP ملكية 4 أدوار مجانًا.',
     },
     {
       title: 'خصم إعادة الحجز والضيوف السابقين',
@@ -47,7 +47,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
     <PageTransition className="bg-[var(--color-ivory)] min-h-screen text-[var(--color-text)] font-cairo">
       <SEO
         title="عروض وباقات الزفاف 2026 | قاعة الباخرة للاحتفالات بجدة"
-        description="استكشف ورقة العروض المعتمدة لقاعة الباخرة للاحتفالات بجدة (الحرازات). بوفيه مفتوح 10 متر فضي، 3 دور تورتة، ضيافة 40 طاولة مجاناً، وقسم رجال متكامل."
+        description="استكشف ورقة العروض المعتمدة لقاعة الباخرة للاحتفالات بجدة (الحرازات). بوفيه مفتوح بطول 10 أمتار فضي، تورتة من 3 أدوار، ضيافة 40 طاولة مجانًا، وقسم رجال متكامل."
         pageType="offers"
       />
 
@@ -56,11 +56,11 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
         driveId="15-LwCv8tRIhMym20zDNDFgdPx3uJ_Hb9"
         driveUrl="https://drive.google.com/file/d/15-LwCv8tRIhMym20zDNDFgdPx3uJ_Hb9/view?usp=drive_link"
         localVideoSrc="/Videos/video_06.mp4"
-        localPoster="/01_Featured_Website/women_03.jpg"
+        localPoster="/Videos/posters/hall-tour.jpg"
         badge="ورقة العروض المعتمدة 2026 (تغطية حية حقيقية)"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="عروض قاعة الباخرة للاحتفالات 2026"
-        description="استعرض خدمات الباقات الشاملة: بوفيه مفتوح 10 متر، تورتة 3 دور، كشاف العروسة، أجهزة الليزرات، وقسم الرجال المتكامل."
+        description="استعرض خدمات الباقات الشاملة: بوفيه مفتوح بطول 10 أمتار، تورتة من 3 أدوار، كشاف العروسة، أجهزة الليزرات، وقسم الرجال المتكامل."
       >
         {/* Quick Stats Grid Overlay */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-6">
@@ -68,7 +68,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
             whileHover={{ scale: 1.05 }}
             className="bg-[var(--color-navy-950)]/85 backdrop-blur-md p-4 rounded-2xl border border-[var(--color-champagne-500)]/40 text-center shadow-xl"
           >
-            <span className="text-xl sm:text-2xl font-black font-tajawal text-[var(--color-champagne-300)]">بوفيه 10 متر</span>
+            <span className="text-xl sm:text-2xl font-black font-tajawal text-[var(--color-champagne-300)]">بوفيه بطول 10 أمتار</span>
             <span className="text-[11px] text-[var(--color-navy-100)] block mt-1">القائمة الفضية المكتملة</span>
           </motion.div>
 
@@ -77,7 +77,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
             className="bg-[var(--color-navy-950)]/85 backdrop-blur-md p-4 rounded-2xl border border-[var(--color-champagne-500)]/40 text-center shadow-xl"
           >
             <span className="text-xl sm:text-2xl font-black font-tajawal text-[var(--color-champagne-300)]">تورتة (3 دور)</span>
-            <span className="text-[11px] text-[var(--color-navy-100)] block mt-1">تورتة زفاف ملكية مجاناً</span>
+            <span className="text-[11px] text-[var(--color-navy-100)] block mt-1">تورتة زفاف ملكية مجانًا</span>
           </motion.div>
 
           <motion.div
@@ -118,7 +118,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
                     قسم وصالة النساء الملكية
                   </h3>
                   <p className="text-xs text-[var(--color-text-secondary)] font-cairo mt-0.5">
-                    بوفيه 10 متر، تورتة 3 دور، 40 طاولة ضيافة مجاناً، وعاملات مسك الفستان.
+                    بوفيه بطول 10 أمتار، تورتة من 3 أدوار، 40 طاولة ضيافة مجانًا، وعاملات مسك الفستان.
                   </p>
                 </div>
               </div>
@@ -262,9 +262,9 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-[var(--color-navy-950)]">البوفيه المفتوح والتورتة</td>
-                  <td className="p-4 text-center text-[var(--color-text-secondary)]">بوفيه 10 متر + تورتة 3 دور</td>
+                  <td className="p-4 text-center text-[var(--color-text-secondary)]">بوفيه بطول 10 أمتار + تورتة من 3 أدوار</td>
                   <td className="p-4 text-center text-[var(--color-text-secondary)]">قهوة وشاي وطبخ الاتفاق</td>
-                  <td className="p-4 text-center text-[var(--color-champagne-700)] font-bold bg-[var(--color-champagne-500)]/10">بوفيه 10 متر + تورتة 3 دور + قهوة وشاي</td>
+                  <td className="p-4 text-center text-[var(--color-champagne-700)] font-bold bg-[var(--color-champagne-500)]/10">بوفيه بطول 10 أمتار + تورتة من 3 أدوار + قهوة وشاي</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-[var(--color-navy-950)]">ضيافة الحلا والمعجنات والأنواع</td>
@@ -279,10 +279,10 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
                   <td className="p-4 text-center text-[var(--color-champagne-700)] font-bold bg-[var(--color-champagne-500)]/10">طاقم نسائي ورجالي مكتمل 20 فرد</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-bold text-[var(--color-navy-950)]">عاملات فستان العروسة والمؤثرات مجاناً</td>
-                  <td className="p-4 text-center text-[var(--color-success)] font-semibold">متاح مجاناً</td>
+                  <td className="p-4 font-bold text-[var(--color-navy-950)]">عاملات فستان العروسة والمؤثرات مجانًا</td>
+                  <td className="p-4 text-center text-[var(--color-success)] font-semibold">متاح مجانًا</td>
                   <td className="p-4 text-center text-[var(--color-text-muted)]">قسم الرجال</td>
-                  <td className="p-4 text-center text-[var(--color-success)] font-bold bg-[var(--color-champagne-500)]/10">متاح مجاناً للعروسين</td>
+                  <td className="p-4 text-center text-[var(--color-success)] font-bold bg-[var(--color-champagne-500)]/10">متاح مجانًا للعروسين</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-[var(--color-navy-950)]">تجهيز الجلسات الخارجية للحوش</td>
@@ -334,10 +334,10 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-[var(--color-navy-100)]">
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[var(--color-success)]" /> تشغيل دي جي احترافي مجاناً قبل وصول المطربة
+                    <CheckCircle2 className="w-4 h-4 text-[var(--color-success)]" /> تشغيل دي جي احترافي مجانًا قبل وصول المطربة
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[var(--color-success)]" /> تشغيل المؤثرات مجاناً (زفة العروسة - زفة العصير - الليزرات - البخار - كشاف العروسة)
+                    <CheckCircle2 className="w-4 h-4 text-[var(--color-success)]" /> تشغيل المؤثرات مجانًا (زفة العروسة - زفة العصير - الليزرات - البخار - كشاف العروسة)
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--color-success)]" /> عاملات متفرغات لمسك فستان العروسة أثناء الزفة
@@ -348,7 +348,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
                 onClick={() => onOpenBooking('midweek-deal')}
                 className="gold-gradient text-[var(--color-navy-950)] font-black px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-transform cursor-pointer shrink-0 text-sm"
               >
-                تواصل وتأكيد الحجز فوراً
+                تواصل وتأكيد الحجز فورًا
               </button>
             </div>
           </div>

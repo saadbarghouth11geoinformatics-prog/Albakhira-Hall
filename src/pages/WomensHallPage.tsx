@@ -81,11 +81,11 @@ export const WomensHallPage: React.FC<WomensHallPageProps> = ({ onOpenBooking })
 
   const handleShare = () => {
     const text = `💎 مواصفات صالة النساء الملكية - قاعة الباخرة للاحتفالات بجدة:
-- بوفيه مفتوح 10 متر فضي لـ 100 سيدة + تورتة 3 أدوار.
-- 40 صحن حلا + 40 صحن معجنات على 40 طاولة مجاناً.
-- 30 لتر عصيرات طازجة (مانجو - جوافة - كوكتيل).
+- بوفيه مفتوح بطول 10 أمتار فضي لـ 100 سيدة + تورتة من 3 أدوار.
+- 40 صحن حلا + 40 صحن معجنات على 40 طاولة مجانًا.
+- 30 لتر عصائر طازجة (مانجو - جوافة - كوكتيل).
 - 10 مباشرات + المشرفة + عاملات مسك فستان العروسة.
-- تشغيل دي جي مجاناً + زفة العروسة والعصير وليزر وبخار وكشاف العروسة.
+- تشغيل دي جي مجانًا + زفة العروسة والعصير وليزر وبخار وكشاف العروسة.
 - تأمين الفحم والمباخر وأدوات النظافة.
 للحجز والاستفسار: 0500292974 - 0534049130`;
 
@@ -100,9 +100,9 @@ export const WomensHallPage: React.FC<WomensHallPageProps> = ({ onOpenBooking })
     <PageTransition className="bg-[var(--color-ivory)] min-h-screen text-[var(--color-text)] font-cairo">
       <SEO
         title="صالة النساء الملكية | قاعة الباخرة للاحتفالات بجدة"
-        description="استكشف مواصفات صالة النساء الملكية بقاعة الباخرة بجدة (الحرازات). بوفيه مفتوح 10 متر فضي، تورتة 3 أدوار، ضيافة 40 طاولة مجاناً، 10 مباشرات ومشرفة، وعاملات فستان العروس مع المؤثرات المجانية."
-        keywords="صالة النساء قاعة الباخرة, قاعة افراح نساء جدة, بوفيه 10 متر فضي, تورتة 3 ادوار, كوشة العروسة, عاملات فستان العروسة, قاعات الحرازات"
-        ogImage="/02_Women_Hall/women_03.jpg"
+        description="استكشف مواصفات صالة النساء الملكية بقاعة الباخرة بجدة (الحرازات). بوفيه مفتوح بطول 10 أمتار فضي، تورتة من 3 أدوار، ضيافة 40 طاولة مجانًا، 10 مباشرات ومشرفة، وعاملات فستان العروس مع المؤثرات المجانية."
+        keywords="صالة النساء قاعة الباخرة, قاعة افراح نساء جدة, بوفيه بطول 10 أمتار فضي, تورتة 3 ادوار, كوشة العروسة, عاملات فستان العروسة, قاعات الحرازات"
+        ogImage="/Videos/posters/hall-tour.jpg"
       />
 
       {/* Hero Banner Section */}
@@ -205,7 +205,7 @@ export const WomensHallPage: React.FC<WomensHallPageProps> = ({ onOpenBooking })
             </div>
             <div className="p-3 rounded-2xl bg-[var(--color-navy-950)]/60 border border-[var(--color-champagne-500)]/20">
               <span className="block text-xl sm:text-2xl font-black font-tajawal text-[var(--color-champagne-300)]">40 + 40 صحن</span>
-              <span className="text-xs text-[var(--color-navy-100)]">ضيافة حلا ومعجنات على 40 طاولة مجاناً</span>
+              <span className="text-xs text-[var(--color-navy-100)]">ضيافة حلا ومعجنات على 40 طاولة مجانًا</span>
             </div>
             <div className="p-3 rounded-2xl bg-[var(--color-navy-950)]/60 border border-[var(--color-champagne-500)]/20">
               <span className="block text-xl sm:text-2xl font-black font-tajawal text-[var(--color-champagne-300)]">10 مباشرات + مشرفة</span>

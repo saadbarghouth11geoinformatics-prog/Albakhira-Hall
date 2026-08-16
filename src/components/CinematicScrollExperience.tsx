@@ -86,13 +86,13 @@ const StoryScene: React.FC<StorySceneProps> = ({
           onError={(e) => {
             const target = e.currentTarget;
             if (accent === 'women') {
-              target.src = '/01_Featured_Website/women_03.jpg';
+              target.src = '/Videos/posters/hall-tour.jpg';
             } else if (accent === 'men') {
-              target.src = '/01_Featured_Website/men_01.jpg';
+              target.src = '/Videos/posters/hospitality.jpg';
             } else if (accent === 'buffet') {
-              target.src = '/01_Featured_Website/food_01.jpg';
+              target.src = '/Videos/posters/table-decor.jpg';
             } else {
-              target.src = '/05_Exterior_Outdoor_Yard/men_18.jpg';
+              target.src = '/Videos/posters/welcome-display.jpg';
             }
           }}
         />
@@ -110,13 +110,13 @@ const StoryScene: React.FC<StorySceneProps> = ({
             onError={(e) => {
               const target = e.currentTarget;
               if (accent === 'women') {
-                target.src = '/02_Women_Hall/women_03.jpg';
+                target.src = '/Videos/posters/hall-tour.jpg';
               } else if (accent === 'men') {
-                target.src = '/03_Men_Hall/men_01.jpg';
+                target.src = '/Videos/posters/hospitality.jpg';
               } else if (accent === 'buffet') {
-                target.src = '/04_Dining_Buffet/food_02.jpg';
+                target.src = '/Videos/posters/table-decor.jpg';
               } else {
-                target.src = '/05_Exterior_Outdoor_Yard/men_18.jpg';
+                target.src = '/Videos/posters/welcome-display.jpg';
               }
             }}
           />
@@ -205,10 +205,10 @@ const StoryCard: React.FC<StoryCardProps> = ({ title, subtitle, image, icon }) =
         referrerPolicy="no-referrer"
         onError={(e) => {
           const target = e.currentTarget;
-          if (title.includes('نساء')) target.src = '/01_Featured_Website/women_03.jpg';
-          else if (title.includes('رجال')) target.src = '/01_Featured_Website/men_01.jpg';
-          else if (title.includes('طعام') || title.includes('بوفيه')) target.src = '/01_Featured_Website/food_01.jpg';
-          else target.src = '/05_Exterior_Outdoor_Yard/men_18.jpg';
+          if (title.includes('نساء')) target.src = '/Videos/posters/hall-tour.jpg';
+          else if (title.includes('رجال')) target.src = '/Videos/posters/hospitality.jpg';
+          else if (title.includes('طعام') || title.includes('بوفيه')) target.src = '/Videos/posters/table-decor.jpg';
+          else target.src = '/Videos/posters/welcome-display.jpg';
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-950)] via-[var(--color-navy-950)]/50 to-transparent" />
@@ -250,8 +250,8 @@ export const CinematicScrollExperience: React.FC = () => {
         eyebrow="المشهد الأول • صالة النساء"
         title="كل تفصيلة تُجهّز لتصنع ليلة استثنائية"
         text="تظهر الصالة الفخمة بأرقى التجهيزات، من ممر العروس الملكي والكوشة إلى الطاولات المنسقة والإضاءات الليزرية الساحرة."
-        image="/02_Women_Hall/women_10.jpg"
-        revealImage="/02_Women_Hall/women_03.jpg"
+        image="/Videos/posters/table-decor.jpg"
+        revealImage="/Videos/posters/hall-tour.jpg"
         badge="كوشة وممر ملكي فندقي"
         accent="women"
       />
@@ -261,8 +261,8 @@ export const CinematicScrollExperience: React.FC = () => {
         eyebrow="المشهد الثاني • قسم الرجال"
         title="مساحة رحبة تليق بحفاوة الاستقبال"
         text="مجلس فسيح ومهيب مجهز بأفخم الكنب والمفارش، مع طاقم متخصص لتقديم القهوة والشاي والضيافة العربية طوال الحفل."
-        image="/03_Men_Hall/men_11.jpg"
-        revealImage="/03_Men_Hall/men_01.jpg"
+        image="/Videos/posters/hospitality.jpg"
+        revealImage="/Videos/posters/hospitality.jpg"
         badge="مجلس 100 فرش + حوش خارجي"
         accent="men"
       />
@@ -271,10 +271,10 @@ export const CinematicScrollExperience: React.FC = () => {
       <StoryScene
         eyebrow="المشهد الثالث • صالة الطعام والبوفيه"
         title="تجربة ضيافة متكاملة تكتمل بها الفرحة"
-        text="صالة طعام منظمة وبوفيه مفتوح 10 متر وتورتة 3 أدوار تعكس كرم الضيافة بأعلى معايير الجودة."
-        image="/04_Dining_Buffet/food_01.jpg"
-        revealImage="/04_Dining_Buffet/food_02.jpg"
-        badge="بوفيه 10 متر شامل الطاقم"
+        text="صالة طعام منظمة وبوفيه مفتوح بطول 10 أمتار وتورتة من 3 أدوار تعكس كرم الضيافة بأعلى معايير الجودة."
+        image="/Videos/posters/table-decor.jpg"
+        revealImage="/Videos/posters/table-decor.jpg"
+        badge="بوفيه بطول 10 أمتار شامل الطاقم"
         accent="buffet"
       />
 
@@ -283,8 +283,8 @@ export const CinematicScrollExperience: React.FC = () => {
         eyebrow="المشهد الرابع • الواجهة والساحة الخارجية"
         title="حين تضيء القاعة تبدأ أجمل الحكايات"
         text="يتحول المشهد تدريجيًا إلى أجواء ليلية أكثر عمقًا، وتبرز إضاءة الواجهة والساحة بالتتابع."
-        image="/05_Exterior_Outdoor_Yard/men_17.jpg"
-        revealImage="/05_Exterior_Outdoor_Yard/men_18.jpg"
+        image="/Videos/posters/welcome-display.jpg"
+        revealImage="/Videos/posters/welcome-display.jpg"
         badge="إضاءات ليلية ساحرة"
         accent="exterior"
       />
@@ -330,31 +330,31 @@ export const CinematicScrollExperience: React.FC = () => {
             <StoryCard
               title="صالة النساء الداخلية"
               subtitle="كوشة وتنسيق ملكي فاخر"
-              image="/02_Women_Hall/women_03.jpg"
+              image="/Videos/posters/hall-tour.jpg"
               icon={<Sparkles className="w-5 h-5" />}
             />
             <StoryCard
               title="مجلس قسم الرجال"
               subtitle="أصالة وكرم الضيافة العربية"
-              image="/03_Men_Hall/men_01.jpg"
+              image="/Videos/posters/hospitality.jpg"
               icon={<Users className="w-5 h-5" />}
             />
             <StoryCard
               title="صالة الطعام والبوفيه"
-              subtitle="بوفيه 10 متر وتورتة 3 دور"
-              image="/04_Dining_Buffet/food_02.jpg"
+              subtitle="بوفيه بطول 10 أمتار وتورتة من 3 أدوار"
+              image="/Videos/posters/table-decor.jpg"
               icon={<Utensils className="w-5 h-5" />}
             />
             <StoryCard
               title="الواجهة والساحة الخارجية"
               subtitle="إضاءات وجلسات حوش فسيحة"
-              image="/01_Featured_Website/men_15.jpg"
+              image="/Videos/posters/welcome-display.jpg"
               icon={<Building className="w-5 h-5" />}
             />
             <StoryCard
               title="المرافق والخدمات"
               subtitle="أعلى معايير الراحة والتنظيم"
-              image="/06_Facilities/food_07.jpg"
+              image="/Videos/posters/welcome-display.jpg"
               icon={<CheckCircle2 className="w-5 h-5" />}
             />
           </div>

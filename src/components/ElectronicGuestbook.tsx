@@ -57,7 +57,7 @@ const INITIAL_GUESTBOOK_ENTRIES: GuestbookEntry[] = [
     relation: 'أخت العروسة',
     eventType: 'حفل زفاف ملكي',
     eventDate: 'حفل زفاف ملكي - ذو الحجة 1447 هـ',
-    message: 'دخَلة أختي مع كشاف العروسة والبخار المكثف كانت كأنها مشهد سينمائي فاخر! المباشرات متفرغات ولطيفات جداً، وتورتة الـ 3 دور كانت لديدة ومجهزة بطريقة راقية جداً. ألف شكر لقاعة الباخرة.',
+    message: 'دخَلة أختي مع كشاف العروسة والبخار المكثف كانت كأنها مشهد سينمائي فاخر! المباشرات متفرغات ولطيفات جدًا، وتورتة من 3 أدوار كانت لديدة ومجهزة بطريقة راقية جدًا. ألف شكر لقاعة الباخرة.',
     rating: 5,
     likes: 67,
     verified: true,
@@ -83,7 +83,7 @@ const INITIAL_GUESTBOOK_ENTRIES: GuestbookEntry[] = [
     relation: 'والدة العروسة',
     eventType: 'حفل زفاف',
     eventDate: 'حفل زفاف - شوال 1447 هـ',
-    message: 'النظافة والاهتمام بالأمان وحراسة النساء بياض وجه! الضيوف كلهم أثنوا على حلا الطاولات والقهوة والعصائر الفريش. القاعة مرتبة وتفتح النفس والمسرح واسع جداً.',
+    message: 'النظافة والاهتمام بالأمان وحراسة النساء بياض وجه! الضيوف كلهم أثنوا على حلا الطاولات والقهوة والعصائر الفريش. القاعة مرتبة وتفتح النفس والمسرح واسع جدًا.',
     rating: 5,
     likes: 58,
     verified: true,
@@ -652,7 +652,7 @@ export const ElectronicGuestbook: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
-            className="fixed bottom-6 right-6 z-50 bg-[var(--color-navy-950)] border-2 border-[#25D366] text-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 font-cairo"
+            className="fixed bottom-20 right-3 left-3 sm:bottom-6 sm:right-6 sm:left-auto z-50 bg-[var(--color-navy-950)] border-2 border-[#25D366] text-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 font-cairo sm:max-w-sm"
           >
             <CheckCircle2 className="w-6 h-6 text-[#25D366]" />
             <div>

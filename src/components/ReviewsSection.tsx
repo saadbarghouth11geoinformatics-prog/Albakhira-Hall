@@ -40,11 +40,11 @@ const INITIAL_LIKES: Record<string, number> = {
 };
 
 const OFFICIAL_REPLIES: Record<string, string> = {
-  t1: 'شكراً لكم عائلة الحارثي الكرام! سررنا جداً بخدمتكم ورسم البسمة في ليلتكم المباركة. نرحب بكم دائماً في قاعة الباخرة.',
+  t1: 'شكراً لكم عائلة الحارثي الكرام! سررنا جدًا بخدمتكم ورسم البسمة في ليلتكم المباركة. نرحب بكم دائماً في قاعة الباخرة.',
   t3: 'ألف مبروك يا عروس شهد! أسعدتينا بكلماتك الرقيقة، ويسعدنا أن تكون مؤثرات الدخلة والزفة عند حسن ظنك المأمول.',
   t2: 'الله يجمل حالك يا شيخ أبو فهد ويحييكم دائماً بين أهلكم وإخوانكم في جدة والحرازات.',
   t9: 'ألف مبروك لعائلة الجهني الكرام، ويسعدنا أن جناح العروسة نال إعجابكم واستحسانكم.',
-  t11: 'ألف مبروك يا عروس ريم! يسعدنا جداً أن تصميم الكوشة والممر الملكي نال إعجابك وإعجاب صديقاتك.',
+  t11: 'ألف مبروك يا عروس ريم! يسعدنا جدًا أن تصميم الكوشة والممر الملكي نال إعجابك وإعجاب صديقاتك.',
   t16: 'شكراً لعائلة الغامدي الكرام! سعدنا بخدمتكم في زفاف المهندس أحمد ونتمنى لكم حياة ملؤها السعادة والتوفيق.',
 };
 
@@ -141,7 +141,7 @@ export const ReviewsSection: React.FC = () => {
             ماذا يقول من احتفلوا في قاعة الباخرة؟
           </h2>
           <p className="text-[var(--color-navy-100)] text-xs sm:text-sm font-cairo max-w-2xl mx-auto leading-relaxed">
-            تقييمات موثقة وانطباعات حقيقية من العرسان وأهاليهم حول جودة البوفيه 10 متر، الزفة، الضيافة، والالتزام بجميع بنود العرض الشامل.
+            تقييمات موثقة وانطباعات حقيقية من العرسان وأهاليهم حول جودة البوفيه بطول 10 أمتار، الزفة، الضيافة، والالتزام بجميع بنود العرض الشامل.
           </p>
         </motion.div>
 
@@ -175,7 +175,7 @@ export const ReviewsSection: React.FC = () => {
               <div>
                 <div className="flex justify-between font-bold mb-1">
                   <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#25D366]" /> النظافة والتعقيم وحراسة النساء:</span>
-                  <span className="text-[var(--color-champagne-300)]">100% (ممتاز جداً)</span>
+                  <span className="text-[var(--color-champagne-300)]">100% (ممتاز جدًا)</span>
                 </div>
                 <div className="w-full h-2 bg-[var(--color-navy-950)] rounded-full overflow-hidden border border-[var(--color-champagne-500)]/20">
                   <div className="h-full bg-gradient-to-r from-[var(--color-champagne-500)] to-[#25D366] w-[100%]" />
@@ -350,7 +350,7 @@ export const ReviewsSection: React.FC = () => {
                   type="submit"
                   className="w-full gold-gradient text-[var(--color-navy-950)] font-black py-3 rounded-xl shadow-lg transition-transform cursor-pointer text-xs"
                 >
-                  نشر التقييم فوراً
+                  نشر التقييم فورًا
                 </button>
               </form>
             )}

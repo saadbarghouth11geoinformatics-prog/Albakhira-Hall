@@ -67,7 +67,7 @@ export const FaqPage: React.FC = () => {
               <div className="space-y-2 bg-[var(--color-navy-900)] p-4 rounded-2xl border border-[var(--color-champagne-500)]/20">
                 <strong className="text-white font-tajawal text-sm block">3. تغيير التاريخ أو التعديل</strong>
                 <p className="leading-relaxed">
-                  يمكن تغيير موعد الحفل مجاناً حتى قبل الموعد بـ 15 يوماً في حال وجود تاريخ آخر متاح بجدول الحجوزات، دون تطبيق أي رسوم إضافية.
+                  يمكن تغيير موعد الحفل مجانًا حتى قبل الموعد بـ 15 يومًا في حال وجود تاريخ آخر متاح بجدول الحجوزات، دون تطبيق أي رسوم إضافية.
                 </p>
               </div>
             </div>

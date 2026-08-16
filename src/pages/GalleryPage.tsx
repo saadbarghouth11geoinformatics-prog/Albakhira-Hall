@@ -2,14 +2,10 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { SEO } from '../components/SEO';
 import { GallerySection } from '../components/GallerySection';
-import { ParallaxImageBanner } from '../components/ParallaxImageBanner';
 import { VideoSection } from '../components/VideoSection';
-import { InstagramFeedSection } from '../components/InstagramFeedSection';
 import { PageVideoHeader } from '../components/PageVideoHeader';
 import { VirtualTour } from '../components/VirtualTour';
 import { PageTransition } from '../components/PageTransition';
-import { AnglePhotoExplorer } from '../components/pageDetails/AnglePhotoExplorer';
-import { BridePhotoSpotsGuide } from '../components/pageDetails/BridePhotoSpotsGuide';
 import { ContactAndBookingSection } from '../components/ContactAndBookingSection';
 import { Camera, Video, Eye } from 'lucide-react';
 
@@ -33,7 +29,7 @@ export const GalleryPage: React.FC = () => {
         badge="معرض الصور والفيديوهات"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="معرض الصور والفيديوهات والجولة الافتراضية 360°"
-        description="استعرض ألبوم صور وفيديوهات زفاف حقيقية من قاعة الباخرة للاحتفالات: كوشة العروسة، ممر الزفة، والبوفيه المفتوح 10 متر."
+        description="استعرض ألبوم صور وفيديوهات زفاف حقيقية من قاعة الباخرة للاحتفالات: كوشة العروسة، ممر الزفة، والبوفيه المفتوح بطول 10 أمتار."
       >
         {/* Quick Navigation Tabs inside Hero Header */}
         <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
@@ -78,20 +74,7 @@ export const GalleryPage: React.FC = () => {
         {activeTab === 'photos' && (
           <div>
             <GallerySection />
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <AnglePhotoExplorer />
-              <BridePhotoSpotsGuide />
-            </div>
-            <ParallaxImageBanner
-              imageUrl="/01_Featured_Website/women_03.jpg"
-              title="فخامة القاعة الملكية ولحظات العمر الخالدة"
-              subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر | استمتع بتصفح زوايا القاعة بتأثير Parallax المباشر"
-            />
-            <InstagramFeedSection />
-            <div className="space-y-12 pb-12">
-              <VideoSection />
-              <VirtualTour />
-            </div>
+            <div className="pb-12"><VideoSection /></div>
           </div>
         )}
         {activeTab === 'videos' && <VideoSection />}

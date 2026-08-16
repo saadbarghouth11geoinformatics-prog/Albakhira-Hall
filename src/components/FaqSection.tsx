@@ -173,7 +173,7 @@ export const FaqSection: React.FC = () => {
                   : 'bg-[var(--color-navy-950)] text-[var(--color-navy-100)] border border-white/10 hover:border-[var(--color-champagne-500)]/50'
               }`}
             >
-              كبير جداً
+              كبير جدًا
             </button>
 
             <div className="h-4 w-px bg-white/20 mx-1 hidden sm:block" />
@@ -433,7 +433,7 @@ export const FaqSection: React.FC = () => {
               لم نجد نتائج مطابقة لـ "{searchQuery}"
             </h3>
             <p className="text-xs text-[var(--color-navy-100)] font-cairo mb-6">
-              يسعدنا إجابة استفسارك المباشر فوراً عبر خدمة العملاء والمبيعات على الواتساب.
+              يسعدنا إجابة استفسارك المباشر فورًا عبر خدمة العملاء والمبيعات على الواتساب.
             </p>
             <button
               onClick={() => {

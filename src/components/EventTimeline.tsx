@@ -45,7 +45,7 @@ const TIMELINE_STEPS: TimelineStep[] = [
     description:
       'تبدأ رحلة ليلتكم المباركة مع وصول ضيوفكم إلى مواقف القاعة الواسعة بالحرازات. يستقبلهم حارس أمن بوابة النساء وطاقم الاستقبال في قسم الرجال برحابة صدر ودقة تنظيم.',
     icon: Car,
-    image: '/03_Men_Hall/men_01.jpg',
+    image: '/Videos/posters/hospitality.jpg',
     badge: 'استقبال منظم وخصوصية تامة',
     location: 'المواقف والمدخل الخارجي وقسم الرجال',
     highlights: [
@@ -64,7 +64,7 @@ const TIMELINE_STEPS: TimelineStep[] = [
     description:
       'يتوزع الضيوف في صالة النساء وقسم الرجال لتلقي أصول الضيافة. يتم تقديم القهوة والشاي عبر القهوجي المباشر وطاقم المباشرات، مع توزيع 40 صحن حلا و40 صحن معجنات مجانية.',
     icon: Coffee,
-    image: '/02_Women_Hall/women_03.jpg',
+    image: '/Videos/posters/hall-tour.jpg',
     badge: 'مشمول 40 صحن حلا + 40 معجنات',
     location: 'صالة النساء (40 طاولة) وقسم الرجال',
     highlights: [
@@ -83,8 +83,8 @@ const TIMELINE_STEPS: TimelineStep[] = [
     description:
       'اللحظة الأهم والأكثر سحراً! تبدأ دخلة العروسة مع تشغيل كشاف العروسة المباشر، جهاز البخار، جهاز الليزر المزدوج، وعاملات مسك الفستان لضمان زفة ملكية لا تُنسى.',
     icon: Sparkles,
-    image: '/01_Featured_Website/women_03.jpg',
-    badge: 'جميع المؤثرات والدي جي مجاناً',
+    image: '/Videos/posters/hall-tour.jpg',
+    badge: 'جميع المؤثرات والدي جي مجانًا',
     location: 'مسرح صالة النساء والكوشة الفخمة',
     highlights: [
       'كشاف العروسة المباشر المخصص للزفة',
@@ -98,12 +98,12 @@ const TIMELINE_STEPS: TimelineStep[] = [
     stepNumber: '04',
     timeSlot: '11:30 مساءً',
     title: 'افتتاح البوفيه المفتوح الفضي 10m',
-    subtitle: 'تجربة عشاء فندقية مع تورتة 3 دور وعصائر طازجة',
+    subtitle: 'تجربة عشاء فندقية مع تورتة من 3 أدوار وعصائر طازجة',
     description:
       'تُفتح أبواب صالة الطعام لاستعراض البوفيه الفضي الممتد لـ 10 متر بألذ الأطباق الساخنة والسلطات. وتقوم العروس بتقطيع تورتة الزفاف الفاخرة المكونة من 3 دور.',
     icon: Utensils,
-    image: '/04_Dining_Buffet/food_02.jpg',
-    badge: 'بوفيه 10m + تورتة 3 دور + 30L عصائر',
+    image: '/Videos/posters/table-decor.jpg',
+    badge: 'بوفيه 10m + تورتة من 3 أدوار + 30L عصائر',
     location: 'صالة الطعام الملكية',
     highlights: [
       'بوفيه مفتوح فضي ممتد 10 متر بأطباق متعددة',
@@ -121,7 +121,7 @@ const TIMELINE_STEPS: TimelineStep[] = [
     description:
       'تستمر السهرة في جلسات الحوش الخارجي للرجال المجهزة بـ 100 فرش تراثي، مع تقديم البخور الفاخر وتوديع الضيوف بكل أمان وحفاوة.',
     icon: MoonStar,
-    image: '/05_Exterior_Outdoor_Yard/men_18.jpg',
+    image: '/Videos/posters/welcome-display.jpg',
     badge: '100 فرش حوش + مباخر وفحم',
     location: 'الحوش الخارجي والتراس الملكي',
     highlights: [

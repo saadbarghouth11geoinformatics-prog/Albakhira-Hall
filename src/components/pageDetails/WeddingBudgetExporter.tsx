@@ -12,7 +12,7 @@ export const WeddingBudgetExporter: React.FC<WeddingBudgetExporterProps> = ({
   const [copiedQuote, setCopiedQuote] = useState(false);
 
   const quoteSummaryText = `تسمية العرض المختار: ${packageName}
-المواصفات: بوفيه مفتوح 10 متر + تورتة 3 دور + 80 صحن ضيافة + 30L عصائر فريش + 20 فرد طاقم خدمة + قسم الرجال و100 فرش حوش.
+المواصفات: بوفيه مفتوح بطول 10 أمتار + تورتة من 3 أدوار + 80 صحن ضيافة + 30L عصائر طازجة + 20 فرد طاقم خدمة + قسم الرجال و100 فرش حوش.
 قاعة الباخرة بجدة - الحرازات (بعد محطة المدينة بـ 500m)`;
 
   const handleCopy = () => {
@@ -36,7 +36,7 @@ export const WeddingBudgetExporter: React.FC<WeddingBudgetExporterProps> = ({
             مشاركة وتصدير كشف مواصفات عرض الزفاف
           </h3>
           <p className="text-xs text-[var(--color-navy-100)] mt-0.5 font-cairo">
-            تستطيع طباعة الكشف أو مشاركته فوراً عبر الواتساب لتنسيق التفاصيل مع شريك العمر.
+            تستطيع طباعة الكشف أو مشاركته فورًا عبر الواتساب لتنسيق التفاصيل مع شريك العمر.
           </p>
         </div>
 

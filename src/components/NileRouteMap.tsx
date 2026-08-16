@@ -43,7 +43,7 @@ const ROUTE_MARKERS: RouteMarker[] = [
     shortDesc: 'المقر الملكي الرئيسي لقاعة الباخرة ومسرح الفعاليات بجدة والحرازات',
     fullDesc: 'قلب المناسبة والوجهة الرئيسية المتكاملة التي تجمع بين صالة النساء الملكية، قسم الرجال، والبوفيه الفضي الشامل مع خدمات الضيافة المباشرة.',
     highlights: ['صالة نساء سعة 400 شخص', 'مسرح زفة مع كشاف عروسة وبخار', 'عرض شامل ومتكامل'],
-    imageUrl: '/01_Featured_Website/women_03.jpg',
+    imageUrl: '/Videos/posters/hall-tour.jpg',
     icon: <Crown className="w-5 h-5 text-[var(--color-navy-950)]" />,
   },
   {
@@ -56,7 +56,7 @@ const ROUTE_MARKERS: RouteMarker[] = [
     shortDesc: 'مدخل فاخر وممر استقبال مزين بالإضاءات الذهبية وحراس الأمن',
     fullDesc: 'استقبال ضيوف العرسان بمشرفين وأمن متواجدين بصفة مستمرة مع ممر واسع لمنع الاكتظاظ وتوفير أعلى مستويات الأمان والخصوصية.',
     highlights: ['حراسة أمنية خاصة بالنساء', 'ممر دخول واسع للعروسة والضيوف', 'تنسيق مدخل بالورود والإضاءة'],
-    imageUrl: '/02_Women_Hall/women_03.jpg',
+    imageUrl: '/Videos/posters/hall-tour.jpg',
     icon: <Ship className="w-4 h-4 text-[var(--color-champagne-500)]" />,
   },
   {
@@ -69,7 +69,7 @@ const ROUTE_MARKERS: RouteMarker[] = [
     shortDesc: '40 طاولة ضيافة مجهزة بكشاف العروسة، البخار، ومؤثرات الليزر',
     fullDesc: 'صالة مكيفة ومصممة بأعلى معايير الفخامة تتسع لـ 40 طاولة مع طاقم 10 مباشرات ومشرفة صالة متفرغة لمساندة العروسة طوال السهرة.',
     highlights: ['تأمين 40 صحن حلا و40 معجنات', 'عاملات متفرغات لمسك فستان العروس', 'دي جي احترافي ومستلزمات نطق الزفة'],
-    imageUrl: '/02_Women_Hall/women_16.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     icon: <Sparkles className="w-4 h-4 text-[var(--color-champagne-500)]" />,
   },
   {
@@ -79,10 +79,10 @@ const ROUTE_MARKERS: RouteMarker[] = [
     x: 68,
     y: 52,
     distance: 'جناح الضيافة بداخل صالة النساء',
-    shortDesc: 'بوفيه فضي ممتد 10 أمتار مع تورتة 3 دور و30 لتر عصائر فريش',
+    shortDesc: 'بوفيه فضي ممتد 10 أمتار مع تورتة من 3 أدوار و30 لتر عصائر طازجة',
     fullDesc: 'مجهزة بمعدات تقديم فندقية ساخنة، وتشكيلة مأكولات شرقية وغربية طازجة، مع تورتة زفاف فخمة من 3 أدوار وعصائر مانجو وجوافة طازجة.',
-    highlights: ['أصناف فندقية ساخنة وطازجة', '30 لتر عصائر فريش متنوعة', 'تورتة زفاف ملكية 3 دور'],
-    imageUrl: '/04_Dining_Buffet/food_02.jpg',
+    highlights: ['أصناف فندقية ساخنة وطازجة', '30 لتر عصائر طازجة متنوعة', 'تورتة زفاف ملكية 3 دور'],
+    imageUrl: '/Videos/posters/table-decor.jpg',
     icon: <Utensils className="w-4 h-4 text-[var(--color-champagne-500)]" />,
   },
   {
@@ -95,7 +95,7 @@ const ROUTE_MARKERS: RouteMarker[] = [
     shortDesc: 'حوش خارجي مجهز بـ 100 فرش جلسات شعبية وتراثية مع القهوجي',
     fullDesc: 'جلسات خارجية مفتوحة ومطلة تتسع لمئات الضيوف، مع تأمين 10 مباشرين احترافيين والقهوجي المختص لتقديم القهوة السعودية والشاي والمباخر.',
     highlights: ['100 فرش جلسات خارجية', '10 مباشرين للرجال + القهوجي', 'تأمين الفحم والمباخر الفاخرة'],
-    imageUrl: '/03_Men_Hall/men_01.jpg',
+    imageUrl: '/Videos/posters/hospitality.jpg',
     icon: <Users className="w-4 h-4 text-[var(--color-champagne-500)]" />,
   },
   {
@@ -106,9 +106,9 @@ const ROUTE_MARKERS: RouteMarker[] = [
     y: 72,
     distance: '50 متر من البوابة',
     shortDesc: 'ساحة مواقف تتسع لأكثر من 250 سيارة مع إنارة وسهولة مناورة',
-    fullDesc: 'مواقف مخصصة لسيارات المعازيم والضيوف قريبة جداً من البوابات الرئيسية لمنع التزاحم وضمان انسيابية الحركة المرورية.',
+    fullDesc: 'مواقف مخصصة لسيارات المعازيم والضيوف قريبة جدًا من البوابات الرئيسية لمنع التزاحم وضمان انسيابية الحركة المرورية.',
     highlights: ['سعة 250+ سيارة', 'إنارات ليلية كاملة', 'مسار دخول وخروج سلس'],
-    imageUrl: '/05_Exterior_Outdoor_Yard/men_18.jpg',
+    imageUrl: '/Videos/posters/welcome-display.jpg',
     icon: <Car className="w-4 h-4 text-[var(--color-champagne-500)]" />,
   },
   {

@@ -44,13 +44,8 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ image, index, onOpen }) => {
             onError={() => {
               if (currentSrc !== image.src) {
                 setCurrentSrc(image.src);
-              } else if (!currentSrc.includes('featured') && !currentSrc.includes('deck') && !currentSrc.includes('coffee')) {
-                // Fallback to top-level high-res photography based on category
-                if (image.categoryId === 'women') setCurrentSrc('/01_Featured_Website/women_03.jpg');
-                else if (image.categoryId === 'men') setCurrentSrc('/01_Featured_Website/men_01.jpg');
-                else if (image.categoryId === 'buffet') setCurrentSrc('/01_Featured_Website/food_01.jpg');
-                else if (image.categoryId === 'exterior') setCurrentSrc('/05_Exterior_Outdoor_Yard/men_18.jpg');
-                else setCurrentSrc('/06_Facilities/food_07.jpg');
+              } else if (!currentSrc.includes('/Videos/posters/')) {
+                setCurrentSrc('/Videos/posters/hall-tour.jpg');
               } else {
                 setFailed(true);
               }
@@ -135,7 +130,7 @@ export const GallerySection: React.FC = () => {
             <Sparkles className="h-4 w-4 text-[var(--color-champagne-500)]" /> الصور الحقيقية لقاعة الباخرة
           </span>
           <h2 id="gallery-title" className="text-3xl font-black text-[var(--color-navy-950)] sm:text-5xl font-tajawal">معرض <span className="text-[var(--color-champagne-700)]">قاعة الباخرة للاحتفالات</span></h2>
-          <p className="mt-4 text-sm font-semibold leading-7 text-[var(--color-navy-700)] sm:text-base">تصفّح جميع الصور الأصلية مرتبة حسب القسم، وافتح أي صورة لمشاهدتها كاملة دون قص.</p>
+          <p className="mt-4 text-sm font-semibold leading-7 text-[var(--color-navy-700)] sm:text-base">لقطات أصلية نظيفة من فيديوهات القاعة، مختارة لتعرض تفاصيل متنوعة دون صور متكررة أو علامات مائية.</p>
         </header>
 
         <div className="mb-9 grid grid-cols-1 gap-3 min-[480px]:grid-cols-2 lg:grid-cols-5" aria-label="بطاقات أقسام القاعة">
@@ -187,7 +182,7 @@ export const GallerySection: React.FC = () => {
         )}
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-soft-beige)] p-5 text-center md:flex-row md:text-right">
-          <p className="flex items-center gap-2 text-sm font-bold text-[var(--color-navy-950)]"><Check className="h-5 w-5 text-[var(--color-champagne-500)]" /> جميع الصور المعروضة من ملفات قاعة الباخرة الموجودة داخل المشروع.</p>
+          <p className="flex items-center gap-2 text-sm font-bold text-[var(--color-navy-950)]"><Check className="h-5 w-5 text-[var(--color-champagne-500)]" /> جميع الصور المعروضة لقطات أصلية نظيفة من فيديوهات قاعة الباخرة.</p>
           <a href="https://wa.me/966500292974" target="_blank" rel="noopener noreferrer" className="btn-primary shrink-0 rounded-xl px-6 py-3 text-xs font-black">تنسيق موعد زيارة ومعاينة</a>
         </div>
       </div>

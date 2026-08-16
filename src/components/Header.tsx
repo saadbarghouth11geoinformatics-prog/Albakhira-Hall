@@ -62,7 +62,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
   return (
     <header className="sticky top-0 z-50 w-full" dir="rtl">
       {/* Top Announcement Bar - Warm Ivory & Champagne Accent */}
-      <div className="brand-info-bar bg-[var(--color-ivory)] border-b border-[var(--color-border)] text-[var(--color-text)] py-1.5 sm:py-2 px-3 sm:px-4">
+      <div className={`brand-info-bar hidden bg-[var(--color-ivory)] border-b border-[var(--color-border)] text-[var(--color-text)] py-1.5 px-4 ${isScrolled ? '' : 'xl:block'}`}>
         <div className="max-w-[1440px] mx-auto font-tajawal text-[11px] sm:text-xs">
           {/* Mobile Single Line Layout */}
           <div className="flex xl:hidden items-center justify-between w-full">

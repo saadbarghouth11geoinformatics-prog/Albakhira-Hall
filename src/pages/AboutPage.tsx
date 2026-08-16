@@ -55,7 +55,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
     <PageTransition className="bg-[var(--color-ivory)] min-h-screen text-[var(--color-text)] font-cairo">
       <SEO
         title="عن القاعة والتجهيزات | قاعة الباخرة للاحتفالات بجدة"
-        description="تعرف على المواصفات والتجهيزات لقاعة الباخرة للاحتفالات بجدة (الحرازات). بوفيه مفتوح 10 متر، تورتة 3 دور، 40 طاولة ضيافة، وجلسات حوش خارجية."
+        description="تعرف على المواصفات والتجهيزات لقاعة الباخرة للاحتفالات بجدة (الحرازات). بوفيه مفتوح بطول 10 أمتار، تورتة من 3 أدوار، 40 طاولة ضيافة، وجلسات حوش خارجية."
         pageType="about"
       />
 
@@ -164,7 +164,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                     وضع زفة العروسة وكشاف المسرح
                   </h3>
                   <p className="text-xs sm:text-sm text-[var(--color-navy-100)] leading-relaxed">
-                    تسليط كشاف العروسة المباشر مع تشغيل زفة العروسة مجاناً، وعاملات متفرغات لمسك الفستان للحفاظ على هيبة اللحظة.
+                    تسليط كشاف العروسة المباشر مع تشغيل زفة العروسة مجانًا، وعاملات متفرغات لمسك الفستان للحفاظ على هيبة اللحظة.
                   </p>
                 </>
               )}
@@ -238,7 +238,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                     : 'bg-[var(--color-warm-white)] text-[var(--color-text)] border border-[var(--color-border)] hover:text-[var(--color-navy-950)] shadow-xs'
                 }`}
               >
-                1. صالة النساء والبوفيه 10 متر
+                1. صالة النساء والبوفيه بطول 10 أمتار
               </button>
               <button
                 onClick={() => setActiveTab('men')}
@@ -293,7 +293,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 </RevealText>
                 <RevealText delay={0.15}>
                   <p className="text-xs sm:text-sm text-[var(--color-navy-100)] leading-relaxed">
-                    تتميز صالة النساء بجمال التجهيز والتكييف الفاخر، مع بوفيه فضي مفتوح بطول 10 أمتار ومعدات تقديم فندقية، بالإضافة إلى 40 صحن حلا و40 صحن معجنات مجاناً.
+                    تتميز صالة النساء بجمال التجهيز والتكييف الفاخر، مع بوفيه فضي مفتوح بطول 10 أمتار ومعدات تقديم فندقية، بالإضافة إلى 40 صحن حلا و40 صحن معجنات مجانًا.
                   </p>
                 </RevealText>
                 <ul className="space-y-2 text-xs text-[var(--color-navy-100)] font-cairo">
@@ -301,7 +301,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                     'بوفيه مفتوح فضي 10 متر مع تورتة زفاف فخمة 3 دور',
                     'طاقم مكون من 10 مباشرات + مشرفة الصالة لتقديم الخدمة',
                     'عاملات متفرغات لمسك فستان العروسة أثناء الزفة',
-                    'تشغيل المؤثرات مجاناً (بخار - ليزر - زفة - كشاف العروسة)',
+                    'تشغيل المؤثرات مجانًا (بخار - ليزر - زفة - كشاف العروسة)',
                   ].map((item, idx) => (
                     <motion.li
                       key={idx}
@@ -327,7 +327,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="/02_Women_Hall/women_03.jpg"
+                  src="/Videos/posters/hall-tour.jpg"
                   alt="صالة النساء"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -390,7 +390,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="/03_Men_Hall/men_01.jpg"
+                  src="/Videos/posters/hospitality.jpg"
                   alt="قسم الرجال"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -451,7 +451,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="/01_Featured_Website/women_03.jpg"
+                  src="/Videos/posters/hall-tour.jpg"
                   alt="الكوشة والديكور"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -485,8 +485,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 </RevealText>
                 <ul className="space-y-2 text-xs text-[var(--color-navy-100)] font-cairo">
                   {[
-                    '30 لتر عصائر فريش طازجة (مانجو - جوافة - كوكتيل)',
-                    '40 صحن حلا + 40 صحن معجنات على 40 طاولة مجاناً',
+                    '30 لتر عصائر طازجة طازجة (مانجو - جوافة - كوكتيل)',
+                    '40 صحن حلا + 40 صحن معجنات على 40 طاولة مجانًا',
                   ].map((item, idx) => (
                     <motion.li
                       key={idx}
@@ -512,7 +512,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="/04_Dining_Buffet/food_02.jpg"
+                  src="/Videos/posters/table-decor.jpg"
                   alt="البوفيه المفتوح"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"

@@ -228,7 +228,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               className="w-full btn-on-dark font-bold py-3 rounded-xl transition-all text-xs cursor-pointer flex items-center justify-center gap-2"
             >
               <Calendar className="w-4 h-4" />
-              <span>طلب تحديد موعد المعاينة مجاناً</span>
+              <span>طلب تحديد موعد المعاينة مجانًا</span>
             </button>
           </div>
         </div>

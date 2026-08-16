@@ -152,7 +152,7 @@ export const RatingDistribution: React.FC = () => {
                 <div>
                   <h5 className="font-bold text-sm text-white font-tajawal">الخيارات الفندقية العالية</h5>
                   <p className="text-[11px] text-[var(--color-navy-100)] font-cairo">
-                    البوفيه الفضي 10م وتورتة الـ 3 دور والقهوة المباشرة تنال أعلى التقييمات باستمرار.
+                    البوفيه الفضي 10م وتورتة من 3 أدوار والقهوة المباشرة تنال أعلى التقييمات باستمرار.
                   </p>
                 </div>
               </div>

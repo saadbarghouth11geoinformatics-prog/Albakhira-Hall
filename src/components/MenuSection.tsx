@@ -9,7 +9,7 @@ export const MenuSection: React.FC = () => {
     { id: 'all', label: 'كافة أصناف البوفيه والضيافة' },
     { id: 'buffet_main', label: 'بوفيه الـ 10 متر الفضي' },
     { id: 'appetizers', label: 'صحون الحلا والمعجنات' },
-    { id: 'desserts', label: 'التورتة الـ 3 دور' },
+    { id: 'desserts', label: 'التورتة من 3 أدوار' },
     { id: 'beverages', label: 'العصائر والقهوة' },
   ];
 
@@ -29,7 +29,7 @@ export const MenuSection: React.FC = () => {
             قائمة البوفيه والضيافة المعتمدة
           </h2>
           <p className="text-[var(--color-navy-100)] text-sm sm:text-base font-cairo">
-            جدة - الحرازات | بوفيه مفتوح فضي 10 متر، تورتة 3 دور، 40 صحن حلا و40 صحن معجنات مجاناً.
+            جدة - الحرازات | بوفيه مفتوح فضي 10 متر، تورتة من 3 أدوار، 40 صحن حلا و40 صحن معجنات مجانًا.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export const MenuSection: React.FC = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                src="/04_Dining_Buffet/food_02.jpg"
+                src="/Videos/posters/table-decor.jpg"
                 alt="بوفيه قاعة الباخرة"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

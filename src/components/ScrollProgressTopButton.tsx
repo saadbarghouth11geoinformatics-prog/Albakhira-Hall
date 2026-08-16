@@ -33,7 +33,7 @@ export const ScrollProgressTopButton: React.FC = () => {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-20 sm:bottom-8 right-4 sm:right-8 z-40"
+          className="hidden sm:block fixed bottom-8 right-8 z-40"
         >
           <button
             onClick={scrollToTop}

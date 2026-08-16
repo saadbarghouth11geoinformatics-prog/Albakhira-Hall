@@ -46,7 +46,7 @@ export const MenuPage: React.FC = () => {
     <PageTransition className="bg-[var(--color-ivory)] min-h-screen text-[var(--color-text)] font-cairo">
       <SEO
         title="قائمة البوفيه والضيافة المعتمدة | قاعة الباخرة بجدة"
-        description="استعرض أصناف بوفيه الـ 10 متر الفضي، تورتة الـ 3 دور، 40 صحن حلا و40 صحن معجنات مجاناً، وعصائر الضيافة بقاعة الباخرة للاحتفالات بجدة."
+        description="استعرض أصناف بوفيه الـ 10 متر الفضي، تورتة من 3 أدوار، 40 صحن حلا و40 صحن معجنات مجانًا، وعصائر الضيافة بقاعة الباخرة للاحتفالات بجدة."
         pageType="menu"
       />
 
@@ -59,7 +59,7 @@ export const MenuPage: React.FC = () => {
         badge="بوفيه 10 أمتار وتورتة الزفاف"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="بوفيه مفتوح فضي 10 متر وضيافة فاخرة"
-        description="استعرض أصناف البوفيه الفضي بطول 10 أمتار، وتورتة الزفاف من 3 أدوار، و40 صحن حلا و40 صحن معجنات مجاناً، والعصائر وخدمة القهوة العربية."
+        description="استعرض أصناف البوفيه الفضي بطول 10 أمتار، وتورتة الزفاف من 3 أدوار، و40 صحن حلا و40 صحن معجنات مجانًا، والعصائر وخدمة القهوة العربية."
       />
 
       {/* Main Menu Component */}
@@ -71,7 +71,7 @@ export const MenuPage: React.FC = () => {
         <GuestHospitalityEstimator />
       </div>
 
-      <SectionDivider variant="sparkle" label="مخصص تورتة العروسين الملكية (3 أدوار مجاناً)" />
+      <SectionDivider variant="sparkle" label="مخصص تورتة العروسين الملكية (3 أدوار مجانًا)" />
 
       {/* Interactive Cake Customizer */}
       <section className="surface-light py-14 bg-[var(--color-soft-beige)] border-y border-[var(--color-champagne-500)]/20">
@@ -81,7 +81,7 @@ export const MenuPage: React.FC = () => {
               <Sparkles className="w-4 h-4 text-[var(--color-champagne-600)]" /> خيارات نكهات تورتة الزفاف الملكية
             </span>
             <h2 className="text-2xl sm:text-4xl font-black font-tajawal text-[var(--color-navy-950)] mb-2">
-              اختر نكهة وتصميم تورتة زفافك المشمولة مجاناً
+              اختر نكهة وتصميم تورتة زفافك المشمولة مجانًا
             </h2>
             <p className="text-xs sm:text-sm text-[var(--color-text-secondary)]">
               تقدم قاعة الباخرة تورتة زفاف 3 أدوار مغطاة بعجينة السكر الفاخرة والتزيين الذهبي:
@@ -118,7 +118,7 @@ export const MenuPage: React.FC = () => {
           </div>
 
           <div className="bg-[var(--color-warm-white)] p-4 rounded-2xl border border-[var(--color-champagne-500)]/40 text-center text-xs text-[var(--color-champagne-700)] font-medium shadow-sm">
-            تم اختيار: <span className="font-bold font-tajawal text-[var(--color-navy-950)]">{cakeFlavors.find(c => c.id === selectedCakeFlavor)?.name}</span> - سيتم اعتماد الخيار تلقائياً في العقد.
+            تم اختيار: <span className="font-bold font-tajawal text-[var(--color-navy-950)]">{cakeFlavors.find(c => c.id === selectedCakeFlavor)?.name}</span> - سيتم اعتماد الخيار تلقائيًا في العقد.
           </div>
         </div>
       </section>
