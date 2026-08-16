@@ -16,57 +16,57 @@ interface AnglePhoto {
 const ANGLES_DATA: AnglePhoto[] = [
   {
     id: 'k1',
-    title: 'الكوشة الملكية الفاخرة ومؤثرات المسرح والزفة',
+    title: 'مسرح وكوشة صالة النساء',
     angleTag: 'kosha',
     angleLabel: 'الكوشة والمسرح',
-    imageUrl: '/Videos/posters/welcome-display.jpg',
-    description: 'إطار واسع للكوشة الفخمة يظهر الثريات الكريستالية والشاشة التفاعلية وأقواس الورود الفاخرة.',
-    cameraSetting: 'عدسة واسعة 24mm | إضاءة سينمائية دافئة'
+    imageUrl: '/07_Clean_Video_Frames/video_09_frame_1.jpg',
+    description: 'لقطة أصلية من داخل الصالة توضح المسرح والكوشة وتجهيزات المناسبة.',
+    cameraSetting: 'لقطة أصلية من فيديو القاعة'
   },
   {
     id: 'b1',
-    title: 'امتداد البوفيه الفضي المفتوح 10 أمتار',
+    title: 'تجهيز بوفيه الحلويات والضيافة',
     angleTag: 'buffet',
     angleLabel: 'البوفيه المفتوح',
-    imageUrl: '/Videos/posters/table-decor.jpg',
-    description: 'لقطة طولية تستعرض امتداد السخانات الفندقية الفضية وتنسيق أطباق المقابلات والحلويات.',
-    cameraSetting: 'زاوية أفقية 35mm | إضاءة كشافات البوفيه الذهبية'
+    imageUrl: '/07_Clean_Video_Frames/video_13_frame_2.jpg',
+    description: 'عرض حقيقي ومرتب لأصناف الحلويات والضيافة في إحدى المناسبات.',
+    cameraSetting: 'لقطة أصلية من تجهيزات الضيافة'
   },
   {
     id: 'c1',
-    title: 'صالة النساء وممر الزفة الملكي مع سقف الإضاءات',
+    title: 'صالة النساء وممر الزفة',
     angleTag: 'catwalk',
     angleLabel: 'الممر الرخامي',
-    imageUrl: '/Videos/posters/hall-tour.jpg',
-    description: 'منظور متكامل للممر الملكي المرتفع والطاولات الدائرية مع كراسي تيفاني المذهبة والورود.',
-    cameraSetting: 'عدسة 50mm ببعد بؤري | تسليط كشاف Follow Spot'
+    imageUrl: '/07_Clean_Video_Frames/video_09_frame_3.jpg',
+    description: 'منظور واسع لممر الزفة والطاولات وتوزيع الجلسات داخل الصالة.',
+    cameraSetting: 'زاوية واسعة من صالة النساء'
   },
   {
     id: 'm1',
-    title: 'قسم الرجال والحوش الخارجي المجهز بـ 100 فرش',
+    title: 'مجلس الرجال وجلسات الاستقبال',
     angleTag: 'men',
-    angleLabel: 'قسم الرجال والحوش',
-    imageUrl: '/Videos/posters/hospitality.jpg',
-    description: 'لقطة تستعرض الجلسات الخارجية الشعبية التراثية ومجلس استقبال كبار الشخصيات مع مباخر العود.',
-    cameraSetting: 'تصوير ليلي مع كشافات المظلات المضيئة'
+    angleLabel: 'قسم الرجال',
+    imageUrl: '/07_Clean_Video_Frames/video_04_frame_3.jpg',
+    description: 'لقطة أصلية توضح ترتيب الجلسات ومساحة استقبال الضيوف في قسم الرجال.',
+    cameraSetting: 'زاوية واسعة من مجلس الرجال'
   },
   {
     id: 's1',
-    title: 'جناح العروسة VIP مع مرآة الميكأب الهوليودية',
+    title: 'مدخل غرفة العروسة',
     angleTag: 'suite',
-    angleLabel: 'جناح العروسة VIP',
-    imageUrl: '/Videos/posters/welcome-display.jpg',
-    description: 'تفاصيل الخصوصية داخل الجناح الخاص بالعروسة مع مرآة الإضاءة الهوليوودية وجلسة الاسترخاء المخملية.',
-    cameraSetting: 'إضاءة دافئة عازلة لتصوير المكياج الاحترافي'
+    angleLabel: 'غرفة العروسة',
+    imageUrl: '/07_Clean_Video_Frames/video_06_frame_3.jpg',
+    description: 'لقطة واضحة لمدخل غرفة العروسة ضمن المرافق الداخلية للقاعة.',
+    cameraSetting: 'لقطة أصلية من مرافق القاعة'
   },
   {
     id: 'e1',
-    title: 'القاعة الملكية الكبرى والثريات الكريستالية',
+    title: 'مدخل القاعة ومسار الوصول',
     angleTag: 'entrance',
-    angleLabel: 'المدخل والثريات',
-    imageUrl: '/Videos/posters/hall-tour.jpg',
-    description: 'لقطة استقبال المعازيم الفخمة والأقواس المذهبة والثريات الكريستالية المعلقة.',
-    cameraSetting: 'عدسة عريضة مع إبراز البريق الكريستالي'
+    angleLabel: 'مدخل القاعة',
+    imageUrl: '/07_Clean_Video_Frames/video_05_frame_1.jpg',
+    description: 'لقطة أصلية توضح مدخل القاعة والممر المؤدي إلى المرافق الداخلية.',
+    cameraSetting: 'زاوية حقيقية من المدخل'
   }
 ];
 
@@ -88,7 +88,7 @@ export const AnglePhotoExplorer: React.FC = () => {
           تصفح زوايا قاعة الباخرة حسب القسم والزاوية
         </h3>
         <p className="text-xs text-[var(--color-navy-100)] font-cairo mt-1">
-          اختر الزاوية التي ترغب بمشاهدة تفاصيلها بدقة عالية التقاطاً بكاميرات سينمائية احترافية مع ميزة التكبير المباشر.
+          لقطات أصلية مستخرجة من فيديوهات القاعة، ويمكنك فتح أي صورة وتكبيرها لمشاهدة التفاصيل.
         </p>
       </div>
 
@@ -99,9 +99,9 @@ export const AnglePhotoExplorer: React.FC = () => {
           { id: 'kosha', label: 'الكوشة والمسرح' },
           { id: 'buffet', label: 'البوفيه المفتوح' },
           { id: 'catwalk', label: 'الممر الملكي' },
-          { id: 'men', label: 'قسم الرجال والحوش' },
-          { id: 'suite', label: 'جناح العروسة' },
-          { id: 'entrance', label: 'المدخل والثريات' }
+          { id: 'men', label: 'قسم الرجال' },
+          { id: 'suite', label: 'غرفة العروسة' },
+          { id: 'entrance', label: 'مدخل القاعة' }
         ].map((tab) => (
           <button
             key={tab.id}

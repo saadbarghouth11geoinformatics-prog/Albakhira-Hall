@@ -52,7 +52,7 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
   capacityText: 'تتسع حتى 400 سيدة مع 40 طاولة ضيافة فاخرة',
   overview:
     'صالة نسائية مجهزة بأعلى معايير الفخامة والخصوصية، تضم مسرحاً ملكياً مبهراً، ممر زفة مضيء، كشاف عروسة وأجهزة ليزر ودخان، مع بوفيه مفتوح فضي بطول 10 متر، تورتة زفاف من 3 أدوار، وضيافة طاولات مجانية تليق بليلة العمر.',
-  heroImage: '/Videos/posters/hall-tour.jpg',
+  heroImage: '/07_Clean_Video_Frames/video_09_frame_2.jpg',
   heroVideo: '/Videos/video_01.mp4',
   specsList: [
     'بوفيه مفتوح بطول 10 أمتار من القائمة الفضية لـ 100 سيدة',
@@ -201,16 +201,16 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
     },
   ],
   galleryImages: [
-    { src: '/Videos/posters/hall-tour.jpg', title: 'صالة النساء الملكية والديكورات الذهبية', desc: 'إطلالة شاملة على مسرح الزفة وترتيب الطاولات والكراسي الملكية', badge: 'الصالة الرئيسية' },
-    { src: '/Videos/posters/hall-tour.jpg', title: 'مسرح وكوشة العروس الفاخرة', desc: 'خلفية مسرحية مبهرة مع إضاءة موجهة وتنسيقات ورد راقية', badge: 'مسرح العروس' },
-    { src: '/Videos/posters/welcome-display.jpg', title: 'ممر الزفة والإضاءات الاحتفالية', desc: 'ممشى الزفة المضيء لخطوات واثقة وأجواء سينمائية ساحرة', badge: 'ممر الزفة' },
-    { src: '/Videos/posters/table-decor.jpg', title: 'تنسيق طاولات الضيافة الـ 40', desc: 'مفارش ساتان ومفارش فاخرة مع أواني الضيافة والسنتربيس', badge: 'ضيافة الطاولات' },
-    { src: '/Videos/posters/table-decor.jpg', title: 'بوفيه النساء المفتوح 10 أمتار', desc: 'تنوع واسع في السخانات والأطباق والمقبلات الفضية', badge: 'بوفيه بطول 10 أمتار' },
-    { src: '/Videos/posters/hall-tour.jpg', title: 'إضاءات الليزر والبانوراما المسرحية', desc: 'مؤثرات ضوئية حديثة تضفي حيوية وسحراً على السهرة', badge: 'مؤثرات الحفل' },
+    { src: '/07_Clean_Video_Frames/video_09_frame_2.jpg', title: 'إطلالة واسعة على صالة النساء', desc: 'لقطة أصلية توضح مساحة الصالة وتوزيع الطاولات', badge: 'الصالة الرئيسية' },
+    { src: '/07_Clean_Video_Frames/video_09_frame_1.jpg', title: 'مسرح وكوشة العروس', desc: 'زاوية حقيقية للمسرح والكوشة وتجهيزات المناسبة', badge: 'مسرح العروس' },
+    { src: '/07_Clean_Video_Frames/video_09_frame_3.jpg', title: 'ممر الزفة والطاولات', desc: 'منظور مختلف لممر الزفة وتنسيق الجلسات المحيطة', badge: 'ممر الزفة' },
+    { src: '/07_Clean_Video_Frames/video_01_frame_1.jpg', title: 'ركن الترحيب بالمناسبة', desc: 'تنسيق الورد وركن استقبال الضيوف', badge: 'الاستقبال' },
+    { src: '/07_Clean_Video_Frames/video_01_frame_2.jpg', title: 'جلسات الاستقبال', desc: 'جانب من جلسات الاستقبال داخل القاعة', badge: 'جلسات القاعة' },
+    { src: '/07_Clean_Video_Frames/video_01_frame_3.jpg', title: 'الكوشة وممر العروس', desc: 'زاوية إضافية من الكوشة وممر العروس', badge: 'الكوشة' },
   ],
   videos: [
-    { src: '/Videos/video_01.mp4', title: 'جولة حية داخل صالة النساء الملكية', desc: 'شاهد تفاصيل الصالة وتوزيع الطاولات وإضاءات الزفة الفاخرة', poster: '/Videos/posters/hall-tour.jpg' },
-    { src: '/Videos/video_15.mp4', title: 'لحظات الزفة والمؤثرات الضوئية', desc: 'استعراض أجهزة الليزر وكشاف العروسة والبخار أثناء الحفل', poster: '/Videos/posters/hall-tour.jpg' },
+    { src: '/Videos/video_01.mp4', title: 'جولة حية داخل صالة النساء', desc: 'شاهد تفاصيل الصالة وتوزيع الطاولات وتجهيزات المناسبة', poster: '/07_Clean_Video_Frames/video_01_frame_3.jpg' },
+    { src: '/Videos/video_15.mp4', title: 'تجهيزات إحدى المناسبات', desc: 'لقطات حقيقية لتفاصيل الديكور والتوزيعات', poster: '/07_Clean_Video_Frames/video_15_frame_1.jpg' },
   ],
 };
 
@@ -222,7 +222,7 @@ export const MEN_HALL_DATA: HallSectionSpec = {
   capacityText: 'يتسع لأكثر من 350 ضيفاً في الصالة الداخلية والمجالس الخارجية',
   overview:
     'قسم رجالي رحب يجمع بين الصالة الداخلية المكيفة الفخمة والمجالس التراثية بالحوش الخارجي المجهز بـ 100 فرش وجلسة مريحة، مع طاقم مكون من 10 مباشرين وقهوجي لتقديم القهوة والشاي بالأصول، وحارس أمن لبوابة النساء، وأدوات عناية ونظافة متكاملة.',
-  heroImage: '/Videos/posters/hospitality.jpg',
+  heroImage: '/07_Clean_Video_Frames/video_04_frame_3.jpg',
   heroVideo: '/Videos/video_05.mp4',
   specsList: [
     'عدد (10) مباشرين محترفين في قسم الرجال بلباس موحد',
@@ -344,16 +344,16 @@ export const MEN_HALL_DATA: HallSectionSpec = {
     },
   ],
   galleryImages: [
-    { src: '/Videos/posters/hospitality.jpg', title: 'المجلس الداخلي الفخم لقسم الرجال', desc: 'كنب ملكي مريح وأرضيات فاخرة وإضاءة متوازنة تليق بالمناسبات الكبرى', badge: 'المجلس الداخلي' },
-    { src: '/Videos/posters/hospitality.jpg', title: 'جلسات الاستقبال وممرات الضيافة', desc: 'توزيع رحب يسمح بمرور المباشرين وتقديم القهوة والشاي بسلاسة', badge: 'استقبال الرجال' },
-    { src: '/Videos/posters/welcome-display.jpg', title: 'الحوش الخارجي والمجالس التراثية (100 فرش)', desc: 'مساحات خارجية مجهزة بجلسات مريحة وأجواء ليلية مميزة', badge: '100 فرش حوش' },
-    { src: '/Videos/posters/welcome-display.jpg', title: 'جلسات الحوش الخارجية والإضاءات المحيطية', desc: 'تنسيق متناسق للمفارش والمجالس لاستيعاب أعداد الضيوف براحة', badge: 'جلسات تراثية' },
-    { src: '/Videos/posters/welcome-display.jpg', title: 'مرافق ومغاسل قسم الرجال الفاخرة', desc: 'مجهزة بأدوات النظافة، الصابون، الكالونيا، وأعواد الأسنان', badge: 'المغاسل والخدمات' },
-    { src: '/Videos/posters/welcome-display.jpg', title: 'المدخل الخارجي ومواقف السيارات الفسيحة', desc: 'بوابة استقبال متميزة وسهولة في وصول ومغادرة الضيوف', badge: 'المدخل والمواقف' },
+    { src: '/07_Clean_Video_Frames/video_04_frame_1.jpg', title: 'جلسات مجلس الرجال', desc: 'لقطة أصلية من جلسات قسم الرجال وتجهيزاته', badge: 'المجلس الداخلي' },
+    { src: '/07_Clean_Video_Frames/video_04_frame_2.jpg', title: 'مجلس استقبال الضيوف', desc: 'زاوية توضح ترتيب الجلسات ومساحة الحركة', badge: 'استقبال الرجال' },
+    { src: '/07_Clean_Video_Frames/video_04_frame_3.jpg', title: 'تفاصيل قسم الرجال', desc: 'منظور واسع لقسم الرجال ومناطق الجلوس', badge: 'قسم الرجال' },
+    { src: '/07_Clean_Video_Frames/video_05_frame_1.jpg', title: 'مدخل القاعة', desc: 'لقطة حقيقية للمدخل ومسار الوصول', badge: 'المدخل' },
+    { src: '/07_Clean_Video_Frames/video_05_frame_2.jpg', title: 'الممر الداخلي', desc: 'جانب من الممرات والمداخل الداخلية', badge: 'المرافق' },
+    { src: '/07_Clean_Video_Frames/video_05_frame_3.jpg', title: 'غرفة الجلوس والخدمات', desc: 'مساحة داخلية مخصصة للراحة والخدمات', badge: 'الخدمات' },
   ],
   videos: [
-    { src: '/Videos/video_05.mp4', title: 'جولة حية في مجلس وقسم الرجال', desc: 'استعراض المجلس الداخلي وتجهيزات الضيافة وأماكن الجلوس', poster: '/Videos/posters/hospitality.jpg' },
-    { src: '/Videos/video_09.mp4', title: 'أجواء الحوش الخارجي والجلسات التراثية', desc: 'مشاهدة ساحة الحوش وفرش الـ 100 جلسة تحت الأضواء', poster: '/Videos/posters/welcome-display.jpg' },
-    { src: '/Videos/video_12.mp4', title: 'مراسم الضيافة وتقديم القهوة والشاي', desc: 'لقطات لكادر المباشرين والقهوجي وخدمة الضيوف بحفاوة', poster: '/Videos/posters/hospitality.jpg' },
+    { src: '/Videos/video_05.mp4', title: 'جولة حية في المداخل والمرافق', desc: 'استعراض المدخل والممرات وبعض المرافق الداخلية', poster: '/07_Clean_Video_Frames/video_05_frame_1.jpg' },
+    { src: '/Videos/video_04.mp4', title: 'جولة داخل مجلس الرجال', desc: 'مشاهدة جلسات قسم الرجال من زوايا مختلفة', poster: '/07_Clean_Video_Frames/video_04_frame_3.jpg' },
+    { src: '/Videos/video_12.mp4', title: 'تجهيز الضيافة والحلويات', desc: 'لقطات حقيقية لفريق الضيافة أثناء التجهيز والتقديم', poster: '/07_Clean_Video_Frames/video_12_frame_2.jpg' },
   ],
 };

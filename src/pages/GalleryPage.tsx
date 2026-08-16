@@ -7,6 +7,7 @@ import { PageVideoHeader } from '../components/PageVideoHeader';
 import { VirtualTour } from '../components/VirtualTour';
 import { PageTransition } from '../components/PageTransition';
 import { ContactAndBookingSection } from '../components/ContactAndBookingSection';
+import { AnglePhotoExplorer } from '../components/pageDetails/AnglePhotoExplorer';
 import { Camera, Video, Eye } from 'lucide-react';
 
 export const GalleryPage: React.FC = () => {
@@ -74,6 +75,9 @@ export const GalleryPage: React.FC = () => {
         {activeTab === 'photos' && (
           <div>
             <GallerySection />
+            <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
+              <AnglePhotoExplorer />
+            </div>
             <div className="pb-12"><VideoSection /></div>
           </div>
         )}
