@@ -65,7 +65,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
         driveUrl="https://drive.google.com/file/d/1gM2sStcxmKXT1nLfRNXTOdk6h1ERk0Uv/view?usp=drive_link"
         localVideoSrc="/Videos/video_08.mp4"
         localPoster="/Videos/posters/hall-tour.jpg"
-        badge="تغطية صالة النساء والكوشة (فيديو خلفية تلقائي)"
+        badge="جولة مرئية داخل القاعة والكوشة"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="تجهيزات وخدمات الاحتفالات الفاخرة بالحرازات"
         description="تعرف على مواصفات قاعة الباخرة للاحتفالات: صالة النساء الفخمة، الكوشة الملكية، ممر الزفة، قسم الرجال الخارجي والجلسات التراثية."
@@ -293,7 +293,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 </RevealText>
                 <RevealText delay={0.15}>
                   <p className="text-xs sm:text-sm text-[var(--color-navy-100)] leading-relaxed">
-                    تتميز صالة النساء بجمال التجهيز والتكييف الفاخر، مع بوفيه مفتوح فضي ممتد لـ 10 متر مجهز بأحدث السرافيس الفندقية وتأمين 40 صحن حلا و40 صحن معجنات مجاناً.
+                    تتميز صالة النساء بجمال التجهيز والتكييف الفاخر، مع بوفيه فضي مفتوح بطول 10 أمتار ومعدات تقديم فندقية، بالإضافة إلى 40 صحن حلا و40 صحن معجنات مجاناً.
                   </p>
                 </RevealText>
                 <ul className="space-y-2 text-xs text-[var(--color-navy-100)] font-cairo">

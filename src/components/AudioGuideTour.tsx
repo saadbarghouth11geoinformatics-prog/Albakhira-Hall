@@ -37,7 +37,7 @@ export const AudioGuideTour: React.FC = () => {
     {
       id: 4,
       title: 'قسم الرجال والحوش الخارجي (100 فرش)',
-      text: 'استقبال فخم بزي القهوجية السعودي الأصيل، مع حوش خارجي واسع مجهز بـ 100 فرش مجاني لكبار الضيوف.'
+      text: 'استقبال فخم بالزي السعودي الأصيل، مع طاقم متخصص لتقديم القهوة وحوش خارجي واسع مجهز بـ 100 جلسة للضيوف.'
     },
     {
       id: 5,
@@ -124,7 +124,7 @@ export const AudioGuideTour: React.FC = () => {
   if (!isSupported) return null;
 
   return (
-    <div className="fixed bottom-18 left-3 sm:bottom-6 sm:left-24 z-40">
+    <div className="hidden sm:block fixed bottom-6 left-24 z-40">
       <AnimatePresence>
         {isExpanded ? (
           <motion.div

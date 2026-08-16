@@ -8,7 +8,7 @@ export const FloatingWhatsAppButton: React.FC = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
-    <div className="fixed bottom-20 sm:bottom-8 left-4 sm:left-8 z-40 flex flex-col items-start gap-2">
+    <div className="hidden sm:flex fixed bottom-8 left-8 z-40 flex-col items-start gap-2">
       {/* Quick Menu Popup if clicked or toggled */}
       <AnimatePresence>
         {isOpenMenu && (

@@ -23,7 +23,7 @@ export const FaqPage: React.FC = () => {
         driveUrl="https://drive.google.com/file/d/1K9HfoSZyo_X8eF9TzFX_Enlg2EHs8Gew/view?usp=drive_link"
         localVideoSrc="/Videos/video_16.mp4"
         localPoster="/Videos/posters/welcome-display.jpg"
-        badge="خدمات الخصوصية والإشراف النسائي (فيديو خلفية تلقائي)"
+        badge="الخصوصية والإشراف النسائي"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="الأسئلة الشائعة وشروط وسياسات الحجز"
         description="إجابات كافة الأسئلة الشائعة حول تفاصيل العربون، الشروط والأحكام، سياسات التعديل والإلغاء، ومعايير الخصوصية والأمان."

@@ -30,7 +30,7 @@ export const CalculatorPage: React.FC<CalculatorPageProps> = ({ onOpenBookingWit
         driveUrl="https://drive.google.com/file/d/1XNcI2FahQcrlm651TnBLW7DHtK-WuYU5/view?usp=drive_link"
         localVideoSrc="/Videos/video_14.mp4"
         localPoster="/Videos/posters/welcome-display.jpg"
-        badge="الحاسبة التفاعلية الشفافة (فيديو خلفية تلقائي)"
+        badge="احسب تفاصيل باقتك بسهولة"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="حاسبة عروض قاعة الباخرة للاحتفالات"
         description="اختر العرض وعدد الضيوف وسياسات الاتفاق للحصول على الحسبة الدقيقة الفورية الشاملة لكافة الخدمات والبوفيه."

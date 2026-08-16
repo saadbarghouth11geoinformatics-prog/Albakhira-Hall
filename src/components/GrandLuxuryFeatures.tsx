@@ -248,6 +248,10 @@ export const GrandLuxuryFeatures: React.FC<GrandLuxuryFeaturesProps> = ({
           </div>
 
           {showComparisonTable && (
+            <>
+            <p className="mb-2 text-center text-[11px] font-bold text-[var(--color-navy-100)] sm:hidden">
+              اسحب الجدول يميناً أو يساراً لمشاهدة المقارنة كاملة
+            </p>
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
@@ -308,6 +312,7 @@ export const GrandLuxuryFeatures: React.FC<GrandLuxuryFeaturesProps> = ({
                 </tbody>
               </table>
             </motion.div>
+            </>
           )}
         </div>
 

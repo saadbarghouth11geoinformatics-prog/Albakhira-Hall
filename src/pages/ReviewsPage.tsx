@@ -26,7 +26,7 @@ export const ReviewsPage: React.FC = () => {
         driveUrl="https://drive.google.com/file/d/17WoRXW12aUbn3CcvdodS4wbE1FCyDA3u/view?usp=drive_link"
         localVideoSrc="/Videos/video_12.mp4"
         localPoster="/Videos/posters/hospitality.jpg"
-        badge="خدمة الضيافة المباشرة (فيديو خلفية تلقائي)"
+        badge="تجارب عملائنا الحقيقية"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="قصص وآراء من أقاموا ليلتهم في قاعة الباخرة بجدة"
         description="اقرأ واستعرض تجارب وتقييمات العرسان والعائلات الحقيقية ممن احتفلوا بمناسباتهم بقاعة الباخرة للاحتفالات بجدة."

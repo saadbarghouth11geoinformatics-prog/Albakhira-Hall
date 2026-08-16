@@ -11,7 +11,7 @@ export const AboutSection: React.FC = () => {
     {
       icon: Utensils,
       title: 'بوفيه مفتوح فضي 10 متر وتورتة 3 دور',
-      desc: 'سرافيس فندقية راقية ومجموعة متنوعة من المأكولات والمقبلات وطاولة بوفيه فضية فاخرة.',
+      desc: 'معدات تقديم فندقية راقية، ومجموعة متنوعة من المأكولات والمقبلات، وطاولة بوفيه فضية فاخرة.',
     },
     {
       icon: Users,
@@ -71,28 +71,28 @@ export const AboutSection: React.FC = () => {
           viewport={{ once: true, margin: '-40px' }}
           className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
         >
-          <div className="glass-card p-4 rounded-2xl border border-[var(--color-champagne-500)]/25 text-center bg-[var(--color-navy-900)]/80">
+          <div className="dark-overlay-card p-4 rounded-2xl text-center bg-[var(--color-navy-900)]/80">
             <div className="text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
               +<ScrollCountUp end={15} duration={1.8} /> سنة
             </div>
             <span className="text-[11px] sm:text-xs text-[var(--color-text-muted)] font-cairo">خبرة في تنظيم أفراح جدة</span>
           </div>
 
-          <div className="glass-card p-4 rounded-2xl border border-[var(--color-champagne-500)]/25 text-center bg-[var(--color-navy-900)]/80">
+          <div className="dark-overlay-card p-4 rounded-2xl text-center bg-[var(--color-navy-900)]/80">
             <div className="text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
               +<ScrollCountUp end={2500} duration={2.2} /> حفل
             </div>
             <span className="text-[11px] sm:text-xs text-[var(--color-text-muted)] font-cairo">مناسبة وزفاف ناجح</span>
           </div>
 
-          <div className="glass-card p-4 rounded-2xl border border-[var(--color-champagne-500)]/25 text-center bg-[var(--color-navy-900)]/80">
+          <div className="dark-overlay-card p-4 rounded-2xl text-center bg-[var(--color-navy-900)]/80">
             <div className="text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
               <ScrollCountUp end={100} duration={1.5} suffix="%" />
             </div>
             <span className="text-[11px] sm:text-xs text-[var(--color-text-muted)] font-cairo">التزام بكافة بنود العقد</span>
           </div>
 
-          <div className="glass-card p-4 rounded-2xl border border-[var(--color-champagne-500)]/25 text-center bg-[var(--color-navy-900)]/80">
+          <div className="dark-overlay-card p-4 rounded-2xl text-center bg-[var(--color-navy-900)]/80">
             <div className="text-2xl sm:text-3xl font-black gold-text font-tajawal mb-0.5">
               <ScrollCountUp end={400} duration={2} suffix="+" />
             </div>

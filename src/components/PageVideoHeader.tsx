@@ -26,7 +26,7 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
   const posterSrc = localPoster || '/Videos/posters/welcome-display.jpg';
 
   return (
-    <section className="page-video-header relative flex min-h-[360px] w-full items-center overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-ivory)] px-4 py-12 sm:min-h-[400px] sm:px-6 sm:py-14 lg:max-h-[500px] lg:px-8">
+    <section className="page-video-header relative flex min-h-[360px] w-full flex-col items-center justify-center overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-navy-950)] px-4 py-16 sm:min-h-[400px] sm:px-6 sm:py-16 lg:max-h-[500px] lg:px-8">
       {/* Compact, section-specific autoplay video. */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none bg-[var(--color-navy-950)]">
         <img
@@ -51,12 +51,12 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
           className="absolute inset-0 h-full w-full object-cover object-center brightness-90 contrast-110"
           aria-label={title}
         />
-        {/* Subtle top/bottom framing (no foggy white veil) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/40 via-transparent to-[var(--color-ivory)]/90 pointer-events-none" />
+        <div className="absolute inset-0 bg-[var(--color-navy-950)]/45 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/55 via-transparent to-[var(--color-navy-950)]/70 pointer-events-none" />
       </div>
 
       {/* TOP CONTROLS & BADGE BAR */}
-      <div className="relative z-10 max-w-7xl mx-auto flex items-center justify-start mb-8">
+      <div className="absolute top-5 right-4 left-4 z-20 mx-auto flex max-w-7xl items-center justify-start sm:right-6 sm:left-6">
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-[var(--color-success)] animate-ping" />
           <span className="text-xs font-bold text-[var(--color-navy-900)] bg-[var(--color-warm-white)] px-3.5 py-1.5 rounded-full border border-[var(--color-champagne-500)] flex items-center gap-1.5 shadow-[var(--shadow-sm)]">
@@ -67,17 +67,17 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
       </div>
 
       {/* HERO MAIN HEADER CONTENT */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="page-video-header__content relative z-10 w-full max-w-4xl mx-auto rounded-3xl px-5 py-7 text-center sm:px-8 sm:py-9">
         {subtitle && (
-          <p className="text-xs sm:text-sm font-bold text-[var(--color-champagne-700)] uppercase tracking-widest mb-2 font-cairo">
+          <p className="text-xs sm:text-sm font-bold text-[var(--color-champagne-300)] mb-2 font-cairo text-shadow-subtle">
             {subtitle}
           </p>
         )}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-black font-tajawal text-[var(--color-navy-950)] mb-4 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-black font-tajawal text-white mb-4 leading-tight text-shadow-strong">
           {title}
         </h1>
         {description && (
-          <p className="text-sm sm:text-lg text-[var(--color-text-secondary)] font-cairo max-w-3xl mx-auto leading-relaxed mb-6">
+          <p className="text-sm sm:text-base text-white/90 font-cairo max-w-3xl mx-auto leading-relaxed mb-6 text-shadow-subtle">
             {description}
           </p>
         )}

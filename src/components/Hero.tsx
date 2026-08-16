@@ -73,7 +73,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
           <source src="/Videos/video_01.mp4" type="video/mp4" />
         </video>
         {/* Crisp subtle framing gradient (no foggy white veil) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/40 via-transparent to-[var(--color-ivory)]/80 pointer-events-none" />
+        <div className="absolute inset-0 bg-[var(--color-navy-950)]/38 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-950)]/55 via-transparent to-[var(--color-navy-950)]/72 pointer-events-none" />
       </motion.div>
 
       {/* Subtle Scroll Parallax Ambient Decor */}
@@ -107,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
             animate="visible"
             className="relative max-w-5xl mb-3 sm:mb-5"
           >
-            <h1 className="text-2xl sm:text-5xl md:text-6xl font-black font-tajawal tracking-tight text-[var(--color-navy-950)] leading-tight drop-shadow-[0_2px_10px_rgba(255,255,255,0.7)]">
+            <h1 className="text-2xl sm:text-5xl md:text-6xl font-black font-tajawal tracking-tight text-white leading-tight text-shadow-strong">
               أفراح ومناسبات ملكية فاخرة بـ <br className="hidden md:block" />
               <span className="gold-text">قاعة الباخرة للاحتفالات بجدة</span>
             </h1>
@@ -128,7 +129,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
             custom={0.4}
             initial="hidden"
             animate="visible"
-            className="text-xs sm:text-lg md:text-xl text-[var(--color-text-secondary)] font-cairo max-w-3xl mx-auto mb-5 sm:mb-7 leading-relaxed font-bold drop-shadow-[0_1px_8px_rgba(255,255,255,0.8)]"
+            className="text-xs sm:text-lg md:text-xl text-white/90 font-cairo max-w-3xl mx-auto mb-5 sm:mb-7 leading-relaxed font-bold text-shadow-strong"
           >
             احجز حفل زفافك أو مناسبتك الشاملة في <strong className="text-[var(--color-champagne-700)] bg-[var(--color-champagne-500)]/15 px-2.5 py-0.5 rounded-md border border-[var(--color-champagne-500)]/40 font-black">أفخم قاعات الحرازات بجدة</strong>، مع بوفيه مفتوح 10 متر، تورتة 3 دور، وقسم رجال متكامل.
           </motion.p>

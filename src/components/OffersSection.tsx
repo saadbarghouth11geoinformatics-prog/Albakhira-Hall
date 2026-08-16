@@ -85,7 +85,7 @@ export const OffersSection: React.FC<OffersSectionProps> = ({
               className={`px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 cursor-pointer ${
                 activeCategory === cat.id
                   ? 'gold-gradient text-[var(--color-navy-950)] shadow-lg shadow-[var(--color-champagne-500)]/20 scale-105'
-                  : 'glass-card text-[var(--color-navy-100)] hover:text-[var(--color-champagne-300)] hover:border-[var(--color-champagne-500)]/40'
+                  : 'dark-overlay-card text-white hover:text-[var(--color-champagne-300)] hover:border-[var(--color-champagne-500)]/40'
               }`}
             >
               {cat.label}
@@ -132,7 +132,6 @@ export const OffersSection: React.FC<OffersSectionProps> = ({
                     <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-900)] via-black/40 to-transparent" />
                     <div className="absolute bottom-2.5 right-3 left-3 flex items-end justify-between">
                       <div>
-                        <span className="text-[10px] sm:text-xs text-[var(--color-champagne-300)] font-bold block">{pkg.nameEn}</span>
                         <h3 className="text-lg sm:text-xl font-black font-tajawal text-white">{pkg.name}</h3>
                       </div>
                     </div>

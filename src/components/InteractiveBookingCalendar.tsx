@@ -173,7 +173,7 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
   };
 
   return (
-    <section id="booking-calendar" className="py-8 sm:py-14 bg-[var(--color-ivory)] relative overflow-hidden font-cairo border-y border-[var(--color-border)]">
+    <section id="booking-calendar" className="surface-light py-8 sm:py-14 bg-[var(--color-ivory)] relative overflow-hidden font-cairo border-y border-[var(--color-border)]">
       {/* Background Ambient Lights */}
       <div className="absolute top-1/4 right-10 w-80 h-80 bg-[var(--color-champagne-500)]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-[var(--color-success)]/10 rounded-full blur-3xl pointer-events-none" />
@@ -181,15 +181,15 @@ export const InteractiveBookingCalendar: React.FC<InteractiveBookingCalendarProp
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-champagne-500)]/15 text-[var(--color-champagne-300)] text-xs font-bold border border-[var(--color-champagne-500)]/40 shadow-lg">
+          <div className="inline-flex flex-wrap justify-center items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-champagne-500)]/15 text-[var(--color-champagne-700)] text-xs font-bold border border-[var(--color-champagne-500)]/40 shadow-sm">
             <CalendarIcon className="w-4 h-4 text-[var(--color-champagne-500)]" />
-            <span>جدول المواعيد والحجوزات الفوري | Interactive Availability Calendar</span>
+            <span>جدول المواعيد والحجوزات المتاحة</span>
           </div>
 
-          <h2 className="text-2xl sm:text-4xl font-black font-tajawal gold-text">
+          <h2 className="text-2xl sm:text-4xl font-black font-tajawal text-[var(--color-navy-950)] leading-snug">
             تقويم مواعيد وحجوزات قاعة الباخرة بجدة
           </h2>
-          <p className="text-xs sm:text-sm text-[var(--color-navy-100)] leading-relaxed">
+          <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] leading-relaxed">
             استعرض المواعيد المتاحة والمحجوزة مسبقاً لصالة النساء وقسم الرجال بالحرازات، واختَر تاريخ مناسبتك للاستفسار والحجز الفوري.
           </p>
         </div>

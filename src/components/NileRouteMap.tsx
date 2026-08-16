@@ -35,7 +35,7 @@ export interface RouteMarker {
 const ROUTE_MARKERS: RouteMarker[] = [
   {
     id: 'al-bakhera-main',
-    nameAr: 'قاعة ورصيف الباخرة (Al Bakhera Main Venue)',
+    nameAr: 'قاعة الباخرة للاحتفالات',
     category: 'focal',
     x: 50,
     y: 45,
@@ -80,7 +80,7 @@ const ROUTE_MARKERS: RouteMarker[] = [
     y: 52,
     distance: 'جناح الضيافة بداخل صالة النساء',
     shortDesc: 'بوفيه فضي ممتد 10 أمتار مع تورتة 3 دور و30 لتر عصائر فريش',
-    fullDesc: 'مجهزة بأحدث السرافيس الفندقية الساخنة، تشكيلة مأكولات شرقية وغربية طازجة، مع تورتة زفاف فخمة 3 دور وعصائر طازجة مانجو وجوافة.',
+    fullDesc: 'مجهزة بمعدات تقديم فندقية ساخنة، وتشكيلة مأكولات شرقية وغربية طازجة، مع تورتة زفاف فخمة من 3 أدوار وعصائر مانجو وجوافة طازجة.',
     highlights: ['أصناف فندقية ساخنة وطازجة', '30 لتر عصائر فريش متنوعة', 'تورتة زفاف ملكية 3 دور'],
     imageUrl: '/04_Dining_Buffet/food_02.jpg',
     icon: <Utensils className="w-4 h-4 text-[var(--color-champagne-500)]" />,
@@ -154,7 +154,7 @@ export const NileRouteMap: React.FC = () => {
             <Ship className="w-3.5 h-3.5 text-[var(--color-champagne-500)]" /> خريطة مسار ومحيط قاعة الباخرة التفاعلية
           </div>
           <h3 className="text-2xl sm:text-3xl font-black font-tajawal gold-text">
-            مسار ومعالم قاعة الباخرة (Al Bakhera Interactive Route)
+            خريطة الوصول إلى قاعة الباخرة
           </h3>
           <p className="text-xs sm:text-sm text-[var(--color-navy-100)] mt-1">
             مرر الماوس أو انقر على النقاط الاستكشافية لمعاينة محيط القاعة، المداخل، البوفيه الفضي، وقسم الرجال.
@@ -202,7 +202,7 @@ export const NileRouteMap: React.FC = () => {
           {/* Focal Point Badge */}
           <div className="absolute bottom-4 left-4 bg-[var(--color-navy-950)]/90 border border-[#25D366]/40 px-3 py-1.5 rounded-xl text-[11px] font-bold text-[#25D366] z-10 shadow-lg flex items-center gap-1.5 backdrop-blur-md">
             <span className="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-ping" />
-            <span>بؤرة ارتكاز الباخرة (Al Bakhera Focal Point)</span>
+            <span>موقع قاعة الباخرة</span>
           </div>
 
           {/* SVG Map Container */}

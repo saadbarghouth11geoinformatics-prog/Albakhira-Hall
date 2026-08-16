@@ -59,7 +59,7 @@ export const InstagramFeedSection: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.55 }}
-          className="glass-card p-6 sm:p-8 rounded-3xl border border-[var(--color-champagne-500)]/40 max-w-4xl mx-auto mb-12 bg-[var(--color-navy-900)]/90 shadow-2xl relative overflow-hidden"
+          className="dark-overlay-card p-6 sm:p-8 rounded-3xl max-w-4xl mx-auto mb-12 bg-[var(--color-navy-900)]/90 shadow-2xl relative overflow-hidden"
         >
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             
@@ -162,7 +162,7 @@ export const InstagramFeedSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{ duration: 0.45, delay: (index % 3) * 0.1 }}
-                className="glass-card rounded-2xl overflow-hidden border border-[var(--color-champagne-500)]/30 bg-[var(--color-navy-900)] hover:border-[var(--color-champagne-500)] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
+                className="dark-overlay-card rounded-2xl overflow-hidden bg-[var(--color-navy-900)] hover:border-[var(--color-champagne-500)] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
               >
                 {/* Header of Instagram Post */}
                 <div className="p-3.5 flex items-center justify-between border-b border-white/5 bg-[var(--color-navy-950)]/80">

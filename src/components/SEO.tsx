@@ -24,7 +24,7 @@ export const SEO: React.FC<SEOProps> = ({
   description = 'قاعة الباخرة للاحتفالات بجدة (الحرازات) - عروض زفاف شاملة مع بوفيه مفتوح 10 متر، تورتة 3 أدوار، وقسم رجال متكامل.',
   keywords = 'قاعة الباخرة, قاعة الباخرة للاحتفالات, قاعات أفراح جدة, قاعات الحرازات, عروض قاعات جدة, حجز قاعة زفاف جدة, بوفيه مفتوح جدة',
   canonical,
-  ogImage = '/logo-official.png',
+  ogImage = '/01_Featured_Website/women_03.jpg',
   ogType = 'website',
   pageType = 'home',
   breadcrumbs,
@@ -34,10 +34,10 @@ export const SEO: React.FC<SEOProps> = ({
   const siteName = 'قاعة الباخرة للاحتفالات بجدة - الحرازات';
   const fullTitle = title.includes('قاعة الباخرة') ? title : `${title} | ${siteName}`;
 
-  const currentUrl = typeof window !== 'undefined' ? window.location.href : 'https://albakhera-hall.com';
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : 'https://albakhira-hall.vercel.app/';
   const canonicalUrl = canonical || currentUrl;
   
-  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://albakhera-hall.com';
+  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://albakhira-hall.vercel.app';
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${origin}${ogImage}`;
 
   // 1. Venue & LocalBusiness Schema

@@ -14,6 +14,31 @@
   }
 }
 
+.pb-safe {
+  padding-bottom: max(0.45rem, env(safe-area-inset-bottom));
+}
+
+.site-main {
+  padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 640px) {
+  .site-main {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  /* Prevent iOS from zooming the page when a form field receives focus. */
+  .site-shell :where(input:not([type='range']), select, textarea) {
+    font-size: 16px !important;
+  }
+
+  .site-shell :where(h1, h2, h3, p) {
+    overflow-wrap: anywhere;
+  }
+}
+
 .font-cairo {
   font-family: 'Cairo', sans-serif;
 }
@@ -79,6 +104,31 @@
   transform: translateY(-3px);
 }
 
+/* Explicit dark card. Use this instead of mixing the light glass-card surface
+   with dark background utilities, which can leave white text on a white card. */
+.dark-overlay-card {
+  background: rgba(28, 24, 19, 0.96);
+  color: var(--color-white);
+  border: 1px solid rgba(184, 142, 62, 0.34);
+  box-shadow: var(--shadow-md);
+}
+
+.dark-overlay-card :where(h1, h2, h3, h4, h5, h6, strong) {
+  color: var(--color-white);
+}
+
+.dark-overlay-card :where(p, li, small) {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.dark-overlay-card :where(
+  [class*='text-[var(--color-navy-100)]'],
+  [class*='text-[var(--color-text-secondary)]'],
+  [class*='text-[var(--color-text-muted)]']
+) {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
 @media (prefers-color-scheme: light) {
   .glass-card-hover:hover {
     background: #ffffff;
@@ -106,15 +156,6 @@
 img[src='/logo-official.png'] {
   object-fit: contain !important;
   box-shadow: none !important;
-}
-
-.surface-light > div > .text-center :where(h1, h2, h3) {
-  color: var(--color-navy-950) !important;
-  -webkit-text-fill-color: currentColor;
-}
-
-.surface-light > div > .text-center p {
-  color: var(--color-text-secondary) !important;
 }
 
 /* Unified site palette & typography contrast system */
@@ -160,17 +201,13 @@ img[src='/logo-official.png'] {
 /* Dark surface & photo overlay contrast guardrails */
 [data-theme='dark'],
 .cinematic-story,
-.dark-overlay-card,
-[class*='bg-[var(--color-navy-950)]'],
-[class*='bg-[var(--color-navy-900)]'],
-[class*='bg-[var(--color-navy-800)]'] {
+.dark-overlay-card {
   color: rgba(255, 255, 255, 0.95);
 }
 
 [data-theme='dark'] h1, [data-theme='dark'] h2, [data-theme='dark'] h3, [data-theme='dark'] h4, [data-theme='dark'] h5, [data-theme='dark'] h6,
 .cinematic-story h1, .cinematic-story h2, .cinematic-story h3, .cinematic-story h4,
-[class*='bg-[var(--color-navy-950)]'] h1, [class*='bg-[var(--color-navy-950)]'] h2, [class*='bg-[var(--color-navy-950)]'] h3,
-[class*='bg-[var(--color-navy-900)]'] h1, [class*='bg-[var(--color-navy-900)]'] h2, [class*='bg-[var(--color-navy-900)]'] h3 {
+.dark-overlay-card h1, .dark-overlay-card h2, .dark-overlay-card h3, .dark-overlay-card h4 {
   color: #ffffff !important;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
 }
@@ -195,6 +232,14 @@ img[src='/logo-official.png'] {
   color: var(--color-navy-950) !important;
   border: 1px solid var(--color-champagne-500);
   box-shadow: none;
+}
+
+/* Page videos change frame constantly, so text needs its own stable contrast. */
+.page-video-header__content {
+  background: rgba(20, 18, 14, 0.74);
+  border: 1px solid rgba(229, 202, 133, 0.34);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
 }
 
 .brand-info-bar :where(a, span) {
@@ -253,62 +298,6 @@ img[src='/logo-official.png'] {
 .global-video-controls [class*='text-[var(--color-navy-100)]'],
 .global-video-controls [class*='text-[var(--color-champagne-300)]'] {
   color: var(--color-navy-900) !important;
-}
-
-/* Global contrast guardrails: dark surfaces stay readable everywhere. */
-.site-shell :where(
-  [data-theme='dark'],
-  [class*='from-[var(--color-navy-950)]'],
-  [class*='from-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-800)]']
-) {
-  color: var(--color-white) !important;
-}
-
-.site-shell :where(
-  [data-theme='dark'],
-  [class*='from-[var(--color-navy-950)]'],
-  [class*='from-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-800)]']
-) :where(h1, h2, h3, h4, h5, h6, strong, [class*='text-white']) {
-  color: var(--color-white) !important;
-  -webkit-text-fill-color: currentColor;
-}
-
-.site-shell :where(
-  [data-theme='dark'],
-  [class*='from-[var(--color-navy-950)]'],
-  [class*='from-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-800)]']
-) :where(
-  p,
-  li,
-  small,
-  [class*='text-[var(--color-navy-100)]'],
-  [class*='text-[var(--color-text-muted)]'],
-  [class*='text-[var(--color-text-secondary)]'],
-  [class*='text-slate-300'],
-  [class*='text-slate-400']
-) {
-  color: rgba(255, 255, 255, 0.88) !important;
-}
-
-.site-shell :where(
-  [data-theme='dark'],
-  [class*='from-[var(--color-navy-950)]'],
-  [class*='from-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-900)]'],
-  [class*='via-[var(--color-navy-800)]']
-) :where(
-  .gold-text,
-  [class*='text-[var(--color-champagne-300)]'],
-  [class*='text-[var(--color-champagne-500)]']
-) {
-  color: var(--color-champagne-300) !important;
-  -webkit-text-fill-color: currentColor;
 }
 
 /* Clean card and surface text styles without breaking child dark components */

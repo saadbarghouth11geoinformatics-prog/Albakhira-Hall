@@ -34,14 +34,14 @@ export const MenuSection: React.FC = () => {
         </div>
 
         {/* Menu Banner Card */}
-        <div className="glass-card rounded-3xl p-6 md:p-10 border border-[var(--color-champagne-500)]/40 mb-12 relative overflow-hidden bg-gradient-to-r from-[var(--color-navy-900)] via-[var(--color-navy-900)] to-[var(--color-navy-900)]">
+        <div className="dark-overlay-card rounded-3xl p-6 md:p-10 border border-[var(--color-champagne-500)]/40 mb-12 relative overflow-hidden bg-gradient-to-r from-[var(--color-navy-900)] via-[var(--color-navy-900)] to-[var(--color-navy-900)]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
               <span className="text-xs font-bold text-[var(--color-champagne-500)] bg-[var(--color-champagne-500)]/15 px-3 py-1 rounded-full border border-[var(--color-champagne-500)]/30">
                 ضيافة شاملة ومكتملة
               </span>
               <h3 className="text-2xl sm:text-3xl font-black font-tajawal text-white">
-                بوفيه طازج وسرافيس فندقية راقية
+                بوفيه طازج وخدمة تقديم فندقية راقية
               </h3>
               <p className="text-xs sm:text-sm text-[var(--color-navy-100)] leading-relaxed">
                 تعتمد القاعة أعلى معايير الجودة بالاتفاق المسبق والمكتوب، مع تقديم 30 لتر عصائر طازجة، طاقم المباشرات للزفاف والقهوجي للرجال.
@@ -69,7 +69,7 @@ export const MenuSection: React.FC = () => {
               className={`px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all cursor-pointer ${
                 selectedCat === cat.id
                   ? 'gold-gradient text-[var(--color-navy-950)] shadow-md scale-105'
-                  : 'glass-card text-[var(--color-navy-100)] hover:text-[var(--color-champagne-300)]'
+                  : 'dark-overlay-card text-white hover:text-[var(--color-champagne-300)]'
               }`}
             >
               {cat.label}
@@ -84,13 +84,12 @@ export const MenuSection: React.FC = () => {
               key={item.id}
               className={`p-6 rounded-2xl transition-all border ${
                 item.highlighted
-                  ? 'glass-card border-[var(--color-champagne-500)] bg-[var(--color-navy-900)]/80'
-                  : 'glass-card border-[var(--color-champagne-500)]/20 bg-[var(--color-navy-900)]/60'
+                  ? 'dark-overlay-card border-[var(--color-champagne-500)] bg-[var(--color-navy-900)]/80'
+                  : 'dark-overlay-card border-[var(--color-champagne-500)]/20 bg-[var(--color-navy-900)]/60'
               }`}
             >
               <div className="flex items-start justify-between gap-4 mb-2">
                 <div>
-                  <span className="text-[10px] text-[var(--color-champagne-500)] font-bold block mb-1">{item.nameEn}</span>
                   <h4 className="text-lg font-bold text-white font-tajawal">{item.nameAr}</h4>
                 </div>
                 {item.highlighted && (

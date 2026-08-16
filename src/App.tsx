@@ -265,7 +265,7 @@ export default function App() {
         <Header onOpenBooking={handleOpenBooking} />
 
         {/* Dynamic Route Pages with Animated Transitions */}
-        <main className="flex-grow pb-20 sm:pb-0">
+        <main className="site-main flex-grow sm:pb-0">
           <AnimatedRoutes
             handleOpenBooking={handleOpenBooking}
             preselectedPkg={preselectedPkg}

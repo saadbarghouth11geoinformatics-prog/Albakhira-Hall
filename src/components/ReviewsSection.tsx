@@ -151,7 +151,7 @@ export const ReviewsSection: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="glass-card p-6 md:p-8 rounded-3xl border-2 border-[var(--color-champagne-500)]/40 max-w-4xl mx-auto mb-12 bg-gradient-to-r from-[var(--color-navy-900)] via-[var(--color-navy-900)] to-[var(--color-navy-900)] shadow-2xl relative overflow-hidden"
+          className="dark-overlay-card p-6 md:p-8 rounded-3xl border-2 border-[var(--color-champagne-500)]/40 max-w-4xl mx-auto mb-12 bg-gradient-to-r from-[var(--color-navy-900)] via-[var(--color-navy-900)] to-[var(--color-navy-900)] shadow-2xl relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-champagne-500)]/10 rounded-full blur-2xl pointer-events-none" />
 
@@ -371,7 +371,7 @@ export const ReviewsSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{ duration: 0.5, delay: (idx % 3) * 0.1, ease: 'easeOut' }}
-                className="glass-card p-6 rounded-3xl border border-[var(--color-champagne-500)]/30 flex flex-col justify-between relative bg-gradient-to-b from-[var(--color-navy-900)] via-[var(--color-navy-950)] to-[var(--color-navy-950)] shadow-xl hover:border-[var(--color-champagne-500)]/60 transition-all group"
+                className="dark-overlay-card p-6 rounded-3xl flex flex-col justify-between relative bg-gradient-to-b from-[var(--color-navy-900)] via-[var(--color-navy-950)] to-[var(--color-navy-950)] shadow-xl hover:border-[var(--color-champagne-500)]/60 transition-all group"
               >
                 <div>
                   {/* Card Top Banner */}

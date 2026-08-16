@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
     { path: '/womens-hall', label: 'قسم النساء', icon: Heart, badge: 'ملكي' },
     { path: '/mens-hall', label: 'قسم الرجال', icon: Users, badge: 'حوش 100 فرش' },
     { path: '/offers', label: 'العروض', icon: Sparkles },
-    { path: '/calculator', label: 'مخصص الحفل', icon: Calculator },
+    { path: '/calculator', label: 'جهز حفلك', icon: Calculator },
     { path: '/menu', label: 'البوفيه', icon: Utensils },
     { path: '/gallery', label: 'المعرض', icon: Camera },
     { path: '/about', label: 'عن القاعة', icon: Info },

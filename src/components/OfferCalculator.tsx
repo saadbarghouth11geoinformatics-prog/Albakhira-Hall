@@ -47,13 +47,13 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--color-champagne-500)]/20 text-[var(--color-champagne-300)] text-xs font-bold border border-[var(--color-champagne-500)]/40 mb-3">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--color-champagne-500)]/20 text-[var(--color-champagne-700)] text-xs font-bold border border-[var(--color-champagne-500)]/40 mb-3">
             <Calculator className="w-3.5 h-3.5 text-[var(--color-champagne-500)]" /> المنسق التفاعلي لعروض قاعة الباخرة
           </div>
           <h2 className="text-3xl sm:text-5xl font-black font-tajawal gold-text mb-4">
             تنسيق وحساب مواصفات باقة الحفل
           </h2>
-          <p className="text-[var(--color-navy-100)] text-sm sm:text-base font-cairo">
+          <p className="text-[var(--color-text-secondary)] text-sm sm:text-base font-cairo">
             اختر العرض المعتمد، حدد عدد الضيوف، وأضف خدمات الاتفاق للحصول على كشف المواصفات المعتمد بجدة (الحرازات).
           </p>
         </div>
@@ -63,7 +63,7 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
           {/* Left Controls Column */}
           <div className="lg:col-span-7 space-y-8">
             {/* Step 1: Base Package Selection */}
-            <div className="glass-card p-6 rounded-3xl border border-[var(--color-champagne-500)]/30">
+            <div className="dark-overlay-card p-6 rounded-3xl">
               <label className="text-base font-bold font-tajawal text-white mb-4 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-full bg-[var(--color-champagne-500)] text-[var(--color-navy-950)] text-xs font-black flex items-center justify-center">1</span>
                 اختر العرض الرئيسي المطلوب:
@@ -81,7 +81,6 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
                           : 'bg-[var(--color-navy-950)]/60 border-[var(--color-champagne-500)]/20 hover:border-[var(--color-champagne-500)]/50'
                       }`}
                     >
-                      <div className="text-xs text-[var(--color-champagne-300)] font-bold mb-1">{pkg.nameEn}</div>
                       <div className="font-bold text-sm text-white font-tajawal mb-2">{pkg.name}</div>
                       <div className="text-xs text-[var(--color-champagne-400)] font-bold">{pkg.badge || 'العرض المعتمد'}</div>
                       <div className="text-[10px] text-[var(--color-text-muted)] mt-1">{pkg.guestCapacity} ضيف أساسي</div>
@@ -92,7 +91,7 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
             </div>
 
             {/* Step 2: Guest Count Slider */}
-            <div className="glass-card p-6 rounded-3xl border border-[var(--color-champagne-500)]/30">
+            <div className="dark-overlay-card p-6 rounded-3xl">
               <div className="flex items-center justify-between mb-4">
                 <label className="text-base font-bold font-tajawal text-white flex items-center gap-2">
                   <span className="w-6 h-6 rounded-full bg-[var(--color-champagne-500)] text-[var(--color-navy-950)] text-xs font-black flex items-center justify-center">2</span>
@@ -130,7 +129,7 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
             </div>
 
             {/* Step 3: Custom Add-ons */}
-            <div className="glass-card p-6 rounded-3xl border border-[var(--color-champagne-500)]/30">
+            <div className="dark-overlay-card p-6 rounded-3xl">
               <label className="text-base font-bold font-tajawal text-white mb-4 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-full bg-[var(--color-champagne-500)] text-[var(--color-navy-950)] text-xs font-black flex items-center justify-center">3</span>
                 خدمات وسياسات الاتفاق الإضافية:
@@ -176,7 +175,7 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
 
           {/* Right Receipt Box */}
           <div className="lg:col-span-5 sticky top-28">
-            <div className="glass-card p-6 md:p-8 rounded-3xl border-2 border-[var(--color-champagne-500)]/50 shadow-2xl bg-gradient-to-b from-[var(--color-navy-900)] to-[var(--color-navy-950)]">
+            <div className="dark-overlay-card p-6 md:p-8 rounded-3xl border-2 border-[var(--color-champagne-500)]/50 shadow-2xl bg-gradient-to-b from-[var(--color-navy-900)] to-[var(--color-navy-950)]">
               <div className="flex items-center justify-between pb-4 border-b border-[var(--color-champagne-500)]/30 mb-6">
                 <div>
                   <span className="text-xs text-[var(--color-champagne-300)] font-bold block">ملخص مواصفات الحفل المعتمد</span>
@@ -240,7 +239,7 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
                 <div className="grid grid-cols-2 gap-2">
                   <button
                     onClick={() => setShowQuoteModal(true)}
-                    className="w-full glass-card hover:bg-[var(--color-navy-900)] text-[var(--color-champagne-300)] font-bold py-2.5 rounded-xl border border-[var(--color-champagne-500)]/40 flex items-center justify-center gap-1.5 text-xs cursor-pointer"
+                    className="w-full dark-overlay-card hover:bg-[var(--color-navy-900)] text-[var(--color-champagne-300)] font-bold py-2.5 rounded-xl border border-[var(--color-champagne-500)]/40 flex items-center justify-center gap-1.5 text-xs cursor-pointer"
                   >
                     <FileText className="w-3.5 h-3.5 text-[var(--color-champagne-500)]" />
                     <span>معاينة للطباعة</span>
@@ -327,7 +326,7 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
             <div className="flex gap-3">
               <button
                 onClick={() => window.print()}
-                className="flex-1 glass-card hover:bg-[var(--color-navy-900)] text-[var(--color-champagne-300)] font-bold py-3 rounded-xl border border-[var(--color-champagne-500)]/40 flex items-center justify-center gap-2 text-xs"
+                className="flex-1 dark-overlay-card hover:bg-[var(--color-navy-900)] text-[var(--color-champagne-300)] font-bold py-3 rounded-xl border border-[var(--color-champagne-500)]/40 flex items-center justify-center gap-2 text-xs"
               >
                 <Download className="w-4 h-4 text-[var(--color-champagne-500)]" />
                 <span>طباعة الكشف الرسمي (PDF)</span>

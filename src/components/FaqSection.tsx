@@ -209,7 +209,7 @@ export const FaqSection: React.FC = () => {
         </div>
 
         {/* Search Bar & Filter Controls Container */}
-        <div className="glass-card p-4 sm:p-6 rounded-3xl border border-[var(--color-champagne-500)]/30 bg-[var(--color-navy-900)]/90 shadow-2xl mb-8 space-y-5">
+        <div className="dark-overlay-card p-4 sm:p-6 rounded-3xl bg-[var(--color-navy-900)]/90 shadow-2xl mb-8 space-y-5">
           
           {/* Live Search Input */}
           <div className="relative">
@@ -296,7 +296,7 @@ export const FaqSection: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-30px' }}
                   transition={{ duration: 0.35, delay: index * 0.05 }}
-                  className={`glass-card rounded-2xl border transition-all duration-300 overflow-hidden ${
+                  className={`dark-overlay-card rounded-2xl border transition-all duration-300 overflow-hidden ${
                     isOpen
                       ? 'border-[var(--color-champagne-500)] bg-[var(--color-navy-900)] shadow-2xl'
                       : 'border-[var(--color-champagne-500)]/30 bg-[var(--color-navy-900)]/60 hover:border-[var(--color-champagne-500)]/60'
@@ -426,7 +426,7 @@ export const FaqSection: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="text-center py-12 px-4 glass-card rounded-3xl border border-[var(--color-champagne-500)]/30"
+            className="text-center py-12 px-4 dark-overlay-card rounded-3xl"
           >
             <HelpCircle className="w-12 h-12 text-[var(--color-champagne-500)] mx-auto mb-3 opacity-60" />
             <h3 className="text-lg font-bold text-white font-tajawal mb-2">

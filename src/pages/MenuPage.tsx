@@ -56,10 +56,10 @@ export const MenuPage: React.FC = () => {
         driveUrl="https://drive.google.com/file/d/1qZrP-Ezk4jr2WYuXq-JtsdXSanhKzCbL/view?usp=drive_link"
         localVideoSrc="/Videos/video_13.mp4"
         localPoster="/Videos/posters/table-decor.jpg"
-        badge="بوفيه الـ 10 متر وتورتة الزفاف (فيديو خلفية حية)"
+        badge="بوفيه 10 أمتار وتورتة الزفاف"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="بوفيه مفتوح فضي 10 متر وضيافة فاخرة"
-        description="استعرض أصناف بوفيه الـ 10 متر الفضي، تورتة الـ 3 دور، 40 صحن حلا و40 صحن معجنات مجاناً، وعصائر الضيافة المباشرة مع القهوجية وصبابات القهوة العربية."
+        description="استعرض أصناف البوفيه الفضي بطول 10 أمتار، وتورتة الزفاف من 3 أدوار، و40 صحن حلا و40 صحن معجنات مجاناً، والعصائر وخدمة القهوة العربية."
       />
 
       {/* Main Menu Component */}

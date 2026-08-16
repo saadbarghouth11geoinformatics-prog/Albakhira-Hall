@@ -240,6 +240,9 @@ export const OffersPage: React.FC<OffersPageProps> = ({ onOpenBooking }) => {
             </p>
           </div>
 
+          <p className="mb-2 text-center text-[11px] font-bold text-[var(--color-text-muted)] sm:hidden">
+            اسحب الجدول يميناً أو يساراً لمشاهدة جميع العروض
+          </p>
           <div className="overflow-x-auto rounded-2xl border border-[var(--color-border)] shadow-xl bg-[var(--color-warm-white)]">
             <table className="w-full text-right border-collapse min-w-[700px]">
               <thead>

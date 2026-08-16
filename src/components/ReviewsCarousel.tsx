@@ -246,7 +246,7 @@ export const ReviewsCarousel: React.FC = () => {
         </div>
 
         {/* Carousel Container */}
-        <div className="glass-card rounded-3xl border-2 border-[var(--color-champagne-500)]/40 bg-gradient-to-b from-[var(--color-navy-900)] via-[var(--color-navy-950)] to-[var(--color-navy-900)] shadow-2xl p-4 sm:p-8 relative overflow-hidden">
+        <div className="dark-overlay-card rounded-3xl border-2 border-[var(--color-champagne-500)]/40 bg-gradient-to-b from-[var(--color-navy-900)] via-[var(--color-navy-950)] to-[var(--color-navy-900)] shadow-2xl p-4 sm:p-8 relative overflow-hidden">
           
           {/* Top Bar Controls */}
           <div className="flex items-center justify-between gap-4 mb-6 pb-4 border-b border-[var(--color-champagne-500)]/20 text-xs font-cairo">

@@ -29,7 +29,7 @@ export const VirtualTour: React.FC = () => {
       desc: 'بوفيه فضي ممتد لـ 10 متر مع تورتة زفاف ملكية 3 دور.',
       image: '/04_Dining_Buffet/food_02.jpg',
       hotspots: [
-        { id: 'b1', title: 'البوفيه الفضي 10 متر', x: '60%', y: '50%', info: 'سرافيس فندقية راقية ومأكولات طازجة' },
+        { id: 'b1', title: 'البوفيه الفضي 10 أمتار', x: '60%', y: '50%', info: 'خدمة تقديم فندقية راقية ومأكولات طازجة' },
       ],
     },
   };
@@ -73,7 +73,7 @@ export const VirtualTour: React.FC = () => {
               className={`px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all cursor-pointer ${
                 activeZone === zoneKey
                   ? 'gold-gradient text-[var(--color-navy-950)] shadow-lg scale-105'
-                  : 'glass-card text-[var(--color-navy-100)] hover:text-[var(--color-champagne-300)]'
+                  : 'dark-overlay-card text-white hover:text-[var(--color-champagne-300)]'
               }`}
             >
               {zones[zoneKey].title}
@@ -87,7 +87,7 @@ export const VirtualTour: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="glass-card p-4 md:p-6 rounded-3xl border border-[var(--color-champagne-500)]/40 relative overflow-hidden bg-black/80 shadow-2xl"
+          className="dark-overlay-card p-4 md:p-6 rounded-3xl relative overflow-hidden bg-black/80 shadow-2xl"
         >
           <div className="relative h-[400px] sm:h-[500px] w-full rounded-2xl overflow-hidden group">
           <img

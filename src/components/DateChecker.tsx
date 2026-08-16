@@ -29,7 +29,7 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
           <CalendarIcon className="w-3.5 h-3.5 text-[var(--color-champagne-500)]" /> فحص إمكانية التوفر والتقويم التفاعلي
         </div>
 
-        <h3 className="text-2xl sm:text-3xl font-black font-tajawal gold-text mb-3">
+        <h3 className="mx-auto max-w-4xl px-2 text-2xl sm:text-3xl font-black font-tajawal text-[var(--color-champagne-300)] mb-3 leading-snug">
           هل تاريخ مناسبتك متاح في قاعة الباخرة بجدة؟
         </h3>
         <p className="text-xs sm:text-sm text-[var(--color-navy-100)] mb-6 max-w-2xl mx-auto">
@@ -115,4 +115,3 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
     </section>
   );
 };
-
