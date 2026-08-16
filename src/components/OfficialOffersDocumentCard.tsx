@@ -147,14 +147,14 @@ export const OfficialOffersDocumentCard: React.FC<OfficialOffersDocumentCardProp
       <div className="bg-white rounded-3xl border-2 border-[var(--color-champagne-500)]/40 shadow-2xl p-6 sm:p-10 relative overflow-hidden">
         {/* Subtle watermark background logo */}
         <div className="absolute -right-16 -bottom-16 opacity-5 pointer-events-none w-96 h-96">
-          <img src="/logo-official.png" alt="watermark" className="w-full h-full object-contain" />
+          <img src="/logo-official.jpg" alt="watermark" className="w-full h-full object-contain" />
         </div>
 
         {/* Document Header with Golden Badge and Official Logo */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b-2 border-[var(--color-champagne-500)]/30 pb-6 mb-8 text-center sm:text-right">
           <div className="flex items-center gap-4">
             <img
-              src="/logo-official.png"
+              src="/logo-official.jpg"
               alt="شعار قاعة الباخرة للاحتفالات"
               className="h-16 sm:h-20 w-auto object-contain"
             />

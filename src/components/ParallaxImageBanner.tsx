@@ -41,7 +41,8 @@ export const ParallaxImageBanner: React.FC<{
           className="w-full h-full object-cover filter brightness-90 contrast-110"
           referrerPolicy="no-referrer"
           onError={(e) => {
-            e.currentTarget.src = '/women_featured.jpg';
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = '/01_Featured_Website/women_03.jpg';
           }}
         />
         {/* Luxury Dark Gradient Overlays */}

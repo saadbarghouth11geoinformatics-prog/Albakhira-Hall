@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
         className="absolute inset-0 z-0 overflow-hidden pointer-events-none origin-center bg-[var(--color-navy-950)]"
       >
         <img
-          src="/hero.jpg"
+          src="/01_Featured_Website/women_03.jpg"
           alt="قاعة الباخرة للاحتفالات بجدة"
           className="absolute inset-0 h-full w-full object-cover object-center filter brightness-[0.88] contrast-[1.05]"
           loading="eager"
@@ -178,11 +178,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.currentTarget;
-                    if (!target.src.includes('buffet_featured.jpg')) {
-                      target.src = '/buffet_featured.jpg';
-                    } else {
-                      target.src = '/01_Featured_Website/food_01.jpg';
-                    }
+                    target.onerror = null;
+                    target.src = '/01_Featured_Website/food_01.jpg';
                   }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
@@ -210,11 +207,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.currentTarget;
-                    if (!target.src.includes('women_featured.jpg')) {
-                      target.src = '/women_featured.jpg';
-                    } else {
-                      target.src = '/01_Featured_Website/women_03.jpg';
-                    }
+                    target.onerror = null;
+                    target.src = '/01_Featured_Website/women_03.jpg';
                   }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
@@ -246,11 +240,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.currentTarget;
-                    if (!target.src.includes('men_featured.jpg')) {
-                      target.src = '/men_featured.jpg';
-                    } else {
-                      target.src = '/01_Featured_Website/men_01.jpg';
-                    }
+                    target.onerror = null;
+                    target.src = '/01_Featured_Website/men_01.jpg';
                   }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 />

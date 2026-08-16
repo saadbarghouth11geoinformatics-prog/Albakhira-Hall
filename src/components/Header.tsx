@@ -133,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
           <Link to="/" className="flex shrink-0 items-center" aria-label="العودة إلى الصفحة الرئيسية">
             {!imageError ? (
               <img
-                src="/logo-official.png"
+                src="/logo-official.jpg"
                 decoding="async"
                 alt="شعار قاعة الباخرة للاحتفالات"
                 onError={() => setImageError(true)}

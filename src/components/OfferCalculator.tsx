@@ -275,7 +275,7 @@ export const OfferCalculator: React.FC<OfferCalculatorProps> = ({
             <div className="border border-[var(--color-champagne-500)]/30 p-6 rounded-2xl bg-[var(--color-navy-950)]/90 mb-6">
               <div className="flex items-center justify-between border-b border-[var(--color-champagne-500)]/30 pb-4 mb-4">
                 <div className="flex items-center gap-3">
-                  <img src="/logo-official.png" alt="شعار قاعة الباخرة للاحتفالات" loading="lazy" decoding="async" className="w-10 h-10 rounded-full border border-[var(--color-champagne-500)]" />
+                  <img src="/logo-official.jpg" alt="شعار قاعة الباخرة للاحتفالات" loading="lazy" decoding="async" className="w-10 h-10 rounded-full border border-[var(--color-champagne-500)]" />
                   <div>
                     <h4 className="font-bold gold-text font-tajawal text-base">كشف مواصفات العرض الرسمي - قاعة الباخرة</h4>
                     <span className="text-[10px] text-[var(--color-text-muted)]">جدة - الحرازات - بعد محطة المدينة بـ 500م</span>

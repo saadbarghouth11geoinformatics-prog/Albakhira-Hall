@@ -86,13 +86,13 @@ const StoryScene: React.FC<StorySceneProps> = ({
           onError={(e) => {
             const target = e.currentTarget;
             if (accent === 'women') {
-              target.src = '/women_featured.jpg';
+              target.src = '/01_Featured_Website/women_03.jpg';
             } else if (accent === 'men') {
-              target.src = '/men_featured.jpg';
+              target.src = '/01_Featured_Website/men_01.jpg';
             } else if (accent === 'buffet') {
-              target.src = '/buffet_featured.jpg';
+              target.src = '/01_Featured_Website/food_01.jpg';
             } else {
-              target.src = '/deck.jpg';
+              target.src = '/05_Exterior_Outdoor_Yard/men_18.jpg';
             }
           }}
         />
@@ -110,13 +110,13 @@ const StoryScene: React.FC<StorySceneProps> = ({
             onError={(e) => {
               const target = e.currentTarget;
               if (accent === 'women') {
-                target.src = '/royal_kosha_stage.jpg';
+                target.src = '/02_Women_Hall/women_03.jpg';
               } else if (accent === 'men') {
-                target.src = '/men_main.jpg';
+                target.src = '/03_Men_Hall/men_01.jpg';
               } else if (accent === 'buffet') {
-                target.src = '/food_main.jpg';
+                target.src = '/04_Dining_Buffet/food_02.jpg';
               } else {
-                target.src = '/instagram_courtyard.jpg';
+                target.src = '/05_Exterior_Outdoor_Yard/men_18.jpg';
               }
             }}
           />
@@ -205,10 +205,10 @@ const StoryCard: React.FC<StoryCardProps> = ({ title, subtitle, image, icon }) =
         referrerPolicy="no-referrer"
         onError={(e) => {
           const target = e.currentTarget;
-          if (title.includes('نساء')) target.src = '/women_featured.jpg';
-          else if (title.includes('رجال')) target.src = '/men_featured.jpg';
-          else if (title.includes('طعام') || title.includes('بوفيه')) target.src = '/buffet_featured.jpg';
-          else target.src = '/deck.jpg';
+          if (title.includes('نساء')) target.src = '/01_Featured_Website/women_03.jpg';
+          else if (title.includes('رجال')) target.src = '/01_Featured_Website/men_01.jpg';
+          else if (title.includes('طعام') || title.includes('بوفيه')) target.src = '/01_Featured_Website/food_01.jpg';
+          else target.src = '/05_Exterior_Outdoor_Yard/men_18.jpg';
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-950)] via-[var(--color-navy-950)]/50 to-transparent" />

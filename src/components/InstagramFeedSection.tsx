@@ -68,7 +68,7 @@ export const InstagramFeedSection: React.FC = () => {
               <div className="relative">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-tr from-[var(--color-champagne-600)] via-[var(--color-champagne-600)] to-[var(--color-champagne-600)] shadow-xl">
                   <img
-                    src="/logo-official.png"
+                    src="/logo-official.jpg"
                     loading="lazy"
                     decoding="async"
                     alt="شعار قاعة الباخرة للاحتفالات"
@@ -168,7 +168,7 @@ export const InstagramFeedSection: React.FC = () => {
                 <div className="p-3.5 flex items-center justify-between border-b border-white/5 bg-[var(--color-navy-950)]/80">
                   <div className="flex items-center gap-2.5">
                     <img
-                      src="/logo-official.png"
+                      src="/logo-official.jpg"
                       loading="lazy"
                       decoding="async"
                       alt="شعار قاعة الباخرة للاحتفالات"
@@ -324,7 +324,7 @@ export const InstagramFeedSection: React.FC = () => {
                   <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
                     <div className="flex items-center gap-3">
                       <img
-                        src="/logo-official.png"
+                        src="/logo-official.jpg"
                         loading="lazy"
                         decoding="async"
                         alt="شعار قاعة الباخرة للاحتفالات"

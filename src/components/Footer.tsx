@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             <Link to="/" className="flex flex-col items-start gap-3">
               <div className="rounded-xl bg-[var(--color-ivory)] p-2">
                 <img
-                  src="/logo-official.png"
+                  src="/logo-official.jpg"
                   loading="lazy"
                   decoding="async"
                   alt="شعار قاعة الباخرة للاحتفالات"

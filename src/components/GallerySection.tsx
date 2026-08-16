@@ -46,11 +46,11 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ image, index, onOpen }) => {
                 setCurrentSrc(image.src);
               } else if (!currentSrc.includes('featured') && !currentSrc.includes('deck') && !currentSrc.includes('coffee')) {
                 // Fallback to top-level high-res photography based on category
-                if (image.categoryId === 'women') setCurrentSrc('/women_featured.jpg');
-                else if (image.categoryId === 'men') setCurrentSrc('/men_featured.jpg');
-                else if (image.categoryId === 'buffet') setCurrentSrc('/buffet_featured.jpg');
-                else if (image.categoryId === 'exterior') setCurrentSrc('/deck.jpg');
-                else setCurrentSrc('/coffee_service.jpg');
+                if (image.categoryId === 'women') setCurrentSrc('/01_Featured_Website/women_03.jpg');
+                else if (image.categoryId === 'men') setCurrentSrc('/01_Featured_Website/men_01.jpg');
+                else if (image.categoryId === 'buffet') setCurrentSrc('/01_Featured_Website/food_01.jpg');
+                else if (image.categoryId === 'exterior') setCurrentSrc('/05_Exterior_Outdoor_Yard/men_18.jpg');
+                else setCurrentSrc('/06_Facilities/food_07.jpg');
               } else {
                 setFailed(true);
               }

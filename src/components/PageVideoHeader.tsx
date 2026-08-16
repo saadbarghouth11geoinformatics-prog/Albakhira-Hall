@@ -36,7 +36,8 @@ export const PageVideoHeader: React.FC<PageVideoHeaderProps> = ({
           loading="eager"
           decoding="async"
           onError={(e) => {
-            e.currentTarget.src = '/hero.jpg';
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = '/01_Featured_Website/women_03.jpg';
           }}
         />
         <video
