@@ -5,7 +5,6 @@ import { PageVideoHeader } from '../components/PageVideoHeader';
 import { SectionDivider } from '../components/SectionDivider';
 import { InteractiveMap } from '../components/InteractiveMap';
 import { DirectionsAndRoutesGuide } from '../components/pageDetails/DirectionsAndRoutesGuide';
-import { InteractiveBookingCalendar } from '../components/InteractiveBookingCalendar';
 import { ContactAndBookingSection } from '../components/ContactAndBookingSection';
 import {
   Phone,
@@ -63,7 +62,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
         driveId="1RGv7Eabum6LSriNjP8uaj6BI3NQEB3UN"
         driveUrl="https://drive.google.com/file/d/1RGv7Eabum6LSriNjP8uaj6BI3NQEB3UN/view?usp=drive_link"
         localVideoSrc="/Videos/video_09.mp4"
-        localPoster="/Videos/posters/welcome-display.jpg"
+        localPoster="/05_Exterior_Outdoor_Yard/men_18.jpg"
         badge="الموقع الجغرافي وبيانات الاتصال الرسمية"
         subtitle={HALL_SPECS.addressAr}
         title="تواصل واحجز مناسبتك بقاعة الباخرة"
@@ -130,7 +129,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
                   className="w-full bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2 shadow-lg hover:scale-102 transition-all cursor-pointer text-xs"
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
-                  <span>تأكيد الموعد فورًا عبر واتساب المشرف</span>
+                  <span>تأكيد الموعد فوراً عبر واتساب المشرف</span>
                 </a>
               </div>
             </div>
@@ -153,7 +152,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
                     <CheckCircle2 className="w-12 h-12 text-[var(--color-success)] mx-auto" />
                     <h4 className="font-bold text-xl text-[var(--color-navy-950)] font-tajawal">تم إرسال طلب موعد المعاينة بنجاح!</h4>
                     <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed max-w-md mx-auto">
-                      شكراً لك أستاذ <strong className="text-[var(--color-navy-950)]">{visitorName}</strong>. تم تسجيل طلب زيارتك بتاريخ <strong className="text-[var(--color-champagne-700)]">{visitDate || 'اليوم'}</strong> وسيتم التواصل معكم عبر الواتساب فورًا.
+                      شكراً لك أستاذ <strong className="text-[var(--color-navy-950)]">{visitorName}</strong>. تم تسجيل طلب زيارتك بتاريخ <strong className="text-[var(--color-champagne-700)]">{visitDate || 'اليوم'}</strong> وسيتم التواصل معكم عبر الواتساب فوراً.
                     </p>
                     <button
                       onClick={() => setSubmittedAppointment(false)}
@@ -231,15 +230,6 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
                 )}
               </div>
             </div>
-          </div>
-
-          {/* Interactive Booking & Availability Calendar */}
-          <SectionDivider variant="crown" label="جدول التوفر والتقويم التفاعلي لمواعيد القاعة" />
-          <div className="mt-6">
-            <InteractiveBookingCalendar
-              onSelectDate={handleCalendarDateSelect}
-              onOpenBookingModal={onOpenBooking}
-            />
           </div>
 
           {/* Interactive Google Map Section */}
