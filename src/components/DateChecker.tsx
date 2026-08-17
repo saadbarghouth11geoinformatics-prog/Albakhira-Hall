@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar as CalendarIcon, CheckCircle2, AlertCircle, CalendarRange } from 'lucide-react';
-
-const InteractiveBookingCalendar = React.lazy(() =>
-  import('./InteractiveBookingCalendar').then((module) => ({ default: module.InteractiveBookingCalendar })),
-);
+import { InteractiveBookingCalendar } from './InteractiveBookingCalendar';
 
 interface DateCheckerProps {
   onSelectDate: (date: string) => void;
@@ -12,7 +9,7 @@ interface DateCheckerProps {
 export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
   const [testDate, setTestDate] = useState('');
   const [checkResult, setCheckResult] = useState<'available' | 'busy' | null>(null);
-  const [showFullCalendar, setShowFullCalendar] = useState(false);
+  const [showFullCalendar, setShowFullCalendar] = useState(true);
 
   const handleCheck = (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,11 +33,17 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
           هل تاريخ مناسبتك متاح في قاعة الباخرة بجدة؟
         </h3>
         <p className="text-xs sm:text-sm text-[var(--color-navy-100)] mb-6 max-w-2xl mx-auto">
-          اختر تاريخًا للفحص السريع، أو افتح التقويم الشهري عند الحاجة لمقارنة أكثر من موعد.
+          تصفح التقويم التفاعلي أدناه أو اختر تاريخاً لفحص توفر صالة النساء وقسم الرجال بالحرازات فوراً.
         </p>
 
         {/* Quick Date Input Bar */}
         <form onSubmit={handleCheck} className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-xl mx-auto mb-6">
+          <button
+            type="submit"
+            className="w-full sm:w-auto gold-gradient text-[var(--color-navy-950)] font-bold px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition-transform cursor-pointer shrink-0"
+          >
+            فحص التوفر الآن
+          </button>
           <input
             type="date"
             required
@@ -49,20 +52,14 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
               setTestDate(e.target.value);
               setCheckResult(null);
             }}
-            className="w-full sm:w-auto flex-1 bg-white border border-[var(--color-champagne-500)]/60 rounded-xl px-4 py-3 text-[var(--color-navy-950)] font-bold focus:outline-none focus:border-[var(--color-champagne-500)] focus:ring-2 focus:ring-[var(--color-champagne-500)]/20 text-right"
+            className="w-full sm:w-auto flex-1 bg-[var(--color-navy-950)] border border-[var(--color-champagne-500)]/40 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[var(--color-champagne-500)] text-right"
           />
-          <button
-            type="submit"
-            className="w-full sm:w-auto gold-gradient text-[var(--color-navy-950)] font-bold px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition-transform cursor-pointer shrink-0"
-          >
-            فحص التوفر الآن
-          </button>
         </form>
 
         {checkResult === 'available' && (
           <div className="bg-[var(--color-success)] border border-[var(--color-success)] p-4 rounded-2xl max-w-lg mx-auto text-right flex items-center justify-between gap-4 mb-8">
             <div className="flex items-center gap-3 text-[var(--color-warm-white)]">
-              <CheckCircle2 className="w-6 h-6 text-white shrink-0" />
+              <CheckCircle2 className="w-6 h-6 text-[var(--color-success)] shrink-0" />
               <div>
                 <h4 className="font-bold text-sm font-tajawal text-white">التاريخ متاح للحجز!</h4>
                 <p className="text-xs text-[var(--color-navy-100)]">صالة النساء وقسم الرجال متاحان في هذا التاريخ.</p>
@@ -109,9 +106,9 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
         {/* Full Interactive Calendar Component */}
         {showFullCalendar && (
           <div className="mt-2 text-right">
-            <React.Suspense fallback={<div className="rounded-2xl border border-[var(--color-champagne-500)]/30 bg-[var(--color-navy-950)] p-6 text-center text-sm font-bold text-[var(--color-champagne-300)]">جاري تحميل التقويم...</div>}>
-              <InteractiveBookingCalendar onSelectDate={(selected) => onSelectDate(selected)} />
-            </React.Suspense>
+            <InteractiveBookingCalendar
+              onSelectDate={(selected) => onSelectDate(selected)}
+            />
           </div>
         )}
       </div>
