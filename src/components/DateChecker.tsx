@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar as CalendarIcon, CheckCircle2, AlertCircle, CalendarRange } from 'lucide-react';
-import { InteractiveBookingCalendar } from './InteractiveBookingCalendar';
+import { Calendar as CalendarIcon, CheckCircle2, AlertCircle } from 'lucide-react';
 
 interface DateCheckerProps {
   onSelectDate: (date: string) => void;
@@ -9,7 +8,6 @@ interface DateCheckerProps {
 export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
   const [testDate, setTestDate] = useState('');
   const [checkResult, setCheckResult] = useState<'available' | 'busy' | null>(null);
-  const [showFullCalendar, setShowFullCalendar] = useState(true);
   const [isInputFocused, setIsInputFocused] = useState(false);
 
   const handleCheck = (e: React.FormEvent) => {
@@ -27,14 +25,14 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
     <section id="date-check" className="py-6 sm:py-12 bg-[var(--color-navy-900)] border-y border-[var(--color-champagne-500)]/30 font-cairo">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-champagne-500)]/20 text-[var(--color-champagne-300)] text-xs font-bold mb-3 border border-[var(--color-champagne-500)]/30">
-          <CalendarIcon className="w-3.5 h-3.5 text-[var(--color-champagne-500)]" /> فحص إمكانية التوفر والتقويم التفاعلي
+          <CalendarIcon className="w-3.5 h-3.5 text-[var(--color-champagne-500)]" /> فحص إمكانية التوفر
         </div>
 
         <h3 className="mx-auto max-w-4xl px-2 text-2xl sm:text-3xl font-black font-tajawal text-[var(--color-champagne-300)] mb-3 leading-snug">
           هل تاريخ مناسبتك متاح في قاعة الباخرة بجدة؟
         </h3>
         <p className="text-xs sm:text-sm text-[var(--color-navy-100)] mb-6 max-w-2xl mx-auto">
-          تصفح التقويم التفاعلي أدناه أو اختر تاريخاً لفحص توفر صالة النساء وقسم الرجال بالحرازات فوراً.
+          اختر تاريخاً لفحص توفر صالة النساء وقسم الرجال بالحرازات فوراً.
         </p>
 
         {/* Quick Date Input Bar */}
@@ -104,26 +102,6 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
             >
               استفسر عن البدائل
             </button>
-          </div>
-        )}
-
-        {/* Calendar View Toggle */}
-        <div className="mt-4">
-          <button
-            onClick={() => setShowFullCalendar(!showFullCalendar)}
-            className="inline-flex items-center gap-2 bg-[var(--color-navy-950)] text-[var(--color-champagne-300)] border border-[var(--color-champagne-500)]/40 px-5 py-2.5 rounded-full text-xs font-bold hover:bg-[var(--color-champagne-500)] hover:text-[var(--color-navy-950)] transition-all cursor-pointer shadow-lg mb-4"
-          >
-            <CalendarRange className="w-4 h-4" />
-            <span>{showFullCalendar ? 'إخفاء جدول المواعيد الشهري' : 'عرض جدول المواعيد والتقويم الشهري الكامل'}</span>
-          </button>
-        </div>
-
-        {/* Full Interactive Calendar Component */}
-        {showFullCalendar && (
-          <div className="mt-2 text-right">
-            <InteractiveBookingCalendar
-              onSelectDate={(selected) => onSelectDate(selected)}
-            />
           </div>
         )}
       </div>
