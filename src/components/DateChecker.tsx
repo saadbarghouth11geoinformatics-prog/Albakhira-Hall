@@ -10,6 +10,7 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
   const [testDate, setTestDate] = useState('');
   const [checkResult, setCheckResult] = useState<'available' | 'busy' | null>(null);
   const [showFullCalendar, setShowFullCalendar] = useState(true);
+  const [isInputFocused, setIsInputFocused] = useState(false);
 
   const handleCheck = (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,16 +45,30 @@ export const DateChecker: React.FC<DateCheckerProps> = ({ onSelectDate }) => {
           >
             فحص التوفر الآن
           </button>
-          <input
-            type="date"
-            required
-            value={testDate}
-            onChange={(e) => {
-              setTestDate(e.target.value);
-              setCheckResult(null);
-            }}
-            className="w-full sm:w-auto flex-1 bg-[var(--color-navy-950)] border border-[var(--color-champagne-500)]/40 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[var(--color-champagne-500)] text-right"
-          />
+          <div className="relative w-full sm:w-auto flex-1">
+            <input
+              type={isInputFocused || testDate ? "date" : "text"}
+              placeholder="اليوم / الشهر / السنة"
+              lang="ar"
+              required
+              value={testDate}
+              onFocus={(e) => {
+                setIsInputFocused(true);
+                if (e.target.showPicker) {
+                  try { e.target.showPicker(); } catch {}
+                }
+              }}
+              onBlur={() => setIsInputFocused(false)}
+              onChange={(e) => {
+                setTestDate(e.target.value);
+                setCheckResult(null);
+              }}
+              className="w-full bg-[var(--color-navy-950)] border border-[var(--color-champagne-500)]/40 rounded-xl px-4 py-3 text-white placeholder-[var(--color-champagne-300)]/60 focus:outline-none focus:border-[var(--color-champagne-500)] text-right cursor-pointer font-cairo"
+            />
+            {!testDate && !isInputFocused && (
+              <CalendarIcon className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-champagne-500)] pointer-events-none" />
+            )}
+          </div>
         </form>
 
         {checkResult === 'available' && (
