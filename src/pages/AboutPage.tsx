@@ -63,8 +63,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
       <PageVideoHeader
         driveId="1gM2sStcxmKXT1nLfRNXTOdk6h1ERk0Uv"
         driveUrl="https://drive.google.com/file/d/1gM2sStcxmKXT1nLfRNXTOdk6h1ERk0Uv/view?usp=drive_link"
-        localVideoSrc="/Videos/video_08.mp4"
-        localPoster="/Videos/posters/hall-tour.jpg"
+        localVideoSrc="/new-media/new-tour-hall.mp4"
+        localPoster="/new-media/poster-hall.jpg"
         badge="جولة مرئية داخل القاعة والكوشة"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="تجهيزات وخدمات الاحتفالات الفاخرة بالحرازات"

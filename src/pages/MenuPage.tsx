@@ -54,8 +54,8 @@ export const MenuPage: React.FC = () => {
       <PageVideoHeader
         driveId="1qZrP-Ezk4jr2WYuXq-JtsdXSanhKzCbL"
         driveUrl="https://drive.google.com/file/d/1qZrP-Ezk4jr2WYuXq-JtsdXSanhKzCbL/view?usp=drive_link"
-        localVideoSrc="/Videos/video_13.mp4"
-        localPoster="/Videos/posters/table-decor.jpg"
+        localVideoSrc="/new-media/new-tour-lights.mp4"
+        localPoster="/new-media/poster-lights.jpg"
         badge="بوفيه 10 أمتار وتورتة الزفاف"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="بوفيه مفتوح فضي 10 متر وضيافة فاخرة"

@@ -9,5 +9,6 @@ coverage/
 .codex-video-review/
 .DS_Store
 *.log
+public/new p/
 .env*
 !.env.example

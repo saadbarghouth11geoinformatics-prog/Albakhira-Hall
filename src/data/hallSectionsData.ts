@@ -52,8 +52,8 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
   capacityText: 'تتسع حتى 400 سيدة مع 40 طاولة ضيافة فاخرة',
   overview:
     'صالة نسائية مجهزة بأعلى معايير الفخامة والخصوصية، تضم مسرحاً ملكياً مبهراً، ممر زفة مضيء، كشاف عروسة وأجهزة ليزر ودخان، مع بوفيه مفتوح فضي بطول 10 متر، تورتة زفاف من 3 أدوار، وضيافة طاولات مجانية تليق بليلة العمر.',
-  heroImage: '/07_Clean_Video_Frames/video_09_frame_1.jpg',
-  heroVideo: '/Videos/video_01.mp4',
+  heroImage: '/new-media/new-hall-12.webp',
+  heroVideo: '/new-media/new-tour-hall.mp4',
   specsList: [
     'بوفيه مفتوح بطول 10 أمتار من القائمة الفضية لـ 100 سيدة',
     'تورتة زفاف فخمة 3 أدوار مع البوفيه',
@@ -201,6 +201,12 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
     },
   ],
   galleryImages: [
+    { src: '/new-media/new-hall-12.webp', title: 'أحدث إطلالة بانورامية على صالة النساء', desc: 'منظر واسع يوضح توزيع الطاولات والجلسات والديكور', badge: 'أحدث تجهيزات القاعة' },
+    { src: '/new-media/new-hall-06.webp', title: 'الصالة من الطابق العلوي', desc: 'زاوية مرتفعة تظهر رحابة الصالة وتناسق تجهيزاتها', badge: 'إطلالة بانورامية' },
+    { src: '/new-media/new-hall-10.webp', title: 'ممر العروس وإضاءة السقف', desc: 'تفاصيل الممر والثريات والتجهيزات المضيئة', badge: 'ممر العروس' },
+    { src: '/new-media/new-hall-08.webp', title: 'الكوشة والدرج الرئيسي', desc: 'مشهد للكوشة والدرج المحاط بتنسيقات الورد', badge: 'الكوشة' },
+    { src: '/new-media/new-hall-01.webp', title: 'جلسات الاستقبال تحت الثريات', desc: 'جلسات مريحة وطاولات أنيقة وإضاءة كريستالية', badge: 'الجلسات' },
+    { src: '/new-media/new-hall-05.webp', title: 'إطلالة على الدرج والكوشة', desc: 'تكوين واسع يجمع الدرج والكوشة والجلسات', badge: 'تفاصيل الصالة' },
     { src: '/07_Clean_Video_Frames/video_09_frame_1.jpg', title: 'إطلالة واسعة على صالة النساء', desc: 'مساحة الصالة وتوزيع الطاولات والجلسات', badge: 'الصالة الرئيسية' },
     { src: '/07_Clean_Video_Frames/video_09_frame_3.jpg', title: 'مسرح وكوشة العروس', desc: 'المسرح والكوشة في مواجهة ممر الزفة', badge: 'مسرح العروس' },
     { src: '/07_Clean_Video_Frames/video_09_frame_5.jpg', title: 'الممر الرئيسي للصالة', desc: 'منظور ممتد للممر والطاولات وصولًا إلى المسرح', badge: 'ممر الزفة' },
@@ -209,6 +215,8 @@ export const WOMEN_HALL_DATA: HallSectionSpec = {
     { src: '/07_Clean_Video_Frames/video_01_frame_4.jpg', title: 'جلسة العروس', desc: 'جلسة أنيقة محاطة بتنسيقات الورد', badge: 'جلسة العروس' },
   ],
   videos: [
+    { src: '/new-media/new-tour-hall.mp4', title: 'أحدث جولة داخل صالة النساء', desc: 'جولة حديثة في الصالة والطاولات والجلسات وممر العروس', poster: '/new-media/poster-hall.jpg' },
+    { src: '/new-media/new-tour-lights.mp4', title: 'السقف المضيء والديكور الكريستالي', desc: 'تفاصيل الإضاءة والديكور المعلق داخل القاعة', poster: '/new-media/poster-lights.jpg' },
     { src: '/Videos/video_01.mp4', title: 'جولة حية داخل صالة النساء', desc: 'شاهد تفاصيل الصالة وتوزيع الطاولات وتجهيزات المناسبة', poster: '/07_Clean_Video_Frames/video_01_frame_3.jpg' },
     { src: '/Videos/video_15.mp4', title: 'تجهيزات إحدى المناسبات', desc: 'تفاصيل الديكور والتوزيعات وتجهيز ركن الترحيب', poster: '/07_Clean_Video_Frames/video_15_frame_4.jpg' },
   ],

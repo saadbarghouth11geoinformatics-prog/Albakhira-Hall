@@ -61,8 +61,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
       <PageVideoHeader
         driveId="1RGv7Eabum6LSriNjP8uaj6BI3NQEB3UN"
         driveUrl="https://drive.google.com/file/d/1RGv7Eabum6LSriNjP8uaj6BI3NQEB3UN/view?usp=drive_link"
-        localVideoSrc="/Videos/video_09.mp4"
-        localPoster="/05_Exterior_Outdoor_Yard/men_18.jpg"
+        localVideoSrc="/new-media/new-tour-exterior.mp4"
+        localPoster="/new-media/poster-exterior.jpg"
         badge="الموقع الجغرافي وبيانات الاتصال الرسمية"
         subtitle={HALL_SPECS.addressAr}
         title="تواصل واحجز مناسبتك بقاعة الباخرة"

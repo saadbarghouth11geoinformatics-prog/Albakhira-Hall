@@ -24,8 +24,8 @@ export const ReviewsPage: React.FC = () => {
       <PageVideoHeader
         driveId="17WoRXW12aUbn3CcvdodS4wbE1FCyDA3u"
         driveUrl="https://drive.google.com/file/d/17WoRXW12aUbn3CcvdodS4wbE1FCyDA3u/view?usp=drive_link"
-        localVideoSrc="/Videos/video_12.mp4"
-        localPoster="/Videos/posters/hospitality.jpg"
+        localVideoSrc="/new-media/new-tour-hall.mp4"
+        localPoster="/new-media/poster-hall.jpg"
         badge="تجارب عملائنا الحقيقية"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="قصص وآراء من أقاموا ليلتهم في قاعة الباخرة بجدة"

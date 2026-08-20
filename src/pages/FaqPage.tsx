@@ -21,8 +21,8 @@ export const FaqPage: React.FC = () => {
       <PageVideoHeader
         driveId="1K9HfoSZyo_X8eF9TzFX_Enlg2EHs8Gew"
         driveUrl="https://drive.google.com/file/d/1K9HfoSZyo_X8eF9TzFX_Enlg2EHs8Gew/view?usp=drive_link"
-        localVideoSrc="/Videos/video_16.mp4"
-        localPoster="/Videos/posters/welcome-display.jpg"
+        localVideoSrc="/new-media/new-tour-lights.mp4"
+        localPoster="/new-media/poster-lights.jpg"
         badge="الخصوصية والإشراف النسائي"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="الأسئلة الشائعة وشروط وسياسات الحجز"

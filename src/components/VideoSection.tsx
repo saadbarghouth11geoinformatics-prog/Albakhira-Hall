@@ -12,6 +12,30 @@ type LocalVideo = {
 
 const LOCAL_VIDEOS: LocalVideo[] = [
   {
+    id: 'new-hall-tour',
+    title: 'أحدث جولة داخل صالة النساء',
+    src: '/new-media/new-tour-hall.mp4',
+    poster: '/new-media/poster-hall.jpg',
+    duration: '00:58',
+    category: 'أحدث المقاطع',
+  },
+  {
+    id: 'new-lights-tour',
+    title: 'الثريات وإضاءة السقف',
+    src: '/new-media/new-tour-lights.mp4',
+    poster: '/new-media/poster-lights.jpg',
+    duration: '00:40',
+    category: 'أحدث المقاطع',
+  },
+  {
+    id: 'new-exterior-tour',
+    title: 'واجهة القاعة والمدخل',
+    src: '/new-media/new-tour-exterior.mp4',
+    poster: '/new-media/poster-exterior.jpg',
+    duration: '00:39',
+    category: 'أحدث المقاطع',
+  },
+  {
     id: 'women-decor',
     title: 'الكوشة ومدخل صالة النساء',
     src: '/Videos/video_01.mp4',
@@ -111,7 +135,7 @@ export const VideoSection: React.FC = () => (
           شاهد القاعة من كل زاوية
         </h2>
         <p className="mt-4 text-sm leading-7 text-[var(--color-text-secondary)] sm:text-base">
-          عشرة مقاطع متنوعة للصالات والجلسات والضيافة والتجهيزات.
+          أحدث الجولات في المقدمة، مع جميع المقاطع السابقة للصالات والجلسات والضيافة والتجهيزات.
         </p>
       </header>
 

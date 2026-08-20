@@ -15,7 +15,39 @@ const frame = (video: string, number: number, categoryId: GalleryCategoryId, tit
   featured,
 });
 
+const newHallImage = (
+  number: number,
+  categoryId: GalleryCategoryId,
+  title: string,
+  description: string,
+  featured = false,
+): HallImage => ({
+  id: `new-hall-${String(number).padStart(2, '0')}`,
+  src: `/new-media/new-hall-${String(number).padStart(2, '0')}.webp`,
+  alt: `${title} في قاعة الباخرة للاحتفالات بجدة`,
+  width: 1440,
+  height: 2560,
+  categoryId,
+  title,
+  description,
+  featured,
+});
+
 const hallImages: HallImage[] = [
+  newHallImage(12, 'women', 'إطلالة بانورامية على صالة النساء', 'منظر واسع يوضح توزيع الطاولات والجلسات والديكور.', true),
+  newHallImage(6, 'women', 'الصالة من الطابق العلوي', 'زاوية مرتفعة تظهر رحابة الصالة وتناسق تجهيزاتها.', true),
+  newHallImage(10, 'women', 'ممر العروس وإضاءة السقف', 'تفاصيل الممر والثريات والتجهيزات المضيئة.', true),
+  newHallImage(8, 'women', 'الكوشة والدرج الرئيسي', 'مشهد للكوشة والدرج المحاط بتنسيقات الورد.', true),
+  newHallImage(1, 'women', 'جلسات الاستقبال تحت الثريات', 'جلسات مريحة وطاولات أنيقة وإضاءة كريستالية.'),
+  newHallImage(2, 'women', 'تفاصيل الجلسات والطاولات', 'تنسيق متناسق للجلسات وديكور الطاولات.'),
+  newHallImage(3, 'women', 'الطاولات وممر الحركة', 'زاوية توضح سهولة الحركة بين الطاولات.'),
+  newHallImage(4, 'women', 'الثريات والديكور الداخلي', 'تفاصيل إضاءة السقف والديكور الفاخر.'),
+  newHallImage(5, 'women', 'إطلالة على الدرج والكوشة', 'تكوين واسع يجمع الدرج والكوشة والجلسات.'),
+  newHallImage(7, 'women', 'ممر الصالة الرئيسي', 'منظور ممتد للممر نحو منصة العروس.'),
+  newHallImage(9, 'women', 'تجهيزات إحدى المناسبات', 'توزيع الطاولات والورد في تجهيز حديث.'),
+  newHallImage(11, 'women', 'تفاصيل السقف الكريستالي', 'إضاءة مميزة تضيف أجواء احتفالية للصالة.'),
+  newHallImage(13, 'exterior', 'واجهة قاعة الباخرة', 'واجهة القاعة واللوحة التعريفية عند الوصول.', true),
+
   frame('video_01', 1, 'women', 'الكوشة والثريا الرئيسية', 'تصميم أنيق يجمع بين الإضاءة الدافئة وتنسيقات الورد.', true),
   frame('video_01', 2, 'women', 'تفاصيل ديكور الكوشة', 'تنسيق الورد والخلفيات المضيئة حول منصة العروس.'),
   frame('video_01', 3, 'women', 'مدخل صالة النساء', 'منظر المدخل والدرج مع ركن الترحيب بالمناسبة.'),
@@ -58,10 +90,10 @@ export const BUFFET_IMAGES = hallImages.filter((image) => image.categoryId === '
 export const EXTERIOR_IMAGES = hallImages.filter((image) => image.categoryId === 'exterior');
 export const FACILITIES_IMAGES = hallImages.filter((image) => image.categoryId === 'facilities');
 export const FEATURED_IMAGES = hallImages.filter((image) => image.featured);
-export const HERO_IMAGE = WOMEN_SECTION_IMAGES[4];
+export const HERO_IMAGE = WOMEN_SECTION_IMAGES[0];
 
 export const GALLERY_CATEGORIES: GalleryCategory[] = [
-  { id: 'women', title: 'صالة النساء والكوشة', description: 'الصالة والكوشة وممر الزفة من زوايا متعددة.', coverImage: WOMEN_SECTION_IMAGES[4].src, images: WOMEN_SECTION_IMAGES },
+  { id: 'women', title: 'صالة النساء والكوشة', description: 'الصالة والكوشة وممر الزفة من زوايا متعددة.', coverImage: WOMEN_SECTION_IMAGES[0].src, images: WOMEN_SECTION_IMAGES },
   { id: 'men', title: 'مجلس الرجال والجلسات', description: 'مجلس الرجال ومناطق استقبال الضيوف.', coverImage: MEN_SECTION_IMAGES[2].src, images: MEN_SECTION_IMAGES },
   { id: 'buffet', title: 'الضيافة والحلويات', description: 'الحلويات والمشروبات وتجهيزات التقديم.', coverImage: BUFFET_IMAGES[4].src, images: BUFFET_IMAGES },
   { id: 'exterior', title: 'التجهيزات والديكور', description: 'تفاصيل الهدايا والتوزيعات وأركان الترحيب.', coverImage: EXTERIOR_IMAGES[0].src, images: EXTERIOR_IMAGES },

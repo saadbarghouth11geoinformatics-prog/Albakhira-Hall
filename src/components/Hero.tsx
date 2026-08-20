@@ -54,14 +54,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
         className="absolute inset-0 z-0 overflow-hidden pointer-events-none origin-center bg-[var(--color-navy-950)]"
       >
         <img
-          src="/01_Featured_Website/women_03.jpg"
+          src="/new-media/new-hall-12.webp"
           alt="قاعة الباخرة للاحتفالات بجدة"
           className="absolute inset-0 h-full w-full object-cover object-center filter brightness-[0.88] contrast-[1.05]"
           loading="eager"
           decoding="async"
         />
         <video
-          poster="/Videos/posters/hall-tour.jpg"
+          poster="/new-media/poster-hall.jpg"
           autoPlay
           muted
           loop
@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenVideoModal }) =
           className="absolute inset-0 h-full w-full object-cover object-center filter contrast-[1.08] brightness-[0.96]"
           aria-label="جولة قصيرة داخل قاعة الباخرة بجدة"
         >
-          <source src="/Videos/video_01.mp4" type="video/mp4" />
+          <source src="/new-media/new-tour-hall.mp4" type="video/mp4" />
         </video>
         {/* Crisp subtle framing gradient (no foggy white veil) */}
         <div className="absolute inset-0 bg-[var(--color-navy-950)]/38 pointer-events-none" />
