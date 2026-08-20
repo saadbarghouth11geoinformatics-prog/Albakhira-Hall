@@ -25,7 +25,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
 
   return (
     <PageTransition className="bg-[var(--color-ivory)] text-[var(--color-text)] font-cairo">
-      <SEO title="الرئيسية | قاعة الباخرة للاحتفالات بجدة" description="قاعة الباخرة للاحتفالات في حي الحرازات بجدة. شاهد الصالات والعروض والصور الحقيقية، وافحص التاريخ واطلب الحجز أو المعاينة بسهولة." pageType="home" ogImage="/Videos/posters/hall-tour.jpg" />
+      <SEO title="الرئيسية | قاعة الباخرة للاحتفالات بجدة" description="قاعة الباخرة للاحتفالات في حي الحرازات بجدة. شاهد الصالات والعروض والصور الحقيقية، وافحص التاريخ واطلب الحجز أو المعاينة بسهولة." pageType="home" ogImage="/new-media/poster-hall.jpg" />
 
       <Hero onOpenBooking={() => onOpenBooking()} onOpenVideoModal={() => navigate('/gallery')} />
 

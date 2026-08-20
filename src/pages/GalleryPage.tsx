@@ -24,8 +24,8 @@ export const GalleryPage: React.FC = () => {
       <PageVideoHeader
         driveId="1Ps_28GHBdCgUKIub85KQnEPSNk85cwT5"
         driveUrl="https://drive.google.com/file/d/1Ps_28GHBdCgUKIub85KQnEPSNk85cwT5/view?usp=drive_link"
-        localVideoSrc="/Videos/video_04.mp4"
-        localPoster="/Videos/posters/hall-tour.jpg"
+        localVideoSrc="/new-media/new-tour-hall.mp4"
+        localPoster="/new-media/poster-hall.jpg"
         badge="معرض الصور والفيديوهات"
         subtitle="جدة - الحرازات - بعد محطة المدينة بـ 500 متر"
         title="معرض الصور والفيديوهات والجولة الافتراضية 360°"
